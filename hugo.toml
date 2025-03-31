@@ -5,6 +5,10 @@ languageCode = "en-us"
 theme = "terminal"
 pagination.pagerSize = 5
 
+# Added to specify output directory for static files
+publishDir = "docs" 
+
+
 # Required for Chroma and the custom syntax highlighting.
 [markup.highlight]
   noClasses = false
