@@ -1,17 +1,16 @@
 ---
-title: Windows command prompt
+title: gaho
 date: 2025-04-01
 draft: true
 tags:
   - bbb
   - abtoy
+  - clippings
 ---
 
 
 # Then What's next
 
 Test image
-
-![Terminal](https://github.com/panr/hugo-theme-terminal/blob/master/images/terminal-theme.png?raw=true)
-
+asgsa
 ---
