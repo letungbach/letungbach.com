@@ -1,7 +1,7 @@
 ---
 title: gaho
 date: 2025-04-01
-draft: false
+draft: true
 tags:
   - bbb
   - abtoy
