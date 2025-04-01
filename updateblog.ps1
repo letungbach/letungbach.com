@@ -52,6 +52,11 @@ if (-not (Test-Path ".git")) {
 # Step 2: Sync posts from Obsidian to Hugo content folder using Robocopy
 Write-Host "Syncing posts from Obsidian..."
 
+
+if (-not (Test-Path $sourcePath)) {
+    Write-Error "Source path does not exist: $sourcePath"
+}
+
 if (-not (Test-Path $sourcePath)) {
     Write-Error "Source path does not exist: $sourcePath"
     exit 1
@@ -62,9 +67,14 @@ if (-not (Test-Path $destinationPath)) {
     exit 1
 }
 
+# Create necessary directories if they don't exist
+Write-Host "Creating necessary directories..."
+New-Item -ItemType Directory -Path "content\posts" -Force | Out-Null
+New-Item -ItemType Directory -Path "docs" -Force | Out-Null
+
 # Use Robocopy to mirror the directories
 $robocopyOptions = @('/MIR', '/Z', '/W:5', '/R:3')
-$robocopyResult = robocopy $sourcePath $destinationPath @robocopyOptions
+$robocopyResult = robocopy "D:\Obsidian_Vaults\b\posts" "C:\Users\b\Documents\bbblog\content\posts" /mir
 
 if ($LASTEXITCODE -ge 8) {
     Write-Error "Robocopy failed with exit code $LASTEXITCODE"
