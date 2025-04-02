@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moe on Terminal</title>
+    <link>/tags/moe/</link>
+    <description>Recent content in Moe on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/moe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Continual Learning</title>
+      <link>/posts/continual-learning/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/continual-learning/</guid>
+      <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;continual-learning-a-review-of-variational-dropout-mixture-of-experts-with-prompting-and-backdoor-attacks&#34;&gt;Continual Learning: A Review of Variational Dropout, Mixture of Experts with Prompting, and Backdoor Attacks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The field of machine learning has witnessed significant advancements in recent years, enabling models to achieve remarkable performance on a wide array of tasks. However, a fundamental challenge arises when these models are deployed in dynamic environments where new data or tasks are encountered sequentially. This paradigm, known as continual learning, necessitates the ability of a model to learn from a continuous stream of information without forgetting previously acquired knowledge.1 A major impediment to achieving this goal is catastrophic forgetting, a phenomenon where the learning of new information leads to a drastic decline in performance on previously learned tasks.4 Overcoming this challenge requires specialized techniques that can maintain a delicate balance between the model&amp;rsquo;s capacity to learn new tasks (plasticity) and its ability to retain old knowledge (stability).4&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

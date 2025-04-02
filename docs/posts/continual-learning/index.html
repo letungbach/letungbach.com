@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Continual Learning :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="**
+Continual Learning: A Review of Variational Dropout, Mixture of Experts with Prompting, and Backdoor Attacks 1. Introduction The field of machine learning has witnessed significant advancements in recent years, enabling models to achieve remarkable performance on a wide array of tasks. However, a fundamental challenge arises when these models are deployed in dynamic environments where new data or tasks are encountered sequentially. This paradigm, known as continual learning, necessitates the ability of a model to learn from a continuous stream of information without forgetting previously acquired knowledge.1 A major impediment to achieving this goal is catastrophic forgetting, a phenomenon where the learning of new information leads to a drastic decline in performance on previously learned tasks.4 Overcoming this challenge requires specialized techniques that can maintain a delicate balance between the model&rsquo;s capacity to learn new tasks (plasticity) and its ability to retain old knowledge (stability).4
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/continual-learning/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.4f0ccc8439f99bf7f7970298556b94011aabc1fcae743b6842fc3361a2da9ea3.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.15870410d15d02abd22fb5ef00996f65a00d04b3a7435e9f83831c7c2298de88.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Continual Learning">
+<meta property="og:description" content="**
+Continual Learning: A Review of Variational Dropout, Mixture of Experts with Prompting, and Backdoor Attacks 1. Introduction The field of machine learning has witnessed significant advancements in recent years, enabling models to achieve remarkable performance on a wide array of tasks. However, a fundamental challenge arises when these models are deployed in dynamic environments where new data or tasks are encountered sequentially. This paradigm, known as continual learning, necessitates the ability of a model to learn from a continuous stream of information without forgetting previously acquired knowledge.1 A major impediment to achieving this goal is catastrophic forgetting, a phenomenon where the learning of new information leads to a drastic decline in performance on previously learned tasks.4 Overcoming this challenge requires specialized techniques that can maintain a delicate balance between the model&rsquo;s capacity to learn new tasks (plasticity) and its ability to retain old knowledge (stability).4
+" />
+<meta property="og:url" content="/posts/continual-learning/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-04-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/rss">RSS</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/rss" >RSS</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/continual-learning/">Continual Learning</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-04-02</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/moe/">moe</a>&nbsp;
+      
+      #<a href="/tags/cvd/">cvd</a>&nbsp;
+      
+      #<a href="/tags/continuallearning/">continuallearning</a>&nbsp;
+      
+      #<a href="/tags/neuralnet/">neuralnet</a>&nbsp;
+      
+      #<a href="/tags/deeplearning/">deeplearning</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>**</p>
+<h1 id="continual-learning-a-review-of-variational-dropout-mixture-of-experts-with-prompting-and-backdoor-attacks">Continual Learning: A Review of Variational Dropout, Mixture of Experts with Prompting, and Backdoor Attacks<a href="#continual-learning-a-review-of-variational-dropout-mixture-of-experts-with-prompting-and-backdoor-attacks" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="1-introduction">1. Introduction<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The field of machine learning has witnessed significant advancements in recent years, enabling models to achieve remarkable performance on a wide array of tasks. However, a fundamental challenge arises when these models are deployed in dynamic environments where new data or tasks are encountered sequentially. This paradigm, known as continual learning, necessitates the ability of a model to learn from a continuous stream of information without forgetting previously acquired knowledge.1 A major impediment to achieving this goal is catastrophic forgetting, a phenomenon where the learning of new information leads to a drastic decline in performance on previously learned tasks.4 Overcoming this challenge requires specialized techniques that can maintain a delicate balance between the model&rsquo;s capacity to learn new tasks (plasticity) and its ability to retain old knowledge (stability).4</p>
+<p>This literature review aims to provide a comprehensive overview of the most recent research in three prominent areas within continual learning: Continual Variational Dropout (CVD), the integration of Mixture of Experts (MoE) with Prompt-Based Continual Learning, and the security implications of Backdoor Attacks in Prompt-Based Continual Learning. Continual Variational Dropout explores the application of variational dropout techniques to enhance the stability and performance of models in continual learning scenarios, particularly within regularization-based approaches. Mixture of Experts combined with prompt-based learning investigates the synergistic benefits of using modular architectures guided by prompts to improve model capacity and mitigate forgetting in a parameter-efficient manner. Lastly, Backdoor Attacks in Prompt-Based Continual Learning delves into the security vulnerabilities introduced by the use of prompts in continual learning, highlighting the potential for malicious manipulation of model behavior.</p>
+<p>The objective of this review is to analyze the common themes, methodologies, and key findings within each of these three areas based on peer-reviewed publications indexed by Scopus. Furthermore, it will compare and contrast the research trends, challenges, and proposed solutions across these topics. By synthesizing the findings, this report seeks to provide a comprehensive understanding of the current state of research and potential future directions in these critical domains of continual learning.</p>
+<h2 id="2-continual-variational-dropout-cvd">2. Continual Variational Dropout (CVD)<a href="#2-continual-variational-dropout-cvd" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Continual Variational Dropout (CVD) emerges as a significant technique within the realm of regularization and prior-based approaches in continual learning.7 Its primary goal is to address the challenge of catastrophic forgetting by focusing on the preservation of previously learned knowledge without necessitating retraining on past data or expanding the model&rsquo;s architecture.7 The fundamental principle of CVD involves the continuous application of variational dropout to generate task-specific local variables that serve as modifying factors for the global variables of the model, thereby enabling adaptation to each new task.7 This approach directly tackles the limitation often encountered in traditional regularization methods, where the model&rsquo;s weights might be excessively adjusted to suit the most recent task, leading to a decline in performance on earlier tasks.6 By introducing these auxiliary local variables, CVD provides a mechanism for task-specific tuning while maintaining the stability of the globally learned representations.7</p>
+<p>The methodology of CVD involves imposing a variational distribution on these task-specific local variables, which are then utilized as multiplicative noise applied to the input of the network&rsquo;s layers.7 This probabilistic approach allows the model to learn the appropriate task-specific modifications in a flexible manner. Notably, research has highlighted several theoretical properties associated with CVD.7 These include: (1) uncorrelated likelihoods between different data instances, which contribute to reducing the high variance often associated with stochastic gradient variational Bayes methods; (2) correlated pre-activation, which enhances the model&rsquo;s ability to effectively represent each task; and (3) data-dependent regularization, which ensures that the global variables are preserved effectively across all learned tasks. These theoretical underpinnings suggest that CVD not only aids in mitigating forgetting but also has the potential to improve the overall learning process by addressing common issues like training instability and representational capacity.</p>
+<p>Recent research trends in CVD demonstrate its versatility and applicability in various continual learning scenarios. One prominent trend is its application in specific continual learning tasks such as Continual Relation Extraction (CRE).8 In this context, CVD offers a novel solution for generating the necessary task-specific local variables to adapt to the sequential learning of different relation types. Another emerging area involves the integration of variational dropout principles within Neural Architecture Search (NAS) for continual learning, as exemplified by VDNAS.11 This work leverages variational dropout to achieve reformulated super-net sparsification, enabling simultaneous operation sampling and topology optimization, ultimately leading to state-of-the-art performance in neural architecture search and strong transferability to large-scale datasets. Furthermore, research efforts are dedicated to rigorously evaluating the effectiveness of variational continual learning methods, including those employing CVD, in comparison to standard variational CL methods and non-variational baselines in terms of alleviating catastrophic forgetting.4 These evaluations often utilize challenging versions of popular continual learning benchmark datasets to provide a comprehensive assessment of the methods&rsquo; capabilities.</p>
+<p>The common methodologies employed in CVD research typically involve modifying existing neural network architectures by incorporating variational dropout layers that are applied sequentially across different tasks.7 Experiments are frequently conducted using standard continual learning benchmark datasets, which are often adapted to create more challenging sequential learning scenarios.4 The performance of CVD and its variants is generally assessed using metrics that quantify both the accuracy achieved on the current task and the degree to which knowledge from previous tasks is retained, such as average accuracy across all tasks and the forgetting rate. Theoretical analysis often plays a crucial role in CVD research, aiming to formally prove the benefits of the proposed approach, such as the reduction in variance during training and the improvement in the model&rsquo;s representational capacity.7</p>
+<p>Key findings from the literature indicate that the continual application of variational dropout, particularly with the introduction of auxiliary local variables, significantly enhances the performance of regularization and prior-based methods in continual learning.7 CVD has demonstrated considerable advantages in improving performance across a variety of datasets.7 In the specific domain of Continual Relation Extraction, CVD has been identified as an effective technique for generating the task-specific adaptations needed for sequential learning.8 More broadly, variational continual learning methods, including those utilizing CVD, have shown promise in effectively mitigating catastrophic forgetting and often outperform both standard variational CL methods and non-variational baselines.4 The application of variational dropout in VDNAS has also yielded state-of-the-art results in neural architecture search, highlighting the potential of this approach beyond traditional continual learning tasks.11</p>
+<p>Despite the promising results, several limitations and open research questions remain in the field of CVD. The optimal design and parameterization of the auxiliary local variables, as well as their interaction with the global variables, warrant further investigation. The scalability of CVD to more complex and larger-scale continual learning scenarios also needs to be thoroughly explored. A deeper theoretical understanding of the properties of CVD and their impact on different types of continual learning problems would be beneficial. Furthermore, exploring the robustness of CVD to factors such as the order in which tasks are presented and the degree of relatedness between tasks could be a significant direction for future research.12 While CVD offers a compelling approach to mitigating catastrophic forgetting, continued research is essential to fully understand its capabilities and address its current limitations.</p>
+<h2 id="3-mixture-of-experts-meets-prompt-based-continual-learning">3. Mixture of Experts Meets Prompt-Based Continual Learning<a href="#3-mixture-of-experts-meets-prompt-based-continual-learning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Mixture of Experts (MoE) architectures have emerged as a powerful paradigm in machine learning, leveraging a &ldquo;divide and conquer&rdquo; strategy to tackle complex tasks.13 These models consist of multiple specialized sub-networks, referred to as &ldquo;experts,&rdquo; and a &ldquo;gating&rdquo; mechanism that dynamically selects and activates the most relevant experts to process each input.13 The benefits of MoE models include improved performance and efficiency, particularly when dealing with large-scale and multimodal data.13 By employing specialized experts, MoEs can effectively handle diverse and even conflicting tasks.13 Furthermore, the inherent sparse activation in MoE architectures leads to significant computational savings compared to dense models.13 This modular approach allows for scaling model capacity without a proportional increase in computational cost, making it particularly attractive for resource-constrained environments.</p>
+<p>In parallel, Prompt-Based Continual Learning has gained prominence as an effective strategy for mitigating catastrophic forgetting in sequential learning scenarios.15 This paradigm leverages the knowledge embedded within pre-trained models and adapts them to new tasks by learning task-specific prompts, often with a minimal number of trainable parameters and without the need for storing past data.15 Prompt tuning involves training these prompts while keeping the underlying pre-trained model&rsquo;s weights frozen.15 These prompts can be either general, shared across multiple tasks, or specific to individual tasks.15 The effectiveness of prompt-based learning stems from its parameter efficiency, allowing for adaptation to new tasks without significantly altering the pre-trained model, thereby reducing the risk of forgetting previously learned information.</p>
+<p>Recent research has increasingly focused on the synergistic combination of MoE architectures and prompt-based learning for continual learning.15 One key area of exploration involves understanding the intrinsic connection between self-attention mechanisms, a core component of transformer-based pre-trained models, and the Mixture of Experts framework.15 Some studies propose that the attention block of these models inherently functions as a MoE architecture.15 Building on this insight, prefix tuning, a common prompt-based technique, can be reinterpreted as the process of adding new, task-specific experts within this existing MoE framework.15 This theoretical understanding has inspired the design of novel gating mechanisms, such as Non-linear Residual Gates (NoRGa), aimed at improving the performance of MoE-based prompt continual learning while maintaining parameter efficiency.15</p>
+<p>Furthermore, adaptive prompting approaches, drawing inspiration from the relationship between prefix-tuning and MoE, have been proposed for tasks like Continual Relation Extraction.8 These methods utilize a pool of prompts for each task to effectively capture the variations within a single task (within-task variance) while also enhancing the distinctions between different tasks (cross-task variance). The concept of having multiple prompts for a single task mirrors the idea in MoE of using different experts to handle various aspects of the input data. In the domain of class-incremental learning, MoE adapters have been employed on top of pre-trained models like CLIP, demonstrating the potential of combining these approaches for visual continual learning.25 Additionally, dynamic MoE approaches are being investigated, where new expert networks are dynamically added to the model as new data blocks or tasks are encountered, offering a way to expand the model&rsquo;s capacity incrementally.27</p>
+<p>The integration of MoE and prompt-based learning in continual learning involves various strategies, each with its own impact on performance. One common strategy is to incorporate MoE within the attention layers of transformer architectures, allowing different &ldquo;heads&rdquo; or sub-networks to specialize in different aspects of the input or different tasks. Another approach involves adding MoE adapters as lightweight modules on top of pre-trained models, enabling task-specific learning without modifying the core model. Dynamic expansion of the number of experts as new tasks arrive is yet another strategy that aims to provide the necessary capacity for learning new information while preserving past knowledge. The choice of the gating mechanism within the MoE architecture, whether sparse or dense, soft or hard, significantly influences the model&rsquo;s performance and computational efficiency.14 Regularization techniques are often employed to guide the learning of new experts and prevent them from interfering with the functionality of existing experts.27 Finally, the design of the prompts themselves, including their length, specificity, and the use of prompt pools, plays a crucial role in the overall effectiveness of this combined approach.8</p>
+<p>The combination of MoE and prompt-based learning has shown promising key findings in continual learning. It has demonstrated improved performance, particularly in mitigating catastrophic forgetting and achieving state-of-the-art results in tasks like continual relation extraction and class-incremental learning. The advantages of this combined approach include the parameter efficiency of prompt tuning, the increased model capacity offered by MoE, and the ability to effectively handle a diverse range of tasks. However, potential disadvantages include the inherent complexity of training MoE models, such as the challenges of load balancing and mode collapse 13, the need for careful design of both prompts and gating mechanisms, and the potential for increased computational overhead depending on the specific architecture.</p>
+<p>Future research directions in this area are plentiful. Exploring more sophisticated gating mechanisms for MoE specifically tailored for prompt-based continual learning could lead to further performance improvements. Investigating methods for automatically designing optimal prompts that can effectively guide MoE architectures in continual learning scenarios is another promising avenue. A deeper theoretical understanding of the properties of this combined approach, including its capacity, generalization ability, and resistance to forgetting, is also warranted. Applying this framework to a wider range of continual learning tasks and data modalities, such as in reinforcement learning, could reveal its broader potential.13 Finally, addressing the challenges related to training stability and ensuring balanced utilization of experts in MoE within a continual learning setting remains an important area for future work.13 The intersection of Mixture of Experts and Prompt-Based Continual Learning represents a dynamic and promising direction in the quest for effective and efficient lifelong learning systems.</p>
+<h2 id="4-backdoor-attacks-in-prompt-based-continual-learning">4. Backdoor Attacks in Prompt-Based Continual Learning<a href="#4-backdoor-attacks-in-prompt-based-continual-learning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Backdoor attacks represent a significant security threat to machine learning models. These attacks involve the injection of a malicious trigger into the model during its training phase. Once the model is deployed, the presence of this specific trigger in an input will cause the model to misclassify it to a target class chosen by the attacker, while the model performs normally on inputs without the trigger.16 The stealthy nature of these attacks makes them particularly dangerous, as they can remain undetected by standard evaluation procedures.16</p>
+<p>Prompt-Based Continual Learning, while offering advantages in terms of data privacy and parameter efficiency, presents specific vulnerabilities to backdoor attacks.16 The very characteristic that makes prompt-based CL effective – its ability to retain and utilize previously learned information – can inadvertently lead to the retention of poisoned knowledge injected during learning from potentially compromised data sources.16 This &ldquo;remembering capability&rdquo; can thus become a double-edged sword, raising security concerns about the potential for malicious manipulation of model behavior through backdoor triggers.</p>
+<p>Recent research has explored various types of backdoor attacks targeting prompt-based continual learning, often under challenging assumptions such as black-box access (where the attacker has no knowledge of the model architecture or training data), clean-label poisoning (where the poisoned data retains its original, correct label), and constrained data availability for the attacker.16 Executing backdoor attacks in the context of continual learning poses unique challenges, including ensuring the transferability of the backdoor effect to new, unseen data, maintaining the resilience of the backdoor trigger throughout the incremental learning process as the model learns new tasks, and ensuring the trigger&rsquo;s authenticity to prevent it from being easily identified as mere adversarial noise.16</p>
+<p>Proposed attack frameworks often focus on manipulating the prompt selection mechanism inherent in prompt-based learning to achieve transferability of the backdoor.16 Dynamic optimization of the backdoor trigger is employed to ensure its continued effectiveness even as the model undergoes incremental learning and updates its parameters.16 Furthermore, the use of specific loss functions, such as sigmoid Binary Cross-Entropy (BCE) loss, during trigger optimization has been shown to help mitigate bias towards the target class and prevent the trigger from being easily classified as adversarial noise.16 Research has also investigated backdoor attacks on continuous prompts, with methods like BadPrompt aiming to generate effective and invisible triggers, particularly in few-shot learning scenarios where traditional backdoor attack methods might struggle.33</p>
+<p>While the research on backdoor attacks in prompt-based CL is growing, the development of effective defense mechanisms is also underway. General backdoor defense techniques like Neural Cleanse and STRIP 18 might offer some level of protection, but the specific vulnerabilities of prompt-based learning often require tailored solutions. UniGuardian has been proposed as a unified defense mechanism designed to detect not only backdoor attacks but also prompt injection and adversarial attacks in large language models.34 Class-wise Backdoor Prompt Tuning (CBPT) defense aims to mitigate backdoor threats in vision-language models by specifically targeting and purifying the text prompts.35 LMSanitator is another novel approach focused on detecting and removing task-agnostic backdoors that might reside in pre-trained Transformer models and could affect downstream prompt-tuning.24 It&rsquo;s worth noting that much of the research on backdoor defenses in continual learning settings has focused on federated learning scenarios, where data is distributed across multiple potentially untrusted clients.36</p>
+<p>The potential for backdoor attacks in prompt-based continual learning has significant implications for the reliability and trustworthiness of these systems, especially in applications dealing with sensitive information or involving multiple stakeholders. Future research needs to prioritize the development of more robust and effective defense mechanisms specifically designed to address the unique vulnerabilities of prompt-based learning in continual settings. This includes exploring methods for proactively detecting poisoned data or backdoored pre-trained models within continual learning pipelines. Understanding the transferability of backdoor attacks across different pre-trained models and prompting strategies is also crucial for assessing the overall threat landscape. Ultimately, the development of security best practices and guidelines for the deployment of prompt-based continual learning in real-world applications is essential to ensure their safe and reliable use.</p>
+<h2 id="5-comparative-analysis-of-research-trends-challenges-and-solutions">5. Comparative Analysis of Research Trends, Challenges, and Solutions<a href="#5-comparative-analysis-of-research-trends-challenges-and-solutions" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Comparing the research trends across the three topics reveals distinct yet interconnected areas of focus within continual learning. Continual Variational Dropout primarily centers on enhancing the stability of learning through probabilistic regularization at the model&rsquo;s parameter level. Mixture of Experts with prompt-based learning aims to improve model capacity and efficiency by utilizing specialized architectural components guided by input-level prompts. In contrast, Backdoor Attacks in prompt-based CL highlights a critical security vulnerability that arises from the very effectiveness of prompts in manipulating model behavior. A common thread is the pursuit of effective continual learning, but each area tackles a different facet: stability, efficiency/capacity, and security. There is a clear trend of leveraging the strengths of diverse techniques – variational methods, MoE, and prompting – to address the fundamental challenges of learning sequentially. The increasing attention towards security concerns, particularly those specific to prompt-based methods, marks a more recent but crucial development.</p>
+<p>Several common challenges emerge across these three domains. Catastrophic forgetting, while addressed with different strategies, remains a central obstacle. CVD seeks to prevent it through parameter-level regularization, MoE with prompting through specialized learning and efficient adaptation, and backdoor attacks, ironically, exploit its potential for unintended retention of malicious knowledge. Scalability, the ability to apply these techniques to large-scale models and complex real-world tasks, is an ongoing challenge in all three areas. The need for deeper theoretical understanding of the underlying mechanisms and limitations of these methods is also prevalent. Furthermore, the development of comprehensive and standardized evaluation metrics for continual learning, especially when considering security implications, is crucial for progress.</p>
+<p>The proposed solutions across these domains showcase a variety of approaches. CVD introduces task-specific modifications through variational dropout while aiming to preserve global knowledge. MoE with prompting suggests using specialized sub-networks guided by prompts to efficiently learn new tasks without significantly altering the base pre-trained model. Research on backdoor attacks in prompt-based CL primarily focuses on understanding the attack mechanisms and developing defense strategies to counteract malicious manipulations of the prompt-based learning process. These solutions range from parameter-level adjustments to architectural modifications combined with input manipulation, and finally, to understanding and mitigating adversarial interventions.</p>
+<p>Exploring potential interdisciplinary insights and connections between these areas could be fruitful. For instance, the principles of variational inference used in CVD might offer insights into managing the uncertainty associated with expert selection in MoE or understanding the robustness of prompts to adversarial perturbations. The parameter efficiency of prompt-based learning could be highly beneficial in deploying large MoE models in continual learning scenarios with limited computational resources. Conversely, a deeper understanding of the vulnerabilities of prompt-based CL to backdoor attacks could inform the design of more secure prompting strategies for MoE-based continual learning systems. Recognizing these interconnections could lead to more holistic and effective solutions for the multifaceted challenges of continual learning.</p>
+<h2 id="6-synthesis-and-conclusion">6. Synthesis and Conclusion<a href="#6-synthesis-and-conclusion" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>This literature review has examined the recent advancements in three critical areas of continual learning: Continual Variational Dropout (CVD), Mixture of Experts (MoE) Meets Prompt-Based Continual Learning, and Backdoor Attacks in Prompt-Based CL.</p>
+<p>The analysis of Continual Variational Dropout reveals its potential as a regularization-based approach to mitigate catastrophic forgetting by introducing task-specific local variables that modulate global model parameters. Recent research highlights its successful application in tasks like Continual Relation Extraction and Neural Architecture Search, demonstrating promising performance and theoretical benefits in reducing training variance and improving representational capacity. However, questions remain regarding its scalability and optimal implementation across diverse continual learning scenarios.</p>
+<p>The intersection of Mixture of Experts and Prompt-Based Continual Learning represents a burgeoning field that leverages the strengths of both paradigms. By viewing the attention mechanisms of pre-trained models through the lens of MoE and interpreting prompt tuning as the addition of task-specific experts, researchers are developing novel architectures and gating mechanisms to enhance model capacity and parameter efficiency in continual learning. This combined approach has shown promising results in mitigating forgetting and achieving state-of-the-art performance in various tasks, although challenges related to training stability and expert utilization persist.</p>
+<p>Finally, the exploration of Backdoor Attacks in Prompt-Based Continual Learning underscores the security vulnerabilities inherent in this otherwise effective learning paradigm. The ability of prompts to manipulate model behavior makes these systems susceptible to malicious attacks that can remain hidden and فعال even as the model learns new tasks. Recent research has focused on understanding the challenges of crafting robust and stealthy backdoor attacks in continual learning settings and on developing defense mechanisms tailored to the specific characteristics of prompt-based learning. The findings highlight the critical need for continued research into the security aspects of continual learning to ensure the reliability and trustworthiness of these systems.</p>
+<p>Overall, the current state of research in these three areas of continual learning demonstrates significant progress in addressing the challenges of learning in dynamic environments. CVD offers a principled approach to stability, MoE with prompting provides a pathway to efficient and scalable learning, and the study of backdoor attacks emphasizes the importance of security in these evolving paradigms. Future research should continue to explore the limitations and potential synergies between these areas to pave the way for robust, efficient, and secure lifelong learning systems.</p>
+<h4 id="works-cited">Works cited<a href="#works-cited" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<ol>
+<li>
+<p>Continual Learning in Artificial Intelligence: A Review of Techniques, Metrics, and Real-World Applications - Preprints.org, accessed March 31, 2025, <a href="https://www.preprints.org/frontend/manuscript/b3edf99f5d9da5ccab8c68367493a97a/download_pub">https://www.preprints.org/frontend/manuscript/b3edf99f5d9da5ccab8c68367493a97a/download_pub</a></p>
+</li>
+<li>
+<p>(PDF) Towards Lifelong Deep Learning: A Review of Continual Learning and Unlearning Methods - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/388030077_Towards_Lifelong_Deep_Learning_A_Review_of_Continual_Learning_and_Unlearning_Methods">https://www.researchgate.net/publication/388030077_Towards_Lifelong_Deep_Learning_A_Review_of_Continual_Learning_and_Unlearning_Methods</a></p>
+</li>
+<li>
+<p>Hierarchically Gated Experts for Efficient Online Continual Learning - SciTePress, accessed March 31, 2025, <a href="https://www.scitepress.org/Papers/2025/131900/131900.pdf">https://www.scitepress.org/Papers/2025/131900/131900.pdf</a></p>
+</li>
+<li>
+<p>[2410.07812] Temporal-Difference Variational Continual Learning - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/abs/2410.07812">https://arxiv.org/abs/2410.07812</a></p>
+</li>
+<li>
+<p>(PDF) Temporal-Difference Variational Continual Learning - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/384811792_Temporal-Difference_Variational_Continual_Learning">https://www.researchgate.net/publication/384811792_Temporal-Difference_Variational_Continual_Learning</a></p>
+</li>
+<li>
+<p>Continual variational dropout: a view of auxiliary local variables in &hellip;, accessed March 31, 2025, <a href="https://openreview.net/forum?id=4kMCIWzceb&amp;referrer=%5Bthe&#43;profile&#43;of&#43;Thien_Trang_Nguyen_Vu1%5c%29">https://openreview.net/forum?id=4kMCIWzceb&amp;referrer=%5Bthe%20profile%20of%20Thien_Trang_Nguyen_Vu1)</a></p>
+</li>
+<li>
+<p>Continual variational dropout: a view of auxiliary local variables&hellip; - OpenReview, accessed March 31, 2025, <a href="https://openreview.net/forum?id=4kMCIWzceb&amp;referrer=%5Bthe&#43;profile&#43;of&#43;Thien&#43;Trang&#43;Nguyen&#43;Vu%5D%5c%28/profile?id%3D~Thien_Trang_Nguyen_Vu1%5c%29">https://openreview.net/forum?id=4kMCIWzceb&amp;referrer=%5Bthe%20profile%20of%20Thien%20Trang%20Nguyen%20Vu%5D(%2Fprofile%3Fid%3D~Thien_Trang_Nguyen_Vu1)</a></p>
+</li>
+<li>
+<p>Adaptive Prompting for Continual Relation Extraction: A Within-Task &hellip;, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/387026942_Adaptive_Prompting_for_Continual_Relation_Extraction_A_Within-Task_Variance_Perspective">https://www.researchgate.net/publication/387026942_Adaptive_Prompting_for_Continual_Relation_Extraction_A_Within-Task_Variance_Perspective</a></p>
+</li>
+<li>
+<p>Continual variational dropout: a view of auxiliary local variables in continual learning | Request PDF - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/376310685_Continual_variational_dropout_a_view_of_auxiliary_local_variables_in_continual_learning">https://www.researchgate.net/publication/376310685_Continual_variational_dropout_a_view_of_auxiliary_local_variables_in_continual_learning</a></p>
+</li>
+<li>
+<p>Auxiliary Local Variables for Improving Regularization/Prior Approach in Continual Learning | Request PDF - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/360480869_Auxiliary_Local_Variables_for_Improving_RegularizationPrior_Approach_in_Continual_Learning">https://www.researchgate.net/publication/360480869_Auxiliary_Local_Variables_for_Improving_RegularizationPrior_Approach_in_Continual_Learning</a></p>
+</li>
+<li>
+<p>Variational Dropout for Differentiable Neural Architecture Search, accessed March 31, 2025, <a href="https://cje.cie.org.cn/article/doi/10.23919/cje.2024.00.183">https://cje.cie.org.cn/article/doi/10.23919/cje.2024.00.183</a></p>
+</li>
+<li>
+<p>Sequence Transferability and Task Order Selection in Continual Learning - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/388884190_Sequence_Transferability_and_Task_Order_Selection_in_Continual_Learning">https://www.researchgate.net/publication/388884190_Sequence_Transferability_and_Task_Order_Selection_in_Continual_Learning</a></p>
+</li>
+<li>
+<p>A Comprehensive Survey of Mixture-of-Experts: Algorithms, Theory, and Applications - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2503.07137v1">https://arxiv.org/html/2503.07137v1</a></p>
+</li>
+<li>
+<p>Improving Deep Learning Performance with Mixture of Experts and Sparse Activation - Preprints.org, accessed March 31, 2025, <a href="https://www.preprints.org/frontend/manuscript/35ff6d7c4f485d4062284ce452b69892/download_pub">https://www.preprints.org/frontend/manuscript/35ff6d7c4f485d4062284ce452b69892/download_pub</a></p>
+</li>
+<li>
+<p>Mixture of Experts Meets Prompt-Based Continual Learning - OpenReview, accessed March 31, 2025, <a href="https://openreview.net/forum?id=erwatqQ4p8&amp;referrer=%5Bthe&#43;profile&#43;of&#43;Huy&#43;Nguyen%5D%5c%28/profile?id%3D~Huy_Nguyen5%5c%29">https://openreview.net/forum?id=erwatqQ4p8&amp;referrer=%5Bthe%20profile%20of%20Huy%20Nguyen%5D(%2Fprofile%3Fid%3D~Huy_Nguyen5)</a></p>
+</li>
+<li>
+<p>(PDF) Backdoor Attack in Prompt-Based Continual Learning, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/381851624_Backdoor_Attack_in_Prompt-Based_Continual_Learning">https://www.researchgate.net/publication/381851624_Backdoor_Attack_in_Prompt-Based_Continual_Learning</a></p>
+</li>
+<li>
+<p>Backdoor Attack in Prompt-Based Continual Learning - Nhat Ho, accessed March 31, 2025, <a href="https://nhatptnk8912.github.io/Backdoor_Continual_Learning_v2.pdf">https://nhatptnk8912.github.io/Backdoor_Continual_Learning_v2.pdf</a></p>
+</li>
+<li>
+<p>Backdoor Attack in Prompt-Based Continual Learning - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2406.19753v1">https://arxiv.org/html/2406.19753v1</a></p>
+</li>
+<li>
+<p>Q-Tuning: Continual Queue-based Prompt Tuning for Language Models | OpenReview, accessed March 31, 2025, <a href="https://openreview.net/forum?id=lQ5mbHhfQv">https://openreview.net/forum?id=lQ5mbHhfQv</a></p>
+</li>
+<li>
+<p>Expand and Compress: Exploring Tuning Principles for Continual Spatio-Temporal Graph Forecasting | OpenReview, accessed March 31, 2025, <a href="https://openreview.net/forum?id=FRzCIlkM7I&amp;noteId=RDXGMROaMj">https://openreview.net/forum?id=FRzCIlkM7I¬eId=RDXGMROaMj</a></p>
+</li>
+<li>
+<p>A Survey on Post-training of Large Language Models - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2503.06072v1">https://arxiv.org/html/2503.06072v1</a></p>
+</li>
+<li>
+<p>Examine the Opportunities and Challenges of Large Language Model (LLM) For Indic Languages - Journal of Information Systems Engineering and Management, accessed March 31, 2025, <a href="https://www.jisem-journal.com/index.php/journal/article/download/4236/1873/6961">https://www.jisem-journal.com/index.php/journal/article/download/4236/1873/6961</a></p>
+</li>
+<li>
+<p>Accelerating and Compressing Transformer-Based PLMs for Enhanced Comprehension of Computer Terminology - MDPI, accessed March 31, 2025, <a href="https://www.mdpi.com/1999-5903/16/11/385">https://www.mdpi.com/1999-5903/16/11/385</a></p>
+</li>
+<li>
+<p>LMSanitator: Defending Prompt-Tuning Against Task-Agnostic Backdoors - Network and Distributed System Security (NDSS) Symposium, accessed March 31, 2025, <a href="https://www.ndss-symposium.org/wp-content/uploads/2024-238-paper.pdf">https://www.ndss-symposium.org/wp-content/uploads/2024-238-paper.pdf</a></p>
+</li>
+<li>
+<p>Knowledge Graph Enhanced Generative Multi-modal Models for Class-Incremental Learning - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/390142678_Knowledge_Graph_Enhanced_Generative_Multi-modal_Models_for_Class-Incremental_Learning/download">https://www.researchgate.net/publication/390142678_Knowledge_Graph_Enhanced_Generative_Multi-modal_Models_for_Class-Incremental_Learning/download</a></p>
+</li>
+<li>
+<p>Boosting Continual Learning of Vision-Language Models via Mixture-of-Experts Adapters, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/384144004_Boosting_Continual_Learning_of_Vision-Language_Models_via_Mixture-of-Experts_Adapters">https://www.researchgate.net/publication/384144004_Boosting_Continual_Learning_of_Vision-Language_Models_via_Mixture-of-Experts_Adapters</a></p>
+</li>
+<li>
+<p>Dynamic Mixture-of-Experts for Incremental Graph Learning | OpenReview, accessed March 31, 2025, <a href="https://openreview.net/forum?id=EZExZ5d8ES">https://openreview.net/forum?id=EZExZ5d8ES</a></p>
+</li>
+<li>
+<p>Sigmoid Self-Attention is Better than Softmax Self-Attention: A Mixture-of-Experts Perspective | Request PDF - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/388658027_Sigmoid_Self-Attention_is_Better_than_Softmax_Self-Attention_A_Mixture-of-Experts_Perspective">https://www.researchgate.net/publication/388658027_Sigmoid_Self-Attention_is_Better_than_Softmax_Self-Attention_A_Mixture-of-Experts_Perspective</a></p>
+</li>
+<li>
+<p>A Survey on Mixture of Experts - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2407.06204v2">https://arxiv.org/html/2407.06204v2</a></p>
+</li>
+<li>
+<p>(PDF) Leveraging Hierarchical Taxonomies in Prompt-based &hellip;, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/384699260_Leveraging_Hierarchical_Taxonomies_in_Prompt-based_Continual_Learning">https://www.researchgate.net/publication/384699260_Leveraging_Hierarchical_Taxonomies_in_Prompt-based_Continual_Learning</a></p>
+</li>
+<li>
+<p>A Comprehensive Survey of Mixture-of-Experts: Algorithms, Theory, and Applications - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/abs/2503.07137">https://arxiv.org/abs/2503.07137</a></p>
+</li>
+<li>
+<p>A CIA Triad-Based Taxonomy of Prompt Attacks on Large Language &hellip;, accessed March 31, 2025, <a href="https://www.mdpi.com/1999-5903/17/3/113">https://www.mdpi.com/1999-5903/17/3/113</a></p>
+</li>
+<li>
+<p>BadPrompt: Backdoor Attacks on Continuous Prompts | Request PDF, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/365820651_BadPrompt_Backdoor_Attacks_on_Continuous_Prompts">https://www.researchgate.net/publication/365820651_BadPrompt_Backdoor_Attacks_on_Continuous_Prompts</a></p>
+</li>
+<li>
+<p>UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor Attacks and Adversarial Attacks in Large Language Models - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2502.13141v1">https://arxiv.org/html/2502.13141v1</a></p>
+</li>
+<li>
+<p>Neural Antidote: Class-Wise Prompt Tuning for Purifying Backdoors in Pre-trained Vision-Language Models - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/html/2502.19269v1">https://arxiv.org/html/2502.19269v1</a></p>
+</li>
+<li>
+<p>Towards a Defense against Backdoor Attacks in Continual Federated Learning, accessed March 31, 2025, <a href="https://www.semanticscholar.org/paper/Towards-a-Defense-against-Backdoor-Attacks-in-Wang-Hayase/abe7fb10883471dd838f4843591553a6a6a6d751">https://www.semanticscholar.org/paper/Towards-a-Defense-against-Backdoor-Attacks-in-Wang-Hayase/abe7fb10883471dd838f4843591553a6a6a6d751</a></p>
+</li>
+<li>
+<p>FedGame: A Game-Theoretic Defense against Backdoor Attacks in Federated Learning, accessed March 31, 2025, <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a6678e2be4ce7aef9d2192e03cd586b7-Paper-Conference.pdf">https://proceedings.neurips.cc/paper_files/paper/2023/file/a6678e2be4ce7aef9d2192e03cd586b7-Paper-Conference.pdf</a></p>
+</li>
+<li>
+<p>Towards a Defense against Backdoor Attacks in Continual Federated Learning | Request PDF - ResearchGate, accessed March 31, 2025, <a href="https://www.researchgate.net/publication/360833742_Towards_a_Defense_against_Backdoor_Attacks_in_Continual_Federated_Learning">https://www.researchgate.net/publication/360833742_Towards_a_Defense_against_Backdoor_Attacks_in_Continual_Federated_Learning</a></p>
+</li>
+<li>
+<p>Towards a Defense Against Federated Backdoor Attacks Under Continuous Training - OpenReview, accessed March 31, 2025, <a href="https://openreview.net/pdf?id=HwcB5elyuG">https://openreview.net/pdf?id=HwcB5elyuG</a></p>
+</li>
+<li>
+<p>towards a defense against backdoor attacks in continual federated learning - arXiv, accessed March 31, 2025, <a href="https://arxiv.org/pdf/2205.11736">https://arxiv.org/pdf/2205.11736</a></p>
+</li>
+</ol>
+<p>**</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="/posts/list-of-researchers-to-follow-up/" class="button inline next">
+         [<span class="button__text">list</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    
+  
+</div>
+
+</body>
+</html>

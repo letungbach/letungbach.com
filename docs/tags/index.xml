@@ -9,23 +9,58 @@
     <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Continuallearning</title>
+      <link>/tags/continuallearning/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/continuallearning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cvd</title>
+      <link>/tags/cvd/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/cvd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deeplearning</title>
+      <link>/tags/deeplearning/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/deeplearning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moe</title>
+      <link>/tags/moe/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/moe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neuralnet</title>
+      <link>/tags/neuralnet/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/neuralnet/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Abtoy</title>
       <link>/tags/abtoy/</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>/tags/abtoy/</guid>
       <description></description>
     </item>
     <item>
       <title>Bbb</title>
       <link>/tags/bbb/</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>/tags/bbb/</guid>
       <description></description>
     </item>
     <item>
       <title>Clippings</title>
       <link>/tags/clippings/</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>/tags/clippings/</guid>
       <description></description>
     </item>

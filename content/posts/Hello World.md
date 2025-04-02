@@ -1,5 +1,5 @@
 ---
-title: Windows command prompt
+title: Hugo Terminal Template
 date: 2025-03-31
 draft: false
 tags:
@@ -7,8 +7,9 @@ tags:
   - abtoy
 ---
 
-
-# Terminal
+Start
+Credit to:
+Hugo Terminal Template
 
 
 
