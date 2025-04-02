@@ -3,7 +3,8 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
-pagination.pagerSize = 5
+# Set the number of posts per page
+pagination.pagerSize = 10
 
 # Added to specify output directory for static files
 publishDir = "docs" 
