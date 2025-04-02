@@ -1,0 +1,131 @@
+{{ $description := "" }}
+{{ $title := "" }}
+{{ $image := "" }}
+
+{{/* Set description */}}
+{{ if .Description }}
+  {{ $description = .Description }}
+{{ else if .Summary }}
+  {{ $description = .Summary }}
+{{ else }}
+  {{ $description = .Site.Params.description | default "AI Researcher & Tech Adoption Specialist | Sustainable Ecosystem Management | Secured >$97M+ ODA International Credit Funding | Art & Technology Innovator. Founder: unitedcoffee.vn, mulala.art, giong.ai" }}
+{{ end }}
+
+{{/* Set title */}}
+{{ if .IsHome }}
+  {{ $title = .Site.Title }}
+{{ else }}
+  {{ $title = printf "%s :: %s" .Title .Site.Title }}
+{{ end }}
+
+{{/* Set image */}}
+{{ if (isset .Params "cover") }}
+  {{ $pageCover := .Param "cover" }}
+  {{ with (.Resources.GetMatch (.Param "cover")) }}
+    {{ $pageCover = .RelPermalink }}
+  {{ end }}
+  {{ $image = $pageCover | absURL }}
+{{ else }}
+  {{ $image = ($.Site.Params.ogImage | default (printf "%s/img/og-image.png" .Site.BaseURL)) }}
+{{ end }}
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Basic SEO tags -->
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description | plainify }}" />
+<meta name="author" content="{{ .Site.Params.author | default "Le Tung Bach, Ph.D." }}" />
+<meta name="keywords" content="{{ with .Params.Keywords }}{{ delimit . ", " }}{{ else }}{{ $.Site.Params.Keywords }}{{ end }}" />
+{{ if .Params.noindex }}
+  {{ if or (eq (.Param "noindex") true) (eq (.Param "noindex") "true") }}
+    <meta name="robots" content="noindex" />
+  {{ end }}
+{{ else }}
+  <meta name="robots" content="index, follow" />
+{{ end }}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Schema.org markup for Google -->
+<meta itemprop="name" content="{{ $title }}">
+<meta itemprop="description" content="{{ $description | plainify }}">
+<meta itemprop="image" content="{{ $image }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ .Site.Params.twitter.site }}" />
+<meta name="twitter:creator" content="@{{ .Site.Params.twitter.creator }}" />
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description | plainify }}">
+<meta name="twitter:image" content="{{ $image }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:locale" content="{{ $.Site.Language.Lang }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ $.Site.Title }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Social Media Profile Links -->
+<link rel="me" href="https://github.com/{{ .Site.Params.githubID }}">
+<link rel="me" href="https://vn.linkedin.com/in/{{ .Site.Params.linkedinID }}">
+<link rel="me" href="https://x.com/{{ .Site.Params.twitterID }}">
+
+<!-- Article specific meta tags -->
+{{ if and (.IsPage) (eq .Type "posts") }}
+  {{ if isset .Params "date" }}
+    <meta property="article:published_time" content="{{ time .Date }}" />
+  {{ end }}
+  {{ if isset .Params "lastmod" }}
+    <meta property="article:modified_time" content="{{ time .Params.lastmod }}" />
+  {{ end }}
+  {{ range .Params.categories }}
+    <meta property="article:section" content="{{ . }}" />
+  {{ end }}
+  {{ range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}" />
+  {{ end }}
+{{ end }}
+
+<!-- CSS Files -->
+{{ $css := resources.Match "css/*.css" }}
+{{ range $css }}
+  {{ $styles := . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}">
+{{ end }}
+
+<!-- Custom Terminal.css styles -->
+{{ if (fileExists "static/terminal.css") -}}
+  <link rel="stylesheet" href="{{ "terminal.css" | absURL }}">
+{{- end }}
+
+<!-- Custom CSS to override theme properties (/static/style.css) -->
+{{ if (fileExists "static/style.css") -}}
+  <link rel="stylesheet" href="{{ "style.css" | absURL }}">
+{{- end }}
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="{{ "favicon/favicon.ico" | absURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}">
+<link rel="manifest" href="{{ "favicon/site.webmanifest" | absURL }}">
+
+<!-- Alternative feeds -->
+{{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{ end }}
+
+{{ with .OutputFormats.Get "json" }}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/json" title="{{ $.Site.Title }}" />
+{{ end }}
+
+<!-- Google Analytics -->
+{{ template "_internal/google_analytics.html" . }}
+
+<!-- Extended head section -->
+{{ partial "extended_head.html" . }} 

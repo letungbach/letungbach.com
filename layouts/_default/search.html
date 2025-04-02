@@ -1,0 +1,195 @@
+{{ define "main" }}
+<h1>Search</h1>
+
+<div class="search">
+  <div class="search__form">
+    <input type="text" id="search-input" placeholder="Search for posts, titles, or content...">
+    <button id="search-button" aria-label="Search">Search</button>
+  </div>
+  <div id="search-results" class="search__results"></div>
+</div>
+
+<script>
+let searchIndex = null;
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const searchResults = document.getElementById('search-results');
+
+// Load the search index
+fetch('/index.json')
+  .then(response => response.json())
+  .then(data => {
+    searchIndex = data;
+  })
+  .catch(error => {
+    console.error('Error loading search index:', error);
+    searchResults.innerHTML = '<p>Error loading search index. Please try again later.</p>';
+  });
+
+// Function to perform search
+function performSearch() {
+  const query = searchInput.value.toLowerCase().trim();
+  if (!query || query.length < 2) {
+    searchResults.innerHTML = '<p>Please enter at least 2 characters to search.</p>';
+    return;
+  }
+
+  if (!searchIndex) {
+    searchResults.innerHTML = '<p>Search index is still loading. Please try again in a moment.</p>';
+    return;
+  }
+
+  const results = searchIndex.filter(item => {
+    const titleMatch = item.title.toLowerCase().includes(query);
+    const contentMatch = item.content.toLowerCase().includes(query);
+    const tagsMatch = item.tags && item.tags.some(tag => tag.toLowerCase().includes(query));
+    
+    return titleMatch || contentMatch || tagsMatch;
+  });
+
+  displayResults(results, query);
+}
+
+// Display search results
+function displayResults(results, query) {
+  if (results.length === 0) {
+    searchResults.innerHTML = `<p>No results found for "${query}".</p>`;
+    return;
+  }
+
+  const resultsList = results.map(item => {
+    // Create snippet from content
+    let snippet = '';
+    const contentLower = item.content.toLowerCase();
+    const index = contentLower.indexOf(query);
+    
+    if (index !== -1) {
+      const start = Math.max(0, index - 50);
+      const end = Math.min(item.content.length, index + query.length + 50);
+      snippet = '...' + item.content.substring(start, end) + '...';
+    } else {
+      snippet = item.content.substring(0, 150) + '...';
+    }
+
+    // Highlight the query in the snippet
+    const highlightedSnippet = snippet.replace(
+      new RegExp(query, 'gi'), 
+      match => `<mark>${match}</mark>`
+    );
+
+    return `
+      <div class="search-result">
+        <h2><a href="${item.permalink}">${item.title}</a></h2>
+        <span class="search-result__date">${item.date}</span>
+        <p>${highlightedSnippet}</p>
+        ${item.tags ? `<div class="search-result__tags">
+          ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+        </div>` : ''}
+      </div>
+    `;
+  }).join('');
+
+  searchResults.innerHTML = `
+    <p>Found ${results.length} result${results.length > 1 ? 's' : ''} for "${query}":</p>
+    <div class="search-results-list">
+      ${resultsList}
+    </div>
+  `;
+}
+
+// Event listeners
+searchButton.addEventListener('click', performSearch);
+searchInput.addEventListener('keyup', event => {
+  if (event.key === 'Enter') {
+    performSearch();
+  }
+});
+
+// Automatically focus the search input when the page loads
+window.addEventListener('load', () => {
+  searchInput.focus();
+  
+  // Check if there's a query parameter in the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  
+  if (query) {
+    searchInput.value = query;
+    performSearch();
+  }
+});
+</script>
+
+<style>
+.search__form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--accent);
+  background-color: var(--background);
+  color: var(--color);
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-result {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--accent);
+}
+
+.search-result h2 {
+  margin-bottom: 0.5rem;
+}
+
+.search-result h2 a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+.search-result h2 a:hover {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+.search-result__date {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.search-result__tags {
+  margin-top: 0.5rem;
+}
+
+.search-result__tags .tag {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+
+mark {
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0 0.2rem;
+}
+</style>
+{{ end }} 

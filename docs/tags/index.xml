@@ -1,67 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Terminal</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Terminal</description>
+    <title>Tags on Le Tung Bach, Ph.D.</title>
+    <link>https://letungbach.com/tags/</link>
+    <description>Recent content in Tags on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://letungbach.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuallearning</title>
-      <link>/tags/continuallearning/</link>
+      <link>https://letungbach.com/tags/continuallearning/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/continuallearning/</guid>
+      <guid>https://letungbach.com/tags/continuallearning/</guid>
       <description></description>
     </item>
     <item>
       <title>Cvd</title>
-      <link>/tags/cvd/</link>
+      <link>https://letungbach.com/tags/cvd/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/cvd/</guid>
+      <guid>https://letungbach.com/tags/cvd/</guid>
       <description></description>
     </item>
     <item>
       <title>Deeplearning</title>
-      <link>/tags/deeplearning/</link>
+      <link>https://letungbach.com/tags/deeplearning/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/deeplearning/</guid>
+      <guid>https://letungbach.com/tags/deeplearning/</guid>
       <description></description>
     </item>
     <item>
       <title>Moe</title>
-      <link>/tags/moe/</link>
+      <link>https://letungbach.com/tags/moe/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/moe/</guid>
+      <guid>https://letungbach.com/tags/moe/</guid>
       <description></description>
     </item>
     <item>
       <title>Neuralnet</title>
-      <link>/tags/neuralnet/</link>
+      <link>https://letungbach.com/tags/neuralnet/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/neuralnet/</guid>
+      <guid>https://letungbach.com/tags/neuralnet/</guid>
       <description></description>
     </item>
     <item>
       <title>Abtoy</title>
-      <link>/tags/abtoy/</link>
+      <link>https://letungbach.com/tags/abtoy/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/abtoy/</guid>
+      <guid>https://letungbach.com/tags/abtoy/</guid>
       <description></description>
     </item>
     <item>
       <title>Bbb</title>
-      <link>/tags/bbb/</link>
+      <link>https://letungbach.com/tags/bbb/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/bbb/</guid>
+      <guid>https://letungbach.com/tags/bbb/</guid>
       <description></description>
     </item>
     <item>
       <title>Clippings</title>
-      <link>/tags/clippings/</link>
+      <link>https://letungbach.com/tags/clippings/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/clippings/</guid>
+      <guid>https://letungbach.com/tags/clippings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moe-Jepa</title>
+      <link>https://letungbach.com/tags/moe-jepa/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/moe-jepa/</guid>
       <description></description>
     </item>
   </channel>

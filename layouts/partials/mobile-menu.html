@@ -1,0 +1,41 @@
+<ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      {{ range $.Site.Menus.main }}
+        {{ if not .HasChildren }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }}
+      {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}
+        <hr />
+        {{ range $.Site.Home.AllTranslations }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  const mobileMenu = document.querySelector('.menu--mobile');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mobileMenu.classList.toggle('open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+  }
+});
+</script> 

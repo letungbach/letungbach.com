@@ -1,15 +1,11 @@
 ---
 title: MoE-JEPA
-date: 2025-04-04
+date: 2025-03-31
 draft: false
 tags:
-  - moe
-  - jepa
   - moe-jepa
+  - deeplearning
   - neuralnet
-  - ai
-  - abtoy
-  - Reinforcement
 ---
 # Research Proposal: MoE-JEPA World Models for Efficient Reinforcement Learning and Planning
 

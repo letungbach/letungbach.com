@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://letungbach.com/"
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
@@ -9,12 +9,38 @@ pagination.pagerSize = 10
 # Added to specify output directory for static files
 publishDir = "docs" 
 
+# Enable outputs for search and SEO
+[outputs]
+  home = ["HTML", "RSS", "JSON", "SITEMAP"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 # Required for Chroma and the custom syntax highlighting.
 [markup.highlight]
   noClasses = false
 
 [params]
+  # Site metadata
+  title = "Le Tung Bach, Ph.D., AI Researcher"
+  subtitle = "AI Researcher & Tech Adoption Specialist"
+  description = "AI Researcher & Tech Adoption Specialist | Sustainable Ecosystem Management | Secured >$97M+ ODA International Credit Funding | Art & Technology Innovator. Founder: unitedcoffee.vn, mulala.art, giong.ai"
+  author = "Le Tung Bach, Ph.D."
+  keywords = "AI Research, Technology Adoption, Ecosystem Management, Innovation, Art Technology"
+  
+  # Social media handles
+  twitterID = "BachLETUNG25331"  # Your Twitter handle without @
+  githubID = "letungbach"  # Your GitHub username
+  linkedinID = "le-tung-bach-28b3074a"  # Your LinkedIn username
+  
+  # OpenGraph image (used when your links are shared)
+  ogImage = "https://letungbach.com/img/og-image.png"
+  
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
@@ -29,7 +55,7 @@ publishDir = "docs"
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -38,54 +64,40 @@ publishDir = "docs"
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
+  showLastUpdated = true
 
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
   # updatedDatePrefix = "Updated"
 
   # whether to show a page's estimated reading time
-  # readingTime = false # default
+  readingTime = true
 
   # whether to show a table of contents
   # can be overridden in a page's front-matter
-  # Toc = false # default
+  Toc = true
 
   # set title for the table of contents
   # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
+  TocTitle = "Table of Contents"
 
   # Set date/time format for posts
-  # This will impact the date/time displayed on
-  # index.html, the posts list page, and on posts themselves
-  # This value can also be configured per-post on front matter
-  # If you have any issues with the timezone rendering differently
-  # than you expected, please ensure your timezone is correctly set
-  # on your server.
-  # This value can be customized according to Hugo documentation:
-  # https://gohugo.io/functions/time/format/
-  # Default value (no changes needed):
-  # dateFormat = "2006-01-02"
-  # Example format, with date, time, and timezone abbreviation:
-  # dateFormat = "2006-01-02 3:04:06 PM MST"
+  dateFormat = "2006-01-02"
 
-
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+  # Twitter cards configuration
+  [params.twitter]
+    creator = "BachLETUNG25331"
+    site = "BachLETUNG25331"
 
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Le Tung Bach, Ph.D."
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
-      copyright = " "
+      subtitle = "AI Researcher & Tech Adoption Specialist"
+      owner = "Le Tung Bach, Ph.D."
+      keywords = "AI Research, Technology Adoption, Ecosystem Management, Innovation, Art Technology"
+      copyright = "© 2024 Le Tung Bach"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -97,7 +109,7 @@ publishDir = "docs"
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Le Tung Bach, Ph.D."
         logoHomeLink = "/"
 
       [languages.en.menu]
@@ -109,9 +121,11 @@ publishDir = "docs"
           identifier = "showcase"
           name = "Showcase"
           url = "/showcase"
-
-
         [[languages.en.menu.main]]
           identifier = "rss"
           name = "RSS"
           url = "/rss"
+        [[languages.en.menu.main]]
+          identifier = "search"
+          name = "Search"
+          url = "/search"

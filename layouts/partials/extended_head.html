@@ -1,0 +1,63 @@
+<style>
+/* Fix for mobile menu dropdown */
+@media (max-width: 684px) {
+  .menu--mobile {
+    position: relative;
+    display: block;
+  }
+  
+  .menu--mobile .menu__trigger {
+    display: block;
+    z-index: 100;
+  }
+  
+  .menu--mobile .menu__dropdown {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    min-width: 180px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 99;
+  }
+  
+  .menu--mobile.open .menu__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu--mobile .menu__dropdown li {
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+  
+  .menu--mobile .menu__dropdown li a {
+    display: block;
+    padding: 8px;
+  }
+  
+  /* Prevent scrolling when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Additional script to prevent body scrolling when menu is open
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function() {
+      document.body.classList.toggle('menu-open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!document.querySelector('.menu--mobile').contains(e.target)) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+});
+</script> 

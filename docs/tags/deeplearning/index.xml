@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deeplearning on Terminal</title>
-    <link>/tags/deeplearning/</link>
-    <description>Recent content in Deeplearning on Terminal</description>
+    <title>Deeplearning on Le Tung Bach, Ph.D.</title>
+    <link>https://letungbach.com/tags/deeplearning/</link>
+    <description>Recent content in Deeplearning on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://letungbach.com/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continual Learning</title>
-      <link>/posts/continual-learning/</link>
+      <link>https://letungbach.com/posts/continual-learning/</link>
       <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/continual-learning/</guid>
+      <guid>https://letungbach.com/posts/continual-learning/</guid>
       <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;continual-learning-a-review-of-variational-dropout-mixture-of-experts-with-prompting-and-backdoor-attacks&#34;&gt;Continual Learning: A Review of Variational Dropout, Mixture of Experts with Prompting, and Backdoor Attacks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The field of machine learning has witnessed significant advancements in recent years, enabling models to achieve remarkable performance on a wide array of tasks. However, a fundamental challenge arises when these models are deployed in dynamic environments where new data or tasks are encountered sequentially. This paradigm, known as continual learning, necessitates the ability of a model to learn from a continuous stream of information without forgetting previously acquired knowledge.1 A major impediment to achieving this goal is catastrophic forgetting, a phenomenon where the learning of new information leads to a drastic decline in performance on previously learned tasks.4 Overcoming this challenge requires specialized techniques that can maintain a delicate balance between the model&amp;rsquo;s capacity to learn new tasks (plasticity) and its ability to retain old knowledge (stability).4&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MoE-JEPA</title>
+      <link>https://letungbach.com/posts/moe-jepa/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/moe-jepa/</guid>
+      <description>&lt;h1 id=&#34;research-proposal-moe-jepa-world-models-for-efficient-reinforcement-learning-and-planning&#34;&gt;Research Proposal: MoE-JEPA World Models for Efficient Reinforcement Learning and Planning&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Current AI research emphasizes the development of sophisticated world models capable of understanding complex dynamics, particularly from video data, often leveraging self-supervised learning (SSL) for representation extraction. Predictive models in abstract spaces (like JEPA) are gaining prominence over generative ones. Simultaneously, Mixture of Experts (MoE) offers a way to scale neural network capacity efficiently. This proposal outlines a research approach combining these trends: developing an Action-Conditioned Mixture-of-Experts Joint-Embedding Predictive Architecture (MoE-JEPA) world model. This model will be pre-trained using self-supervision on large video datasets to learn robust visual representations and environment dynamics. The MoE structure will allow the model to efficiently capture diverse or multi-modal dynamics within an environment by routing inputs to specialized expert sub-networks. This sophisticated world model will then be integrated into a model-based Reinforcement Learning (RL) framework to enable efficient planning and decision-making for agents (e.g., robots) interacting with complex environments. We hypothesize that this approach will lead to more accurate world models, improved sample efficiency in RL, and better generalization across tasks compared to monolithic world models.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

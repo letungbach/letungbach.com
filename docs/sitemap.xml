@@ -1,61 +1,295 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
-    <loc>/posts/</loc>
+    <loc>https://letungbach.com/</loc>
+    
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/continual-learning/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/continuallearning/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/cvd/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/deeplearning/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/moe/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/neuralnet/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/about/</loc>
-    <lastmod>2025-04-01T17:53:32+07:00</lastmod>
-  </url><url>
-    <loc>/tags/abtoy/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/bbb/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/clippings/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/list-of-researchers-to-follow-up/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/moe-jepa-vs-titan-vs-fan/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/rss/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/showcase/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/hello-world/</loc>
-    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
   </url>
-</urlset>
+  
+  <url>
+    <loc>https://letungbach.com/posts/</loc>
+    
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/continual-learning/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/continuallearning/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/cvd/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/deeplearning/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/moe/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/neuralnet/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/</loc>
+    
+    <lastmod>2025-04-02T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/about/</loc>
+    
+    <lastmod>2025-04-01T17:53:32+07:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/abtoy/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/bbb/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/clippings/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/list-of-researchers-to-follow-up/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/moe-jepa-vs-titan-vs-fan/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/rss/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/showcase/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/moe-jepa/</loc>
+    
+    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/moe-jepa/</loc>
+    
+    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/categories/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/search/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+</urlset> 
