@@ -19,15 +19,7 @@ https://www.story.com/
 | <br>[Hailuo](https://hailuoai.video/)<br>[account](https://github.com/hexiaochun/hailuo_api_proxy)<br>                                                                               |                      |                      |                                        |                                                               |                             |
 |                                                                                                                                                                                      |                      |                      |                                        |                                                               |                             |
 
-API Key
-```
-{    
-    "openai": "key_here",
-    "anthropic": "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",
-    "togetherai": "2e6c478682a4ce1cb08b4f0a4ceed541bad75c96225c3d17240ba37eab7c6f55",
-    "deepseek": "sk-21ab04493f0e4a3992aaaf2093ede326"    
-}
-```
+
 
 	https://console.anthropic.com/settings/keys
 
