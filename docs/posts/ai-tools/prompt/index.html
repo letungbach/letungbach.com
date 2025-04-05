@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Le Tung Bach, Ph.D.</title>
+  
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title> :: Le Tung Bach, Ph.D.</title>
+<meta name="description" content="Create a comprehensive, step-by-step guide detailing all available methods (both technical and non-technical) to scrape or crawl data from Facebook, including public and private data. A detailed, well-structured document or guide with headings, subheadings, bullet points, and examples. The guide should cover technical considerations, tools, techniques, and potential risks.
+Overview of Facebook data scraping/crawling. Facebook’s Terms of Service and Community Standards.
+Types of Facebook Data Public data (e.g., public posts, pages, groups). Private data (e.g., private profiles, messages, friend lists). Metadata (e.g., likes, shares, comments, timestamps). Methods for Scraping Public Facebook Data
+" />
+<meta name="author" content="Le Tung Bach, Ph.D." />
+<meta name="keywords" content="AI Research, Technology Adoption, Ecosystem Management, Innovation, Art Technology" />
+
+  <meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://letungbach.com/posts/ai-tools/prompt/" />
+
+
+<meta itemprop="name" content=" :: Le Tung Bach, Ph.D.">
+<meta itemprop="description" content="Create a comprehensive, step-by-step guide detailing all available methods (both technical and non-technical) to scrape or crawl data from Facebook, including public and private data. A detailed, well-structured document or guide with headings, subheadings, bullet points, and examples. The guide should cover technical considerations, tools, techniques, and potential risks.
+Overview of Facebook data scraping/crawling. Facebook’s Terms of Service and Community Standards.
+Types of Facebook Data Public data (e.g., public posts, pages, groups). Private data (e.g., private profiles, messages, friend lists). Metadata (e.g., likes, shares, comments, timestamps). Methods for Scraping Public Facebook Data
+">
+<meta itemprop="image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@BachLETUNG25331" />
+<meta name="twitter:creator" content="@BachLETUNG25331" />
+<meta name="twitter:title" content=" :: Le Tung Bach, Ph.D.">
+<meta name="twitter:description" content="Create a comprehensive, step-by-step guide detailing all available methods (both technical and non-technical) to scrape or crawl data from Facebook, including public and private data. A detailed, well-structured document or guide with headings, subheadings, bullet points, and examples. The guide should cover technical considerations, tools, techniques, and potential risks.
+Overview of Facebook data scraping/crawling. Facebook’s Terms of Service and Community Standards.
+Types of Facebook Data Public data (e.g., public posts, pages, groups). Private data (e.g., private profiles, messages, friend lists). Metadata (e.g., likes, shares, comments, timestamps). Methods for Scraping Public Facebook Data
+">
+<meta name="twitter:image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content=" :: Le Tung Bach, Ph.D.">
+<meta property="og:description" content="Create a comprehensive, step-by-step guide detailing all available methods (both technical and non-technical) to scrape or crawl data from Facebook, including public and private data. A detailed, well-structured document or guide with headings, subheadings, bullet points, and examples. The guide should cover technical considerations, tools, techniques, and potential risks.
+Overview of Facebook data scraping/crawling. Facebook’s Terms of Service and Community Standards.
+Types of Facebook Data Public data (e.g., public posts, pages, groups). Private data (e.g., private profiles, messages, friend lists). Metadata (e.g., likes, shares, comments, timestamps). Methods for Scraping Public Facebook Data
+">
+<meta property="og:url" content="https://letungbach.com/posts/ai-tools/prompt/">
+<meta property="og:site_name" content="Le Tung Bach, Ph.D.">
+<meta property="og:image" content="https://letungbach.com/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="me" href="https://github.com/letungbach">
+<link rel="me" href="https://vn.linkedin.com/in/le-tung-bach-28b3074a">
+<link rel="me" href="https://x.com/BachLETUNG25331">
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/code.min.4f0ccc8439f99bf7f7970298556b94011aabc1fcae743b6842fc3361a2da9ea3.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/main.min.15870410d15d02abd22fb5ef00996f65a00d04b3a7435e9f83831c7c2298de88.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="https://letungbach.com/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://letungbach.com/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://letungbach.com/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://letungbach.com/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://letungbach.com/favicon/site.webmanifest">
+
+
+
+
+
+
+
+
+
+
+<style>
+ 
+@media (max-width: 684px) {
+  .menu--mobile {
+    position: relative;
+    display: block;
+  }
+  
+  .menu--mobile .menu__trigger {
+    display: block;
+    z-index: 100;
+  }
+  
+  .menu--mobile .menu__dropdown {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    min-width: 180px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 99;
+  }
+  
+  .menu--mobile.open .menu__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu--mobile .menu__dropdown li {
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+  
+  .menu--mobile .menu__dropdown li a {
+    display: block;
+    padding: 8px;
+  }
+  
+   
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function() {
+      document.body.classList.toggle('menu-open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!document.querySelector('.menu--mobile').contains(e.target)) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+});
+</script>  
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Le Tung Bach, Ph.D.
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/rss">RSS</a></li>
+        
+      
+        
+          <li><a href="/search">Search</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  const mobileMenu = document.querySelector('.menu--mobile');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mobileMenu.classList.toggle('open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+  }
+});
+</script> 
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/rss" >RSS</a></li>
+        
+      
+        
+          <li><a href="/search" >Search</a></li>
+        
+      
+      
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">Show more&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/showcase" >Showcase</a></li>
+                  
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://letungbach.com/posts/ai-tools/prompt/"></a>
+  </h1>
+  <div class="post-meta"><span class="post-reading-time">2 min read (359 words)</span></div>
+
+  
+  
+
+
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents"></nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <p>Create a comprehensive, step-by-step guide detailing all available methods (both technical and non-technical) to scrape or crawl data from Facebook, including public and private data. A detailed, well-structured document or guide with headings, subheadings, bullet points, and examples. The guide should cover technical considerations, tools, techniques, and potential risks.</p>
+<ol>
+<li>
+<p>Overview of Facebook data scraping/crawling.
+Facebook’s Terms of Service and Community Standards.</p>
+</li>
+<li>
+<p>Types of Facebook Data
+Public data (e.g., public posts, pages, groups).
+Private data (e.g., private profiles, messages, friend lists).
+Metadata (e.g., likes, shares, comments, timestamps).
+Methods for Scraping Public Facebook Data</p>
+</li>
+<li>
+<p>Manual Methods
+Copy-pasting data.
+Saving posts or pages as PDFs.
+Automated Methods
+Using Facebook Graph API (official method).
+Web scraping with tools like BeautifulSoup, Scrapy, or Selenium.
+Browser extensions for data extraction.
+Third-party tools (e.g., Octoparse, ParseHub).
+Social Media Management Tools
+Hootsuite, Buffer, or Sprout Social for public data analytics.
+Methods for Scraping Private Facebook Data</p>
+</li>
+<li>
+<p>Account Access Methods
+Logging into a user’s account (with consent).
+Using session cookies or tokens.
+Social Engineering
+Phishing or tricking users into sharing data.
+Exploits and Vulnerabilities
+Exploiting Facebook’s security flaws (unethical and illegal).
+Third-Party Apps and APIs
+Apps with access to private data (requires user permission).
+Advanced Techniques</p>
+</li>
+<li>
+<p>Reverse Engineering Facebook’s API
+Analyzing network requests to uncover hidden endpoints.
+Using Proxies and VPNs
+Bypassing IP blocks and rate limits.
+Machine Learning and NLP
+Extracting insights from unstructured Facebook data.
+Tools and Technologies</p>
+</li>
+<li>
+<p>Programming languages (Python, JavaScript).
+Libraries (Requests, BeautifulSoup, Selenium).
+Frameworks (Scrapy, Puppeteer).
+Databases (SQLite, MongoDB) for storing scraped data.
+Risks and Mitigation</p>
+</li>
+<li>
+<p>Detection by Facebook’s anti-scraping systems.
+IP blocking or CAPTCHA challenges.
+Legal risks and how to avoid them.
+Best practices for ethical scraping.
+Alternatives to Scraping</p>
+</li>
+<li>
+<p>Using Facebook’s official tools (e.g., Insights, Ads Manager).
+Partnering with Facebook for data access.
+Purchasing data from third-party providers.
+Case Studies</p>
+</li>
+<li>
+<p>Examples of successful (and unsuccessful) Facebook scraping projects.
+Lessons learned from legal cases or bans.
+Conclusion</p>
+</li>
+<li>
+<p>Future trends in Facebook data scraping.</p>
+</li>
+<li>
+<p>Additional Notes:</p>
+</li>
+</ol>
+<p>Include code snippets or examples for technical methods.
+Highlight the differences between scraping public vs. private data.
+Provide resources for further learning (e.g., documentation, tutorials).</p>
+<p>Tone:
+Informative, neutral, and cautionary, emphasizing the importance of legality and ethics.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="https://letungbach.com/posts/ai-tools/fine-tuning/" class="button inline prev">
+        &lt; [<span class="button__text"></span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="https://letungbach.com/posts/benchmarks/" class="button inline next">
+         [<span class="button__text"></span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    
+  
+</div>
+
+</body>
+</html>
