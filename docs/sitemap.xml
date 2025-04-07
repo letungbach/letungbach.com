@@ -3,6 +3,62 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://letungbach.com/tags/ai/</loc>
+    
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/ethic/</loc>
+    
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/ethical-intelligence/</loc>
+    
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/ethicalai/</loc>
+    
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/</loc>
     
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
@@ -31,9 +87,9 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/abtoy/</loc>
+    <loc>https://letungbach.com/tags/</loc>
     
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -45,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/ai/</loc>
+    <loc>https://letungbach.com/tags/abtoy/</loc>
     
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
     
@@ -130,20 +186,6 @@
   
   <url>
     <loc>https://letungbach.com/tags/reinforcement/</loc>
-    
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/</loc>
     
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
     
@@ -314,42 +356,6 @@
     <loc>https://letungbach.com/posts/moe-jepa/</loc>
     
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/ai-tools/ai-tools/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/ai-tools/fine-tuning/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/ai-tools/prompt/</loc>
     
     
     <changefreq>weekly</changefreq>
