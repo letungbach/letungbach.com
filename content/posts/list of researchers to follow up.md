@@ -1,5 +1,5 @@
 ---
-title: list
+title: researcher list
 date: 2025-04-01
 draft: false
 tags:

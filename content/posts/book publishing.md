@@ -1,5 +1,5 @@
 ---
-title: AI Prompts
+title: bookpublishing
 date: 2025-04-10
 draft: false
 tags:
