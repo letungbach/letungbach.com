@@ -3,6 +3,34 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://letungbach.com/</loc>
+    
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/</loc>
+    
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/ai/</loc>
     
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
@@ -59,34 +87,6 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/</loc>
-    
-    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/</loc>
-    
-    <lastmod>2025-04-06T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
     <loc>https://letungbach.com/tags/</loc>
     
     <lastmod>2025-04-06T00:00:00+00:00</lastmod>
@@ -129,6 +129,20 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/tags/leisure/</loc>
+    
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/moe/</loc>
     
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
@@ -158,6 +172,34 @@
   
   <url>
     <loc>https://letungbach.com/posts/moe-jepa2/</loc>
+    
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/movie-list/</loc>
+    
+    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/movie/</loc>
     
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
     
@@ -356,42 +398,6 @@
     <loc>https://letungbach.com/posts/moe-jepa/</loc>
     
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/benchmarks/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/mario/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/movies-lists/</loc>
     
     
     <changefreq>weekly</changefreq>
