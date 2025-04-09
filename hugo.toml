@@ -63,6 +63,7 @@ publishDir = "docs"
   centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+
   # then the file will be used as a cover automatically.
   # With this option you don't have to put the `cover` param in a front-matter.
   autoCover = true
@@ -92,6 +93,26 @@ publishDir = "docs"
   [params.twitter]
     creator = "BachLETUNG25331"
     site = "BachLETUNG25331"
+
+# Development server settings
+[server]
+  watch = true
+  ignoreCache = true
+  disableFastRender = false
+  disableLiveReload = false
+  # Added for better live updates
+  navigateToChanged = true
+
+# Build settings
+buildDrafts = true
+buildFuture = true
+buildExpired = true
+
+# Watch settings
+watchConfig = true
+# Add these settings for better file watching
+disableCache = true
+enableSourceMap = true
 
 [languages]
   [languages.en]

@@ -1,0 +1,2 @@
+# Start Hugo development server with optimal live reload settings
+hugo server --disableFastRender --watch --forceSyncStatic --gc --cleanDestinationDir --buildDrafts --buildFuture --bind "0.0.0.0" --baseURL "http://localhost:1313/"
