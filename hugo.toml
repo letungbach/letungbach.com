@@ -25,6 +25,11 @@ publishDir = "docs"
 [markup.highlight]
   noClasses = false
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allows raw HTML in markdown content
+
 [params]
   # Site metadata
   title = "Le Tung Bach, Ph.D., AI Researcher"
@@ -129,3 +134,7 @@ publishDir = "docs"
           identifier = "search"
           name = "Search"
           url = "/search"
+        [[languages.en.menu.main]]
+          identifier = "game"
+          name = "Game"
+          url = "/game"

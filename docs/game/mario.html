@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario HTML5</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #6b88fe;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        canvas {
+            border: 4px solid #000;
+            display: block;
+            background-color: #6b88fe;
+            max-height: 90vh;
+        }
+        
+        #game-container {
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        #controls {
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        #start-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #e7373c;
+            color: white;
+            border: 3px solid #000;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        #start-button:hover {
+            background-color: #ff5a5f;
+        }
+        
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 0 #000;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            text-shadow: 3px 3px 0 #000;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Super Mario HTML5</h1>
+    
+    <div id="game-container">
+        <button id="start-button">START GAME</button>
+        <canvas id="gameCanvas" width="800" height="480"></canvas>
+        <div id="game-over" class="game-over">GAME OVER</div>
+    </div>
+    
+    <div id="controls">
+        <p>Controls: Arrow Keys to move, Space to jump</p>
+        <p>Goal: Collect coins and reach the flag!</p>
+    </div>
+
+    <script>
+        const startButton = document.getElementById('start-button');
+        const gameCanvas = document.getElementById('gameCanvas');
+        const gameOverText = document.getElementById('game-over');
+        const ctx = gameCanvas.getContext('2d');
+        
+        // Game state
+        let gameStarted = false;
+        let gameOver = false;
+        let score = 0;
+        let lives = 3;
+
+        // Game constants
+        const SPEED = 5;
+        const JUMP_FORCE = -12;
+        const GRAVITY = 0.6;
+
+        // Level state
+        let currentLevel = 1;
+        let maxLevels = 10;
+
+        // Level configurations
+        const levelConfigs = {
+            1: {
+                enemies: 5,
+                coins: 20,
+                gaps: [[20, 22]],
+                platformCount: 3,
+                enemySpeed: 2,
+                background: '#6b88fe'
+            },
+            2: {
+                enemies: 8,
+                coins: 25,
+                gaps: [[20, 22], [35, 37]],
+                platformCount: 4,
+                enemySpeed: 2.5,
+                background: '#5878ee'
+            },
+            3: {
+                enemies: 10,
+                coins: 30,
+                gaps: [[20, 22], [35, 37], [50, 53]],
+                platformCount: 5,
+                enemySpeed: 3,
+                background: '#4868de'
+            },
+            4: {
+                enemies: 12,
+                coins: 35,
+                gaps: [[20, 22], [35, 37], [50, 53], [70, 74]],
+                platformCount: 6,
+                enemySpeed: 3.5,
+                background: '#3858ce'
+            },
+            5: {
+                enemies: 15,
+                coins: 40,
+                gaps: [[20, 23], [35, 39], [50, 54], [70, 75]],
+                platformCount: 7,
+                enemySpeed: 4,
+                background: '#2848be'
+            },
+            6: {
+                enemies: 18,
+                coins: 45,
+                gaps: [[20, 24], [35, 40], [50, 55], [70, 76]],
+                platformCount: 8,
+                enemySpeed: 4.5,
+                background: '#1838ae'
+            },
+            7: {
+                enemies: 20,
+                coins: 50,
+                gaps: [[20, 25], [35, 41], [50, 56], [70, 77]],
+                platformCount: 9,
+                enemySpeed: 5,
+                background: '#08289e'
+            },
+            8: {
+                enemies: 22,
+                coins: 55,
+                gaps: [[20, 26], [35, 42], [50, 57], [70, 78]],
+                platformCount: 10,
+                enemySpeed: 5.5,
+                background: '#001898'
+            },
+            9: {
+                enemies: 25,
+                coins: 60,
+                gaps: [[20, 27], [35, 43], [50, 58], [70, 79]],
+                platformCount: 11,
+                enemySpeed: 6,
+                background: '#000888'
+            },
+            10: {
+                enemies: 30,
+                coins: 70,
+                gaps: [[20, 28], [35, 44], [50, 59], [70, 80]],
+                platformCount: 12,
+                enemySpeed: 6.5,
+                background: '#000878',
+                isBossLevel: true
+            }
+        };
+
+        // Boss sprite and state
+        const bossState = {
+            x: 3000,
+            y: 300,
+            width: 64,
+            height: 64,
+            health: 3,
+            velocityX: -3,
+            velocityY: 0,
+            attacking: false,
+            attackCooldown: 0
+        };
+
+        // Create boss sprite
+        function createBossSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 64;
+            canvas.height = 64;
+            const ctx = canvas.getContext('2d');
+            
+            // Body
+            ctx.fillStyle = '#800000';
+            ctx.fillRect(8, 8, 48, 48);
+            
+            // Crown
+            ctx.fillStyle = '#FFD700';
+            ctx.beginPath();
+            ctx.moveTo(8, 8);
+            ctx.lineTo(56, 8);
+            ctx.lineTo(32, 0);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Eyes
+            ctx.fillStyle = 'white';
+            ctx.fillRect(16, 20, 12, 12);
+            ctx.fillRect(36, 20, 12, 12);
+            
+            ctx.fillStyle = 'red';
+            ctx.fillRect(20, 24, 4, 4);
+            ctx.fillRect(40, 24, 4, 4);
+            
+            return canvas.toDataURL();
+        }
+
+        // Add boss sprite to sprites to load
+        const sprites = {};
+        const spritesToLoad = [
+            { name: 'mario', src: createMarioSprite() },
+            { name: 'ground', src: createGroundSprite() },
+            { name: 'brick', src: createBrickSprite() },
+            { name: 'coin', src: createCoinSprite() },
+            { name: 'goomba', src: createGoombaSprite() },
+            { name: 'flag', src: createFlagSprite() },
+            { name: 'cloud', src: createCloudSprite() },
+            { name: 'boss', src: createBossSprite() }
+        ];
+        
+        // Character state
+        const mario = {
+            x: 50,
+            y: 380,
+            width: 32,
+            height: 32,
+            velocityX: 0,
+            velocityY: 0,
+            jumping: false,
+            direction: 1, // 1 for right, -1 for left
+            frame: 0,
+            frameCount: 0,
+            isInvincible: false,
+            invincibleTimer: 0
+        };
+        
+        // Game elements
+        let platforms = [];
+        let coins = [];
+        let enemies = [];
+        let clouds = [];
+        let flag = { x: 3200, y: 350, width: 32, height: 130 };
+        let cameraOffset = 0;
+        
+        // Input handling
+        const keys = {};
+        
+        // Event listeners
+        window.addEventListener('keydown', (e) => {
+            keys[e.key] = true;
+        });
+        
+        window.addEventListener('keyup', (e) => {
+            keys[e.key] = false;
+        });
+        
+        startButton.addEventListener('click', () => {
+            if (!gameStarted) {
+                startGame();
+            } else if (gameOver) {
+                resetGame();
+            }
+        });
+        
+        // Create sprites using canvas instead of images
+        function createMarioSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            
+            // Red cap and shirt
+            ctx.fillStyle = 'red';
+            ctx.fillRect(8, 0, 16, 6);
+            ctx.fillRect(8, 14, 16, 10);
+            
+            // Blue overalls
+            ctx.fillStyle = '#4040FF';
+            ctx.fillRect(8, 24, 16, 8);
+            ctx.fillRect(4, 14, 4, 12);
+            ctx.fillRect(24, 14, 4, 12);
+            
+            // Face and arms
+            ctx.fillStyle = '#FFC68C';
+            ctx.fillRect(8, 6, 16, 8);
+            ctx.fillRect(0, 14, 4, 8);
+            ctx.fillRect(28, 14, 4, 8);
+            
+            // Shoes
+            ctx.fillStyle = '#804000';
+            ctx.fillRect(4, 26, 8, 6);
+            ctx.fillRect(20, 26, 8, 6);
+            
+            return canvas.toDataURL();
+        }
+        
+        function createGroundSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            
+            // Main ground color
+            ctx.fillStyle = '#8B4513';
+            ctx.fillRect(0, 0, 32, 32);
+            
+            // Top edge
+            ctx.fillStyle = '#00AA00';
+            ctx.fillRect(0, 0, 32, 6);
+            
+            // Texture details
+            ctx.fillStyle = '#7B3503';
+            ctx.fillRect(4, 10, 6, 4);
+            ctx.fillRect(18, 18, 8, 6);
+            ctx.fillRect(8, 24, 10, 4);
+            
+            return canvas.toDataURL();
+        }
+        
+        function createBrickSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            
+            // Background
+            ctx.fillStyle = '#C86828';
+            ctx.fillRect(0, 0, 32, 32);
+            
+            // Brick lines
+            ctx.fillStyle = '#A05018';
+            // Horizontal lines
+            ctx.fillRect(0, 0, 32, 2);
+            ctx.fillRect(0, 16, 32, 2);
+            ctx.fillRect(0, 30, 32, 2);
+            // Vertical lines
+            ctx.fillRect(0, 0, 2, 32);
+            ctx.fillRect(16, 0, 2, 16);
+            ctx.fillRect(8, 16, 2, 16);
+            ctx.fillRect(24, 16, 2, 16);
+            
+            return canvas.toDataURL();
+        }
+        
+        function createCoinSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 24;
+            canvas.height = 24;
+            const ctx = canvas.getContext('2d');
+            
+            // Coin circle
+            ctx.fillStyle = '#FFD700';
+            ctx.beginPath();
+            ctx.arc(12, 12, 10, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Inner detail
+            ctx.fillStyle = '#FFA500';
+            ctx.beginPath();
+            ctx.arc(12, 12, 6, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Shine
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(8, 8, 2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            return canvas.toDataURL();
+        }
+        
+        function createGoombaSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            
+            // Body
+            ctx.fillStyle = '#8B4513';
+            ctx.beginPath();
+            ctx.arc(16, 22, 12, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Feet
+            ctx.fillStyle = '#000';
+            ctx.fillRect(6, 28, 8, 4);
+            ctx.fillRect(18, 28, 8, 4);
+            
+            // Eyes
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(12, 18, 3, 0, Math.PI * 2);
+            ctx.arc(20, 18, 3, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Pupils
+            ctx.fillStyle = 'black';
+            ctx.beginPath();
+            ctx.arc(12, 18, 1.5, 0, Math.PI * 2);
+            ctx.arc(20, 18, 1.5, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Mushroom top
+            ctx.fillStyle = '#B22222';
+            ctx.beginPath();
+            ctx.arc(16, 10, 10, 0, Math.PI, true);
+            ctx.fill();
+            
+            return canvas.toDataURL();
+        }
+        
+        function createFlagSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 130;
+            const ctx = canvas.getContext('2d');
+            
+            // Pole
+            ctx.fillStyle = '#C0C0C0';
+            ctx.fillRect(14, 0, 4, 130);
+            
+            // Flag
+            ctx.fillStyle = 'red';
+            ctx.beginPath();
+            ctx.moveTo(18, 10);
+            ctx.lineTo(18, 50);
+            ctx.lineTo(32, 30);
+            ctx.closePath();
+            ctx.fill();
+            
+            return canvas.toDataURL();
+        }
+        
+        function createCloudSprite() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 64;
+            canvas.height = 32;
+            const ctx = canvas.getContext('2d');
+            
+            // Cloud parts
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(20, 20, 12, 0, Math.PI * 2);
+            ctx.arc(35, 15, 15, 0, Math.PI * 2);
+            ctx.arc(50, 20, 12, 0, Math.PI * 2);
+            ctx.fill();
+            
+            return canvas.toDataURL();
+        }
+        
+        // Load all sprites first
+        let loadedSprites = 0;
+        spritesToLoad.forEach(sprite => {
+            const img = new Image();
+            img.src = sprite.src;
+            img.onload = () => {
+                sprites[sprite.name] = img;
+                loadedSprites++;
+                if (loadedSprites === spritesToLoad.length) {
+                    // All sprites loaded, show start button
+                    startButton.style.display = 'block';
+                }
+            };
+        });
+        
+        function startGame() {
+            gameStarted = true;
+            gameOver = false;
+            startButton.style.display = 'none';
+            gameOverText.style.display = 'none';
+            
+            // Initialize game elements
+            initializeLevel();
+            
+            // Start game loop
+            requestAnimationFrame(gameLoop);
+        }
+        
+        function resetGame() {
+            mario.x = 50;
+            mario.y = 380;
+            mario.velocityX = 0;
+            mario.velocityY = 0;
+            mario.jumping = false;
+            
+            score = 0;
+            lives = 3;
+            cameraOffset = 0;
+            gameOver = false;
+            currentLevel = 1;
+            
+            initializeLevel();
+            
+            gameOverText.style.display = 'none';
+            startButton.textContent = 'START GAME';
+            startButton.style.display = 'none';
+            requestAnimationFrame(gameLoop);
+        }
+        
+        function initializeLevel() {
+            const config = levelConfigs[currentLevel];
+            
+            // Update background color
+            document.body.style.backgroundColor = config.background;
+            gameCanvas.style.backgroundColor = config.background;
+            
+            // Create ground platforms
+            platforms = [];
+            for (let i = 0; i < 120; i++) {
+                // Ground level
+                platforms.push({
+                    x: i * 32,
+                    y: 416,
+                    width: 32,
+                    height: 32
+                });
+                
+                // Create gaps based on level config
+                config.gaps.forEach(gap => {
+                    if (i >= gap[0] && i < gap[1]) {
+                        platforms.pop();
+                    }
+                });
+            }
+            
+            // Add floating platforms based on level config
+            for (let i = 0; i < config.platformCount; i++) {
+                const platformWidth = 2 + Math.floor(Math.random() * 4);
+                const x = 300 + Math.floor(Math.random() * 2700);
+                const y = 200 + Math.floor(Math.random() * 150);
+                
+                for (let j = 0; j < platformWidth; j++) {
+                    platforms.push({
+                        x: x + (j * 32),
+                        y: y,
+                        width: 32,
+                        height: 32,
+                        isBrick: true
+                    });
+                }
+            }
+            
+            // Create enemies
+            enemies = [];
+            for (let i = 0; i < config.enemies; i++) {
+                enemies.push({
+                    x: 400 + Math.floor(Math.random() * 2800),
+                    y: 384,
+                    width: 32,
+                    height: 32,
+                    velocityX: -config.enemySpeed,
+                    squashed: false
+                });
+            }
+            
+            // Create coins
+            coins = [];
+            for (let i = 0; i < config.coins; i++) {
+                coins.push({
+                    x: 200 + Math.floor(Math.random() * 3000),
+                    y: 100 + Math.floor(Math.random() * 250),
+                    width: 24,
+                    height: 24,
+                    collected: false
+                });
+            }
+            
+            // Reset boss state if it's the final level
+            if (config.isBossLevel) {
+                bossState.x = 3000;
+                bossState.y = 300;
+                bossState.health = 3;
+                bossState.velocityX = -3;
+                bossState.attacking = false;
+                bossState.attackCooldown = 0;
+            }
+            
+            // Add clouds for background
+            clouds = [];
+            for (let i = 0; i < 20; i++) {
+                clouds.push({
+                    x: Math.floor(Math.random() * 3200),
+                    y: 50 + Math.floor(Math.random() * 100),
+                    width: 64,
+                    height: 32,
+                    speed: 0.2 + Math.random() * 0.3
+                });
+            }
+            
+            // Set flag position
+            flag = { x: 3200, y: 286, width: 32, height: 130 };
+        }
+        
+        function gameLoop() {
+            if (!gameStarted || gameOver) return;
+            
+            update();
+            if (currentLevel === maxLevels) {
+                updateBoss();
+            }
+            render();
+            
+            requestAnimationFrame(gameLoop);
+        }
+        
+        function update() {
+            // Update mario
+            updateMario();
+            
+            // Update enemies
+            updateEnemies();
+            
+            // Update clouds
+            updateClouds();
+            
+            // Check collisions with platforms
+            checkPlatformCollisions();
+            
+            // Check collisions with coins
+            checkCoinCollisions();
+            
+            // Check collisions with enemies
+            checkEnemyCollisions();
+            
+            // Check collision with flag (win condition)
+            checkFlagCollision();
+            
+            // Check if mario fell off the screen
+            if (mario.y > gameCanvas.height) {
+                loseLife();
+            }
+            
+            // Update camera offset
+            cameraOffset = Math.max(0, mario.x - 300);
+        }
+        
+        function updateMario() {
+            // Handle invincibility timer
+            if (mario.isInvincible) {
+                mario.invincibleTimer--;
+                if (mario.invincibleTimer <= 0) {
+                    mario.isInvincible = false;
+                }
+            }
+            
+            // Reset velocity X
+            mario.velocityX = 0;
+            
+            // Horizontal movement
+            if (keys['ArrowLeft']) {
+                mario.velocityX = -SPEED;
+                mario.direction = -1;
+            }
+            if (keys['ArrowRight']) {
+                mario.velocityX = SPEED;
+                mario.direction = 1;
+            }
+            
+            // Jumping
+            if ((keys[' '] || keys['ArrowUp']) && !mario.jumping) {
+                mario.velocityY = JUMP_FORCE;
+                mario.jumping = true;
+            }
+            
+            // Apply gravity
+            mario.velocityY += GRAVITY;
+            
+            // Update position
+            mario.x += mario.velocityX;
+            mario.y += mario.velocityY;
+            
+            // Prevent going backwards beyond the start
+            if (mario.x < 0) {
+                mario.x = 0;
+            }
+            
+            // Animation
+            mario.frameCount++;
+            if (mario.frameCount > 5) {
+                mario.frame = (mario.frame + 1) % 2;
+                mario.frameCount = 0;
+            }
+        }
+        
+        function updateEnemies() {
+            enemies.forEach(enemy => {
+                if (!enemy.squashed) {
+                    // Move enemies
+                    enemy.x += enemy.velocityX;
+                    
+                    // Check for platform edges and reverse direction
+                    let onPlatform = false;
+                    let hitWall = false;
+                    
+                    platforms.forEach(platform => {
+                        // Check if standing on a platform
+                        if (
+                            enemy.x + enemy.width > platform.x &&
+                            enemy.x < platform.x + platform.width &&
+                            enemy.y + enemy.height >= platform.y &&
+                            enemy.y + enemy.height <= platform.y + 10
+                        ) {
+                            onPlatform = true;
+                        }
+                        
+                        // Check if hitting a wall
+                        if (
+                            ((enemy.x + enemy.width >= platform.x && enemy.x + enemy.width <= platform.x + 10) ||
+                            (enemy.x <= platform.x + platform.width && enemy.x >= platform.x + platform.width - 10)) &&
+                            enemy.y + enemy.height > platform.y &&
+                            enemy.y < platform.y + platform.height
+                        ) {
+                            hitWall = true;
+                        }
+                    });
+                    
+                    // Check if at edge of platform or hit a wall, then reverse direction
+                    const nextX = enemy.x + enemy.velocityX;
+                    let willBeOnPlatform = false;
+                    
+                    platforms.forEach(platform => {
+                        if (
+                            nextX + enemy.width > platform.x &&
+                            nextX < platform.x + platform.width &&
+                            enemy.y + enemy.height >= platform.y &&
+                            enemy.y + enemy.height <= platform.y + 10
+                        ) {
+                            willBeOnPlatform = true;
+                        }
+                    });
+                    
+                    if (!willBeOnPlatform || hitWall) {
+                        enemy.velocityX = -enemy.velocityX;
+                    }
+                }
+            });
+        }
+        
+        function updateClouds() {
+            clouds.forEach(cloud => {
+                cloud.x += cloud.speed;
+                if (cloud.x > 3200) {
+                    cloud.x = -cloud.width;
+                }
+            });
+        }
+        
+        function checkPlatformCollisions() {
+            let onPlatform = false;
+            
+            platforms.forEach(platform => {
+                // Check if mario is on a platform
+                if (
+                    mario.x + mario.width > platform.x &&
+                    mario.x < platform.x + platform.width &&
+                    mario.y + mario.height >= platform.y &&
+                    mario.y + mario.height <= platform.y + platform.height / 2 &&
+                    mario.velocityY >= 0
+                ) {
+                    mario.y = platform.y - mario.height;
+                    mario.velocityY = 0;
+                    mario.jumping = false;
+                    onPlatform = true;
+                }
+                
+                // Check for head collision
+                if (
+                    mario.x + mario.width > platform.x &&
+                    mario.x < platform.x + platform.width &&
+                    mario.y <= platform.y + platform.height &&
+                    mario.y >= platform.y + platform.height / 2 &&
+                    mario.velocityY < 0
+                ) {
+                    mario.y = platform.y + platform.height;
+                    mario.velocityY = 0;
+                    
+                    // If it's a brick platform, add a slight bump animation
+                    if (platform.isBrick) {
+                        // Could add brick animation here
+                    }
+                }
+                
+                // Check for side collisions
+                if (
+                    mario.y + mario.height > platform.y &&
+                    mario.y < platform.y + platform.height
+                ) {
+                    // Right side collision
+                    if (
+                        mario.x <= platform.x + platform.width &&
+                        mario.x + mario.width > platform.x + platform.width &&
+                        mario.velocityX < 0
+                    ) {
+                        mario.x = platform.x + platform.width;
+                    }
+                    
+                    // Left side collision
+                    if (
+                        mario.x + mario.width >= platform.x &&
+                        mario.x < platform.x &&
+                        mario.velocityX > 0
+                    ) {
+                        mario.x = platform.x - mario.width;
+                    }
+                }
+            });
+            
+            // If not on any platform and not jumping up, then start falling
+            if (!onPlatform && mario.velocityY === 0) {
+                mario.jumping = true;
+            }
+        }
+        
+        function checkCoinCollisions() {
+            coins.forEach(coin => {
+                if (!coin.collected && 
+                    mario.x + mario.width > coin.x &&
+                    mario.x < coin.x + coin.width &&
+                    mario.y + mario.height > coin.y &&
+                    mario.y < coin.y + coin.height) {
+                    
+                    coin.collected = true;
+                    score += 100;
+                }
+            });
+        }
+        
+        function checkEnemyCollisions() {
+            enemies.forEach(enemy => {
+                if (!enemy.squashed && 
+                    mario.x + mario.width > enemy.x &&
+                    mario.x < enemy.x + enemy.width &&
+                    mario.y + mario.height > enemy.y &&
+                    mario.y < enemy.y + enemy.height) {
+                    
+                    // If mario is moving downward and above the enemy, squash the enemy
+                    if (mario.velocityY > 0 && mario.y + mario.height < enemy.y + enemy.height / 2) {
+                        enemy.squashed = true;
+                        enemy.height = enemy.height / 2;
+                        enemy.y += enemy.height;
+                        mario.velocityY = JUMP_FORCE / 1.5; // Bounce up a bit
+                        score += 200;
+                    } else if (!mario.isInvincible) {
+                        // Otherwise, mario gets hurt
+                        loseLife();
+                    }
+                }
+            });
+        }
+        
+        function checkFlagCollision() {
+            if (
+                mario.x + mario.width > flag.x &&
+                mario.x < flag.x + flag.width &&
+                mario.y + mario.height > flag.y &&
+                mario.y < flag.y + flag.height
+            ) {
+                if (currentLevel < maxLevels) {
+                    // Next level
+                    currentLevel++;
+                    gameOverText.textContent = "LEVEL " + currentLevel;
+                    gameOverText.style.display = "block";
+                    setTimeout(() => {
+                        gameOverText.style.display = "none";
+                        mario.x = 50;
+                        mario.y = 380;
+                        initializeLevel();
+                    }, 2000);
+                } else if (bossState.health <= 0) {
+                    // Win game
+                    gameStarted = false;
+                    gameOverText.textContent = "CONGRATULATIONS! YOU SAVED THE PRINCESS!";
+                    gameOverText.style.display = "block";
+                    startButton.textContent = "PLAY AGAIN";
+                    startButton.style.display = "block";
+                }
+            }
+        }
+        
+        function loseLife() {
+            if (!mario.isInvincible) {
+                lives--;
+                
+                if (lives <= 0) {
+                    // Game over
+                    gameOver = true;
+                    gameOverText.textContent = "GAME OVER";
+                    gameOverText.style.display = "block";
+                    startButton.textContent = "TRY AGAIN";
+                    startButton.style.display = "block";
+                } else {
+                    // Reset mario position but keep the game going
+                    mario.x = Math.max(50, mario.x - 100);
+                    mario.y = 300;
+                    mario.velocityY = 0;
+                    
+                    // Temporary invincibility
+                    mario.isInvincible = true;
+                    mario.invincibleTimer = 60; // Frames of invincibility
+                }
+            }
+        }
+        
+        function updateBoss() {
+            if (currentLevel === maxLevels && !bossState.defeated) {
+                // Boss movement
+                bossState.x += bossState.velocityX;
+                bossState.y += bossState.velocityY;
+                
+                // Bounce at screen edges
+                if (bossState.x <= 2500 || bossState.x >= 3100) {
+                    bossState.velocityX = -bossState.velocityX;
+                }
+                
+                // Attack pattern
+                if (bossState.attackCooldown <= 0) {
+                    bossState.attacking = true;
+                    bossState.velocityY = 5;
+                    bossState.attackCooldown = 120;
+                } else {
+                    bossState.attackCooldown--;
+                }
+                
+                // Check if boss hits ground
+                if (bossState.y >= 352) {
+                    bossState.y = 352;
+                    bossState.velocityY = -5;
+                    bossState.attacking = false;
+                }
+                
+                // Check collision with Mario
+                if (
+                    mario.x + mario.width > bossState.x &&
+                    mario.x < bossState.x + bossState.width &&
+                    mario.y + mario.height > bossState.y &&
+                    mario.y < bossState.y + bossState.height
+                ) {
+                    if (mario.velocityY > 0 && mario.y + mario.height < bossState.y + bossState.height / 2) {
+                        // Hit boss
+                        bossState.health--;
+                        mario.velocityY = JUMP_FORCE;
+                        if (bossState.health <= 0) {
+                            bossState.defeated = true;
+                        }
+                    } else if (!mario.isInvincible) {
+                        // Boss hits Mario
+                        loseLife();
+                    }
+                }
+            }
+        }
+        
+        function render() {
+            // Clear canvas
+            ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
+            
+            // Draw sky background
+            ctx.fillStyle = '#6b88fe';
+            ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
+            
+            // Save the context state
+            ctx.save();
+            
+            // Apply camera transformation
+            ctx.translate(-cameraOffset, 0);
+            
+            // Draw clouds (background)
+            clouds.forEach(cloud => {
+                ctx.drawImage(sprites.cloud, cloud.x, cloud.y, cloud.width, cloud.height);
+            });
+            
+            // Draw platforms
+            platforms.forEach(platform => {
+                if (platform.isBrick) {
+                    ctx.drawImage(sprites.brick, platform.x, platform.y, platform.width, platform.height);
+                } else {
+                    ctx.drawImage(sprites.ground, platform.x, platform.y, platform.width, platform.height);
+                }
+            });
+            
+            // Draw coins
+            coins.forEach(coin => {
+                if (!coin.collected) {
+                    // Add a simple floating animation
+                    const floatOffset = Math.sin(Date.now() / 200) * 3;
+                    ctx.drawImage(sprites.coin, coin.x, coin.y + floatOffset, coin.width, coin.height);
+                }
+            });
+            
+            // Draw enemies
+            enemies.forEach(enemy => {
+                if (!enemy.squashed) {
+                    ctx.drawImage(sprites.goomba, enemy.x, enemy.y, enemy.width, enemy.height);
+                } else {
+                    // Draw squashed goomba
+                    ctx.drawImage(sprites.goomba, enemy.x, enemy.y, enemy.width, enemy.height);
+                }
+            });
+            
+            // Draw flag
+            ctx.drawImage(sprites.flag, flag.x, flag.y, flag.width, flag.height);
+            
+            // Draw mario
+            if (!mario.isInvincible || Math.floor(Date.now() / 100) % 2 === 0) {
+                ctx.save();
+                if (mario.direction === -1) {
+                    ctx.scale(-1, 1);
+                    ctx.drawImage(sprites.mario, -mario.x - mario.width, mario.y, mario.width, mario.height);
+                } else {
+                    ctx.drawImage(sprites.mario, mario.x, mario.y, mario.width, mario.height);
+                }
+                ctx.restore();
+            }
+            
+            // Draw boss in final level
+            if (currentLevel === maxLevels && !bossState.defeated) {
+                ctx.drawImage(sprites.boss, bossState.x, bossState.y, bossState.width, bossState.height);
+                
+                // Draw boss health
+                ctx.fillStyle = 'red';
+                ctx.fillText(`Boss Health: ${bossState.health}`, gameCanvas.width - 200, 30);
+            }
+            
+            // Draw level number
+            ctx.fillStyle = 'white';
+            ctx.fillText(`LEVEL: ${currentLevel}`, gameCanvas.width / 2 - 40, 30);
+            
+            // Restore the context state
+            ctx.restore();
+            
+            // Draw UI elements (not affected by camera)
+            // Score
+            ctx.fillStyle = 'white';
+            ctx.font = '20px Arial';
+            ctx.fillText(`SCORE: ${score}`, 20, 30);
+            
+            // Lives
+            ctx.fillText(`LIVES: ${lives}`, gameCanvas.width - 100, 30);
+        }
+        
+        // Initial screen - show start button
+        function drawStartScreen() {
+            ctx.fillStyle = '#6b88fe';
+            ctx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
+            
+            ctx.fillStyle = 'white';
+            ctx.font = '40px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Super Mario HTML5', gameCanvas.width / 2, gameCanvas.height / 2 - 40);
+            
+            ctx.font = '20px Arial';
+            ctx.fillText('Press START to begin!', gameCanvas.width / 2, gameCanvas.height / 2 + 20);
+            ctx.fillText('Use Arrow Keys to move and Space to jump', gameCanvas.width / 2, gameCanvas.height / 2 + 50);
+        }
+
+        // Draw the initial start screen
+        drawStartScreen();
+    </script>
+</body>
+</html>

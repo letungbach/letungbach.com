@@ -9,6 +9,19 @@ This page automatically pulls the latest news from Hacker News. Stay updated wit
 
 ## Recent Headlines
 
-{{< hackernews >}}
+<div class="hn-feed">
+  <ul class="hn-stories">
+    <li class="hn-story">Loading latest news...</li>
+  </ul>
+</div>
 
-*This feed is automatically updated from [Hacker News](https://news.ycombinator.com/newest)* 
+<style>
+  .hn-feed { margin: 2rem 0; }
+  .hn-stories { list-style-type: none; padding: 0; }
+  .hn-story { margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #eee; }
+  .hn-story a { font-weight: bold; text-decoration: none; }
+</style>
+
+<script src="/js/hn-feed.js" defer></script>
+
+*This feed is automatically updated from [Hacker News](https://news.ycombinator.com/newest)*

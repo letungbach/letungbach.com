@@ -379,7 +379,43 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/mario/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/movies-lists/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/categories/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/game/</loc>
     
     
     <changefreq>weekly</changefreq>
