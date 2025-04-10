@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mario-Style Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+        .game-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .score {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .instructions {
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="score">Coins: <span id="score">0</span></div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="instructions">
+            Use arrow keys to move and jump.<br>
+            Collect coins and avoid falling!
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Game constants
+        const BLOCK_SIZE = 32;
+        const GRAVITY = 0.5;
+        const JUMP_FORCE = -12;
+        const MOVE_SPEED = 5;
+        
+        // Player object
+        const player = {
+            x: 50,
+            y: canvas.height - BLOCK_SIZE * 3,
+            width: BLOCK_SIZE,
+            height: BLOCK_SIZE,
+            velocityX: 0,
+            velocityY: 0,
+            isJumping: false,
+            coins: 0
+        };
+        
+        // Platform layout
+        const platforms = [
+            {x: 0, y: canvas.height - BLOCK_SIZE, width: canvas.width, height: BLOCK_SIZE},
+            {x: 200, y: canvas.height - BLOCK_SIZE * 3, width: BLOCK_SIZE * 3, height: BLOCK_SIZE},
+            {x: 400, y: canvas.height - BLOCK_SIZE * 5, width: BLOCK_SIZE * 4, height: BLOCK_SIZE},
+            {x: 600, y: canvas.height - BLOCK_SIZE * 4, width: BLOCK_SIZE * 3, height: BLOCK_SIZE}
+        ];
+        
+        // Coins
+        const coins = [
+            {x: 220, y: canvas.height - BLOCK_SIZE * 4},
+            {x: 450, y: canvas.height - BLOCK_SIZE * 6},
+            {x: 650, y: canvas.height - BLOCK_SIZE * 5},
+            {x: 750, y: canvas.height - BLOCK_SIZE * 2}
+        ];
+        
+        function drawPlayer() {
+            ctx.fillStyle = 'red';
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+        
+        function drawPlatforms() {
+            ctx.fillStyle = 'green';
+            platforms.forEach(platform => {
+                ctx.fillRect(platform.x, platform.y, platform.width, platform.height);
+            });
+        }
+        
+        function drawCoins() {
+            ctx.fillStyle = 'gold';
+            coins.forEach(coin => {
+                if (coin.collected) return;
+                ctx.beginPath();
+                ctx.arc(coin.x + BLOCK_SIZE/2, coin.y + BLOCK_SIZE/2, BLOCK_SIZE/3, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+        
+        function checkCollision(rect1, rect2) {
+            return rect1.x < rect2.x + rect2.width &&
+                   rect1.x + rect1.width > rect2.x &&
+                   rect1.y < rect2.y + rect2.height &&
+                   rect1.y + rect1.height > rect2.y;
+        }
+        
+        function updatePlayer() {
+            // Apply gravity
+            player.velocityY += GRAVITY;
+            
+            // Update position
+            player.x += player.velocityX;
+            player.y += player.velocityY;
+            
+            // Check platform collisions
+            player.isJumping = true;
+            platforms.forEach(platform => {
+                if (checkCollision(player, platform)) {
+                    // Top collision (landing)
+                    if (player.velocityY > 0 && player.y + player.height - player.velocityY <= platform.y) {
+                        player.y = platform.y - player.height;
+                        player.velocityY = 0;
+                        player.isJumping = false;
+                    }
+                    // Bottom collision
+                    else if (player.velocityY < 0 && player.y >= platform.y + platform.height) {
+                        player.y = platform.y + platform.height;
+                        player.velocityY = 0;
+                    }
+                    // Side collisions
+                    else if (player.velocityX > 0) {
+                        player.x = platform.x - player.width;
+                    } else if (player.velocityX < 0) {
+                        player.x = platform.x + platform.width;
+                    }
+                }
+            });
+            
+            // Check coin collisions
+            coins.forEach(coin => {
+                if (!coin.collected && checkCollision(player, {
+                    x: coin.x,
+                    y: coin.y,
+                    width: BLOCK_SIZE,
+                    height: BLOCK_SIZE
+                })) {
+                    coin.collected = true;
+                    player.coins++;
+                    document.getElementById('score').textContent = player.coins;
+                }
+            });
+            
+            // Screen boundaries
+            if (player.x < 0) player.x = 0;
+            if (player.x + player.width > canvas.width) player.x = canvas.width - player.width;
+            
+            // Check if fallen off
+            if (player.y > canvas.height) {
+                resetGame();
+            }
+        }
+        
+        function resetGame() {
+            player.x = 50;
+            player.y = canvas.height - BLOCK_SIZE * 3;
+            player.velocityX = 0;
+            player.velocityY = 0;
+            player.coins = 0;
+            coins.forEach(coin => coin.collected = false);
+            document.getElementById('score').textContent = 0;
+        }
+        
+        function gameLoop() {
+            // Clear canvas
+            ctx.fillStyle = 'skyblue';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Update game objects
+            updatePlayer();
+            
+            // Draw everything
+            drawPlatforms();
+            drawCoins();
+            drawPlayer();
+            
+            // Continue game loop
+            requestAnimationFrame(gameLoop);
+        }
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            switch(e.code) {
+                case 'ArrowLeft':
+                    player.velocityX = -MOVE_SPEED;
+                    break;
+                case 'ArrowRight':
+                    player.velocityX = MOVE_SPEED;
+                    break;
+                case 'ArrowUp':
+                case 'Space':
+                    if (!player.isJumping) {
+                        player.velocityY = JUMP_FORCE;
+                        player.isJumping = true;
+                    }
+                    break;
+            }
+        });
+        
+        document.addEventListener('keyup', (e) => {
+            switch(e.code) {
+                case 'ArrowLeft':
+                    if (player.velocityX < 0) player.velocityX = 0;
+                    break;
+                case 'ArrowRight':
+                    if (player.velocityX > 0) player.velocityX = 0;
+                    break;
+            }
+        });
+        
+        // Start the game
+        gameLoop();
+    </script>
+</body>
+</html>

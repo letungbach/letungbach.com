@@ -6,21 +6,28 @@
     <description>Recent content in Ai on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://letungbach.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Prompts</title>
+      <link>https://letungbach.com/posts/prompts/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/prompts/</guid>
+      <description>&lt;h5 id=&#34;10-prompt-templates-cho-rlms-sử-dụng-framework-thinking--reasoning&#34;&gt;10 Prompt Templates cho RLMs sử dụng Framework Thinking / Reasoning&lt;/h5&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://wsgxall6ggaw.sg.larksuite.com/space/api/box/stream/download/asynccode/?code=YmEzYjAwNTE4ZmM2MTYyNDcyMGY4NTljNzk3MWFlZGNfWTk1cE5ZQkR1UzBFYUY5a1JRbXU5bWJYemhLenJBTWpfVG9rZW46TWd1M2JqOHh3b0J1ZWR4N3lOUWxsd0N1Z3VnXzE3NDQyMjAyNDc6MTc0NDIyMzg0N19WNA&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;**Phù hợp dùng cho Claude 3.7 Sonnet&lt;/p&gt;&#xA;&lt;p&gt;Dưới đây là các prompt template đơn giản và trực tiếp để tận dụng tối đa khả năng reasoning của RLMs, kết hợp với các framework thinking. Mỗi template được thiết kế để tối ưu hóa quá trình lý luận có cấu trúc.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;MCTS-Based Strategy Analysis Template&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://wsgxall6ggaw.sg.larksuite.com/space/api/box/stream/download/asynccode/?code=MWRjYzYzYjUwMjc4ZDI5YTE5ZDliODFjNmU5Nzc3OGFfdnZPMjR1MzJ4eGUydmR2MVlTaWJ5ZmNCOUJGWVVLenlfVG9rZW46U0dyRGJkdVJDbzg1NlF4SG9vRWxNR1paZ2FjXzE3NDQyMjAyNDc6MTc0NDIyMzg0N19WNA&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&lt;code&gt;&amp;lt;reasoning&amp;gt;&lt;/code&gt; &lt;code&gt;Apply Monte Carlo Tree Search reasoning to systematically explore business environment factors and their competitive impacts. Branch out from core industry analysis to specific forces, evaluating each path&#39;s strategic implications.&lt;/code&gt; &lt;code&gt;&amp;lt;/reasoning&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;task&amp;gt;&lt;/code&gt; &lt;code&gt;Analyze [Business Situation] using Porter&#39;s Five Forces:&lt;/code&gt; &lt;code&gt;Root: Current competitive landscape&lt;/code&gt; &lt;code&gt;Explore branches:&lt;/code&gt; &lt;code&gt;Evaluate impact on [Business Outcome]&lt;/code&gt; &lt;code&gt;Develop strategic recommendations&lt;/code&gt; &lt;code&gt;&amp;lt;/task&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h6 id=&#34;giải-thích&#34;&gt;Giải thích:&lt;/h6&gt;&#xA;&lt;p&gt;Template này áp dụng phương pháp MCTS với Porter&amp;rsquo;s Five Forces, tạo cấu trúc lý luận dạng cây với các nhánh tương ứng với mỗi thành phần. RLM khám phá từng nhánh và lan truyền insights để tạo chiến lược toàn diện.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Self-Rag</title>
+      <link>https://letungbach.com/posts/self-rag/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/self-rag/</guid>
+      <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;advancing-agentic-knowledgeable-self-awareness-a-research-agenda-extending-arxiv250403553&#34;&gt;Advancing Agentic Knowledgeable Self-Awareness: A Research Agenda Extending arXiv:2504.03553&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The development of artificial intelligence (AI) agents capable of complex tasks necessitates mechanisms for robust and efficient knowledge utilization. A critical aspect of this is self-awareness regarding the agent&amp;rsquo;s own knowledge state – understanding what it knows, what it doesn&amp;rsquo;t know, and when external information is required. The paper arXiv:2504.03553 introduces the concept of &amp;ldquo;agentic knowledgeable self-awareness&amp;rdquo; and proposes the &amp;ldquo;KnowSelf&amp;rdquo; method as a novel approach to instill this capability in language agents. KnowSelf utilizes special tokens and a two-stage training process to explicitly signal the agent&amp;rsquo;s perceived knowledge state and guide its information processing strategy (e.g., relying on internal parameters vs. seeking external knowledge).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ethical Intelligence</title>
       <link>https://letungbach.com/posts/ethical-intelligence/</link>
       <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/posts/ethical-intelligence/</guid>
       <description>&lt;h1 id=&#34;ethical-intelligence-in-the-era-of-al-navigating-the-post-turing-landscape&#34;&gt;Ethical Intelligence in the Era of Al: Navigating the Post-Turing Landscape&lt;/h1&gt;&#xA;&lt;p&gt;The rapid advancement of artificial intelligence (Al) has ignited a global conversation about its potential benefits and inherent risks. The unease expressed by authors in London regarding the alleged unauthorized use of their work to train Al models underscores a growing concern within the creative ecosystem. This is not an isolated incident, but rather a symptom of a larger challenge: how to ethically integrate increasingly sophisticated Al into the fabric of our society, particularly within creative and political spheres where human values and rights are paramount. The deployment of Al in support of regimes committing atrocities further amplifies the urgency of establishing ethical boundaries for this powerful technology. It is no longer a question of whether unchecked Al will significantly impact these ecosystems, but rather how quickly and with what consequences. This paper will delve into the concept of &amp;ldquo;Ethical Intelligence&amp;rdquo; in the context of Al that is reaching, and in some interpretations, surpassing human-level conversational abilities, as symbolized by the Turing Test.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MoE-JEPA</title>
-      <link>https://letungbach.com/posts/moe-jepa2/</link>
-      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://letungbach.com/posts/moe-jepa2/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

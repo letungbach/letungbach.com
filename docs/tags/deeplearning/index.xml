@@ -6,8 +6,15 @@
     <description>Recent content in Deeplearning on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://letungbach.com/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>benchmark</title>
+      <link>https://letungbach.com/posts/benchmark/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/benchmark/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Continual Learning</title>
       <link>https://letungbach.com/posts/continual-learning/</link>
