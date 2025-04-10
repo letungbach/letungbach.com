@@ -3,6 +3,34 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://letungbach.com/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/abtoy/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
@@ -213,20 +241,6 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/</loc>
-    
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
     <loc>https://letungbach.com/tags/moe/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
@@ -256,20 +270,6 @@
   
   <url>
     <loc>https://letungbach.com/tags/neuralnet/</loc>
-    
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     
