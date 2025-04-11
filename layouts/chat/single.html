@@ -1,0 +1,87 @@
+{{ define "main" }}
+<div class="post">
+  <h1 class="post-title">{{ .Title }}</h1>
+  <div class="post-content">
+    <link rel="stylesheet" href="/css/chat.css">
+    <div id="chat-container">
+      <div id="chat-box"></div>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+        <span id="loading" class="loading" style="display: none;"></span>
+      </div>
+    </div>
+
+    <script>
+      async function getApiKey() {
+        try {
+          const response = await fetch('/.netlify/functions/get-api-key');
+          const data = await response.json();
+          return data.apiKey;
+        } catch (error) {
+          console.error('Error fetching API key:', error);
+          return null;
+        }
+      }
+
+      const apiUrl = "https://api.groq.com/openai/v1/chat/completions";
+      let isProcessing = false;
+
+      document.getElementById('send-btn').addEventListener('click', async () => {
+        if (isProcessing) return;
+        
+        const userInput = document.getElementById('user-input').value;
+        if (userInput.trim() === "") return;
+
+        const chatBox = document.getElementById('chat-box');
+        chatBox.innerHTML += `<div class="message user-message"><strong>User:</strong> ${userInput}</div>`;
+        
+        isProcessing = true;
+        document.getElementById('user-input').value = "";
+        document.getElementById('loading').style.display = 'inline-block';
+        
+        try {
+          const apiKey = await getApiKey();
+          if (!apiKey) {
+            throw new Error('Unable to get API key');
+          }
+
+          const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({
+              model: "mixtral-8x7b-32768",
+              messages: [{
+                role: "user",
+                content: userInput
+              }]
+            })
+          });
+
+          const data = await response.json();
+          const botResponse = data.choices?.[0]?.message?.content || "No response received.";
+          chatBox.innerHTML += `<div class="message bot-message">${marked.parse(botResponse)}</div>`;
+        } catch (error) {
+          console.error('Error:', error);
+          chatBox.innerHTML += `<div class="message bot-message error">An error occurred. Please try again later.</div>`;
+        } finally {
+          isProcessing = false;
+          document.getElementById('loading').style.display = 'none';
+          chatBox.scrollTop = chatBox.scrollHeight;
+        }
+      });
+
+      // Handle Enter key
+      document.getElementById('user-input').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          document.getElementById('send-btn').click();
+        }
+      });
+    </script>
+  </div>
+</div>
+{{ end }}

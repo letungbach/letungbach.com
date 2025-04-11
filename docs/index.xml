@@ -128,6 +128,13 @@
       <description>&lt;h1 id=&#34;research-proposal-moe-jepa-world-models-for-efficient-reinforcement-learning-and-planning&#34;&gt;Research Proposal: MoE-JEPA World Models for Efficient Reinforcement Learning and Planning&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Current AI research emphasizes the development of sophisticated world models capable of understanding complex dynamics, particularly from video data, often leveraging self-supervised learning (SSL) for representation extraction. Predictive models in abstract spaces (like JEPA) are gaining prominence over generative ones. Simultaneously, Mixture of Experts (MoE) offers a way to scale neural network capacity efficiently. This proposal outlines a research approach combining these trends: developing an Action-Conditioned Mixture-of-Experts Joint-Embedding Predictive Architecture (MoE-JEPA) world model. This model will be pre-trained using self-supervision on large video datasets to learn robust visual representations and environment dynamics. The MoE structure will allow the model to efficiently capture diverse or multi-modal dynamics within an environment by routing inputs to specialized expert sub-networks. This sophisticated world model will then be integrated into a model-based Reinforcement Learning (RL) framework to enable efficient planning and decision-making for agents (e.g., robots) interacting with complex environments. We hypothesize that this approach will lead to more accurate world models, improved sample efficiency in RL, and better generalization across tasks compared to monolithic world models.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Chat</title>
+      <link>https://letungbach.com/chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/chat/</guid>
+      <description>&lt;p&gt;Welcome to the chat interface! This is a secure implementation using the Groq API.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Search</title>
       <link>https://letungbach.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

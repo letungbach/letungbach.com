@@ -159,3 +159,7 @@ enableSourceMap = true
           identifier = "game"
           name = "Game"
           url = "/game"
+        [[languages.en.menu.main]]
+          identifier = "chat"
+          name = "Chat"
+          url = "/chat"

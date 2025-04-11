@@ -186,6 +186,17 @@ Mario Game Enjoy the Mario-style platformer! Navigate through platforms, collect
 }
 </style>
 
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  marked.setOptions({
+    breaks: true,
+    gfm: true,
+    headerIds: false,
+    mangle: false
+  });
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   
@@ -203,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-</script>  
+</script> 
 </head>
 <body>
 
@@ -228,6 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
       
         
           <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/chat">Chat</a></li>
         
       
         
@@ -284,11 +299,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
       
         
-          <li><a href="/game" >Game</a></li>
+          <li><a href="/chat" >Chat</a></li>
         
       
         
-          <li><a href="/rss" >RSS</a></li>
+          <li><a href="/game" >Game</a></li>
         
       
       
@@ -297,6 +312,10 @@ document.addEventListener('DOMContentLoaded', function() {
             <li class="menu__trigger">Show more&nbsp;▾</li>
             <li>
               <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/rss" >RSS</a></li>
+                  
                 
                   
                     <li><a href="/search" >Search</a></li>

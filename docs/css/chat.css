@@ -1,0 +1,72 @@
+/* Chat interface custom styles */
+:root {
+  --border-color: var(--accent);
+  --background-secondary: rgba(var(--accent), 0.05);
+  --background-tertiary: rgba(var(--accent), 0.1);
+  --primary-color: var(--accent);
+}
+
+/* Add custom scrollbar for the chat box */
+#chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chat-box::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Fade effect for long messages */
+.message {
+  position: relative;
+  overflow: hidden;
+}
+
+.message pre {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.message pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.message pre::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.message pre::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.message pre::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Loading indicator */
+.loading {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.loading:after {
+  content: '.';
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60% { content: '...'; }
+  80%, 100% { content: ''; }
+}

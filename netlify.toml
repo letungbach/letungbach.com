@@ -1,0 +1,12 @@
+[build]
+  command = "hugo"
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
