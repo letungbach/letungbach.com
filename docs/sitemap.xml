@@ -3,7 +3,77 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://letungbach.com/tags/agent/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/agentic/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/ai/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/maas/</loc>
+    
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/multi-ai-agent-system/</loc>
     
     <lastmod>2025-04-11T00:00:00+00:00</lastmod>
     
@@ -31,9 +101,9 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/abtoy/</loc>
+    <loc>https://letungbach.com/tags/</loc>
     
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-11T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -45,7 +115,7 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/ai/</loc>
+    <loc>https://letungbach.com/tags/abtoy/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     
@@ -368,20 +438,6 @@
   
   <url>
     <loc>https://letungbach.com/tags/sociallistening/</loc>
-    
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://letungbach.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MAAS</title>
+      <link>https://letungbach.com/posts/multi-ai-agent-system/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/multi-ai-agent-system/</guid>
+      <description>&lt;p&gt;The next generation of AI Agents is not just smarter&lt;/p&gt;&#xA;&lt;p&gt;They will be fundamentally different, Let me explain&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.&lt;br&gt;&#xA;(Learn more here: &lt;a href=&#34;https://lnkd.in/gzTFADZM&#34;&gt;https://lnkd.in/gzTFADZM&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;These AI Agents can clearly accelerate the development of different fields.&lt;/p&gt;&#xA;&lt;p&gt;However, it is certain that their architecture will greatly differ from our current architecture.&lt;/p&gt;&#xA;&lt;p&gt;Though we cannot exactly predict the future architecture.&lt;/p&gt;&#xA;&lt;p&gt;Here is my take on a possible architectural change within AI agents:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AI Prompts</title>
       <link>https://letungbach.com/posts/prompts/</link>
