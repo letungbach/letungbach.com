@@ -1,5 +1,5 @@
 ---
-title: Researcher list
+title: get-updated
 date: 2025-04-01
 draft: false
 tags:
@@ -54,3 +54,6 @@ https://www.together.ai/research
 
 
 youtube
+
+
+https://openrouter.ai/openrouter/optimus-alpha/apps
