@@ -52,24 +52,36 @@ Multidisciplinary AI expert with a Ph.D. in Management and extensive experience 
 - #IndustryCollaboration
 
 ## Code
-
-- C++
+Back:
+- C, C#, C++
+- Java
 - Python
+- SQL & NonSQL
+- PHP, 
+Front:
+- Wordpress, HTML
+- CSS
+- JavaScript
+- JSON
+- XML
+LLM:
+- Go, R (ggplot, rnet)
+- Matlab
+- Scala
+- Jupyter notebook
+- Kubernetes/Docker
 - TensorFlow, PyTorch, Keras
 - NumPy, Pandas, SciPy
 - Matplotlib
 - Scikit-learn
-- R (ggplot, rnet)
-- SQL
-- Java
-- Matlab
-- Scala
-- Jupyter notebook
-- HTML
+- Aws, Azure
+- Google Vertex & a2a
+Other:
+- PHP
 - Shell
-- Kubernetes/Docker
-- JavaScript
-- Git
+- Delphi
+- Ruby, COBOL, RPG
+- Github, Gitlab
 
 ## Research Focus
 
