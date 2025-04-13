@@ -64,7 +64,7 @@ if (-not (Test-Path $destinationPath)) {
 
 # Use Robocopy to mirror the directories
 $robocopyOptions = @('/MIR', '/Z', '/W:5', '/R:3')
-$robocopyResult = robocopy "D:\Obsidian_Vaults\b\posts" "C:\Users\b\Documents\bbblog\content\posts" /MIR
+$robocopyResult = robocopy "D:\Obsidian_Vaults\b\posts" "C:\Users\b\Documents\bbblog\content\posts"
 
 if ($LASTEXITCODE -ge 8) {
     Write-Error "Robocopy failed with exit code $LASTEXITCODE"
