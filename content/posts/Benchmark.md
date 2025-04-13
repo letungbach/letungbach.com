@@ -21,5 +21,7 @@ EQ-Bench - Longform Creative Writing: [paper](https://arxiv.org/pdf/2312.06281)
 
 
 
+{{< figure src="https://eqbench.com/images/eqbench3-judge-comparison.png" title="Judge Comparison" >}}
+
 
 
