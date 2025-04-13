@@ -52,19 +52,19 @@ Multidisciplinary AI expert with a Ph.D. in Management and extensive experience 
 - #IndustryCollaboration
 
 ## Code
-Back:
+## Back:
 - C, C#, C++
 - Java
 - Python
 - SQL & NonSQL
 - PHP, 
-Front:
+## Front:
 - Wordpress, HTML
 - CSS
 - JavaScript
 - JSON
 - XML
-LLM:
+## LLM:
 - Go, R (ggplot, rnet)
 - Matlab
 - Scala
@@ -76,7 +76,7 @@ LLM:
 - Scikit-learn
 - Aws, Azure
 - Google Vertex & a2a
-Other:
+## Other:
 - PHP
 - Shell
 - Delphi
