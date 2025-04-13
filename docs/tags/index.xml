@@ -204,5 +204,19 @@
       <guid>https://letungbach.com/tags/clippings/</guid>
       <description></description>
     </item>
+    <item>
+      <title>News</title>
+      <link>https://letungbach.com/tags/news/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Update</title>
+      <link>https://letungbach.com/tags/update/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/update/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

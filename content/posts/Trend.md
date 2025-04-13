@@ -5,8 +5,11 @@ draft: false
 tags:
   - sociallistening
 ---
-If you're looking for tools to track trends beyond Google Trends, here are some great alternatives:
 
+![[Pasted image 20250413004815.png]]
+
+
+If you're looking for tools to track trends beyond Google Trends, here are some great alternatives:
 1. **Exploding Topics**: Helps discover emerging trends before they become mainstream. It's ideal for marketers and entrepreneurs.
 2. **SEMrush Trends**: A comprehensive tool for analyzing industry trends and competitive insights.
 3. **BuzzSumo**: Focuses on social media trends and content performance.

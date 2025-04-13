@@ -3,10 +3,41 @@ title: get-updated
 date: 2025-04-01
 draft: false
 tags:
-  - bbb
-  - abtoy
-  - clippings
+  - update
+  - news
 ---
+https://rss.orbit13.synology.me
+
+
+
+
+To stay updated on the latest news about AI and neural networks, here are some effective strategies:
+
+1. **Google Alerts**:
+   - Set up Google Alerts for keywords like "AI news" or "neural networks." You can choose to receive updates via email or create an RSS feed for your alerts.
+
+2. **RSS Feeds**:
+   - Use RSS readers like Feedly or Inoreader to subscribe to AI-related blogs, news websites, and research publications. Many platforms, including Google Alerts, allow you to convert alerts into RSS feeds.
+
+3. **Tech News Websites**:
+   - Follow websites like [TechCrunch](https://techcrunch.com/category/artificial-intelligence/) and [WIRED](https://www.wired.com/tag/neural-networks/) for regular updates on AI advancements and neural network developments.
+
+4. **Social Media**:
+   - Follow AI researchers, organizations, and tech companies on platforms like Twitter, LinkedIn, and Reddit. They often share cutting-edge research and news.
+
+5. **Academic Journals**:
+   - Keep an eye on journals like IEEE Transactions on Neural Networks and Learning Systems for peer-reviewed research.
+
+6. **AI Conferences**:
+   - Track announcements and updates from conferences like NVIDIA's GTC or other AI-focused events.
+		NAACL
+		
+
+
+Would you like help setting up Google Alerts or finding specific RSS feeds? 😊
+
+https://arxivgpt.net/
+
 # Yann LeCun: The Future Beyond Generative AI
 
 12 sources

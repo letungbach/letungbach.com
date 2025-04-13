@@ -353,6 +353,20 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/new-model-introduction/</loc>
+    
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/prompt/</loc>
     
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
@@ -633,6 +647,20 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/tags/news/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/rss/</loc>
     
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
@@ -648,6 +676,20 @@
   
   <url>
     <loc>https://letungbach.com/showcase/</loc>
+    
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/update/</loc>
     
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
     
