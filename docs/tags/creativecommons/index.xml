@@ -6,8 +6,15 @@
     <description>Recent content in Creativecommons on Le Tung Bach, Ph.D.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://letungbach.com/tags/creativecommons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Natural Language Programming</title>
+      <link>https://letungbach.com/posts/natural-language-programming/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/natural-language-programming/</guid>
+      <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;natural-language-programming-evolution-techniques-applications-and-future-directions&#34;&gt;Natural Language Programming: Evolution, Techniques, Applications, and Future Directions&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction-defining-natural-language-programming&#34;&gt;1. Introduction: Defining Natural Language Programming&lt;/h2&gt;&#xA;&lt;p&gt;Natural Language Programming (NLPg) represents an emerging paradigm aiming to bridge the gap between human language and computer execution. Its core objective is to enable users, including those with limited or no formal programming expertise, to instruct computers or generate code using natural language, such as English.1 This involves translating potentially ambiguous, high-level natural language descriptions into precise, executable instructions or code.2 The ultimate goal is to make programming more intuitive, accessible, and aligned with human thought processes, thereby potentially democratizing software creation and task automation.1&lt;/p&gt;</description>
+    </item>
     <item>
       <title>emoji submission</title>
       <link>https://letungbach.com/posts/emoji/</link>

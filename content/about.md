@@ -52,36 +52,26 @@ Multidisciplinary AI expert with a Ph.D. in Management and extensive experience 
 - #IndustryCollaboration
 
 ## Code
-## Back:
-- C, C#, C++
-- Java
-- Python
-- SQL & NonSQL
-- PHP, 
-## Front:
-- Wordpress, HTML
-- CSS
-- JavaScript
-- JSON
-- XML
-## LLM:
-- Go, R (ggplot, rnet)
-- Matlab
-- Scala
-- Jupyter notebook
-- Kubernetes/Docker
-- TensorFlow, PyTorch, Keras
-- NumPy, Pandas, SciPy
-- Matplotlib
-- Scikit-learn
-- Aws, Azure
-- Google Vertex & a2a
-## Other:
-- PHP
-- Shell
-- Delphi
-- Ruby, COBOL, RPG
-- Github, Gitlab
+| **LLM**                               | **Back**             | **Front**               | **Cloud**            | **Other**                               |
+|---------------------------------------|----------------------|-------------------------|----------------------|-----------------------------------------|
+| Go, R (ggplot, rnet)                  | C, C#, C++           | Wordpress, HTML         | Terraform            | PHP                                     |
+| Matlab                                | Java                 | CSS                     | Google Vertex & a2a  | Shell                                   |
+| Scala                                 | Python               | JavaScript              | Amazon Aws           | Delphi                                  |
+| LangChain                             | SQL & NonSQL         | React.js                | Microsoft Azure      | Ruby                                    |
+| Ray                                   | PHP                  | Vue.js                  | IBM                  | COBOL                                   |
+| MXNet                                 | Apache               | TypeScript              | Oracle               | RPG                                     |
+| Horovod                               | Cloudflare           | JSON                    |                      | Julia                                   |
+| Jupyter notebook                      | Nginx                | XML                     |                      | Redis                                   |
+| Kubernetes/Docker                     | Node.js              |                         |                      | Lua                                     |
+| TensorFlow, PyTorch, Keras            | GraphQL              |                         |                      | Elasticsearch                           |
+| NumPy, Pandas, SciPy                  | Rust                 |                         |                      | Version control: Github, Gitlab, Bitbucket |
+| Matplotlib                            |                      |                         |                      |                                         |
+| Scikit-learn                          |                      |                         |                      |                                         |
+| Hugging Face Transformers             |                      |                         |                      |                                         |
+| ONNX (Open Neural Network Exchange)   |                      |                         |                      |                                         |
+
+
+
 
 ## Research Focus
 

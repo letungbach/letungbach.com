@@ -10,7 +10,7 @@ tags:
   - deeplearning
 ---
 https://livebench.ai/#/
-
+https://openrouter.ai/rankings
 
 https://arcprize.org/leaderboard?fbclid=IwY2xjawJkGOJleHRuA2FlbQIxMAABHpInxwGwuzaVHnGeNNycEGfhmweu8Xb_aBq5dhGnOHLm1qEbktYZYnqZzNmc_aem_ttSWRTegPXjvOSU1K0DAlg
 
@@ -23,5 +23,4 @@ EQ-Bench - Longform Creative Writing: [paper](https://arxiv.org/pdf/2312.06281)
 
 {{< figure src="https://eqbench.com/images/eqbench3-judge-comparison.png" title="Judge Comparison" >}}
 
-
-
+  
