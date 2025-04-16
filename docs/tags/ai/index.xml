@@ -13,7 +13,7 @@
       <link>https://letungbach.com/posts/multi-ai-agent-system/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/posts/multi-ai-agent-system/</guid>
-      <description>&lt;p&gt;The next generation of AI Agents is not just smarter&lt;/p&gt;&#xA;&lt;p&gt;They will be fundamentally different, Let me explain&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.&lt;br&gt;&#xA;(Learn more here: &lt;a href=&#34;https://lnkd.in/gzTFADZM&#34;&gt;https://lnkd.in/gzTFADZM&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;These AI Agents can clearly accelerate the development of different fields.&lt;/p&gt;&#xA;&lt;p&gt;However, it is certain that their architecture will greatly differ from our current architecture.&lt;/p&gt;&#xA;&lt;p&gt;Though we cannot exactly predict the future architecture.&lt;/p&gt;&#xA;&lt;p&gt;Here is my take on a possible architectural change within AI agents:&lt;/p&gt;</description>
+      <description>&lt;p&gt;The next generation of AI Agents is not just smarter&lt;/p&gt;&#xA;&lt;p&gt;They will be fundamentally different, Let me explain&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414225911.png]]&lt;/p&gt;&#xA;&lt;p&gt;Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.&lt;br&gt;&#xA;(Learn more here: &lt;a href=&#34;https://lnkd.in/gzTFADZM&#34;&gt;https://lnkd.in/gzTFADZM&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;These AI Agents can clearly accelerate the development of different fields.&lt;/p&gt;&#xA;&lt;p&gt;However, it is certain that their architecture will greatly differ from our current architecture.&lt;/p&gt;&#xA;&lt;p&gt;Though we cannot exactly predict the future architecture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Prompts</title>
@@ -35,6 +35,34 @@
       <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/posts/ethical-intelligence/</guid>
       <description>&lt;h1 id=&#34;ethical-intelligence-in-the-era-of-al-navigating-the-post-turing-landscape&#34;&gt;Ethical Intelligence in the Era of Al: Navigating the Post-Turing Landscape&lt;/h1&gt;&#xA;&lt;p&gt;The rapid advancement of artificial intelligence (Al) has ignited a global conversation about its potential benefits and inherent risks. The unease expressed by authors in London regarding the alleged unauthorized use of their work to train Al models underscores a growing concern within the creative ecosystem. This is not an isolated incident, but rather a symptom of a larger challenge: how to ethically integrate increasingly sophisticated Al into the fabric of our society, particularly within creative and political spheres where human values and rights are paramount. The deployment of Al in support of regimes committing atrocities further amplifies the urgency of establishing ethical boundaries for this powerful technology. It is no longer a question of whether unchecked Al will significantly impact these ecosystems, but rather how quickly and with what consequences. This paper will delve into the concept of &amp;ldquo;Ethical Intelligence&amp;rdquo; in the context of Al that is reaching, and in some interpretations, surpassing human-level conversational abilities, as symbolized by the Turing Test.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Cybersecurity</title>
+      <link>https://letungbach.com/posts/ai-cyber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/ai-cyber/</guid>
+      <description>&lt;p&gt;A Cost-Effective Certification Pathway for AI/LLM Cybersecurity SpecializationI. The AI/LLM Security Frontier: Navigating New Risks and OpportunitiesThe rapid integration of Artificial Intelligence (AI) and Large Language Models (LLMs) across industries presents unprecedented opportunities alongside novel security challenges. Understanding this unique landscape is the first step toward specializing in AI/LLM cybersecurity. This section defines the specific threats targeting these systems, explores the critical role of AI governance, and assesses the burgeoning job market for professionals skilled in this domain.A. Defining the Unique Security Challenges in AI/LLMAI and LLM systems introduce attack surfaces and vulnerabilities distinct from traditional IT environments. Securing these systems requires familiarity with threats specifically targeting the AI lifecycle, from data ingestion and model training to deployment and inference.Key frameworks have emerged to categorize these unique risks:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compute</title>
+      <link>https://letungbach.com/posts/compute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/compute/</guid>
+      <description>&lt;p&gt;![[Pasted image 20250415204516.png]]&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://genk.mediacdn.vn/139269124445442048/2025/4/15/musasdk-4c73590369dcc153a8e01a2db9b79a27-1744699950311-17446999505031306493898.png&#34;&gt;https://genk.mediacdn.vn/139269124445442048/2025/4/15/musasdk-4c73590369dcc153a8e01a2db9b79a27-1744699950311-17446999505031306493898.png&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum</title>
+      <link>https://letungbach.com/posts/quantum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/quantum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rag</title>
+      <link>https://letungbach.com/posts/rag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/rag/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://vectorize.io/how-i-finally-got-agentic-rag-to-work-right/&#34;&gt;https://vectorize.io/how-i-finally-got-agentic-rag-to-work-right/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230344.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230302.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230445.png]]&#xA;![[Pasted image 20250414230451.png]]&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

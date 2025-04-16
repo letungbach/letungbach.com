@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybersecurity on Le Tung Bach, Ph.D.</title>
+    <link>https://letungbach.com/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://letungbach.com/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Cybersecurity</title>
+      <link>https://letungbach.com/posts/ai-cyber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/ai-cyber/</guid>
+      <description>&lt;p&gt;A Cost-Effective Certification Pathway for AI/LLM Cybersecurity SpecializationI. The AI/LLM Security Frontier: Navigating New Risks and OpportunitiesThe rapid integration of Artificial Intelligence (AI) and Large Language Models (LLMs) across industries presents unprecedented opportunities alongside novel security challenges. Understanding this unique landscape is the first step toward specializing in AI/LLM cybersecurity. This section defines the specific threats targeting these systems, explores the critical role of AI governance, and assesses the burgeoning job market for professionals skilled in this domain.A. Defining the Unique Security Challenges in AI/LLMAI and LLM systems introduce attack surfaces and vulnerabilities distinct from traditional IT environments. Securing these systems requires familiarity with threats specifically targeting the AI lifecycle, from data ingestion and model training to deployment and inference.Key frameworks have emerged to categorize these unique risks:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -7,11 +7,19 @@ tags:
   - ai
   - agent
   - agentic
+created: 2025-04-11T00:21
+updated: 2025-04-14T22:59
 ---
 The next generation of AI Agents is not just smarter  
   
+
 They will be fundamentally different, Let me explain...  
   
+
+![[Pasted image 20250414225911.png]]
+
+
+
 Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.  
 (Learn more here: [https://lnkd.in/gzTFADZM](https://lnkd.in/gzTFADZM))  
   

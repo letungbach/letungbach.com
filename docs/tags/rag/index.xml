@@ -15,5 +15,12 @@
       <guid>https://letungbach.com/posts/self-rag/</guid>
       <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;advancing-agentic-knowledgeable-self-awareness-a-research-agenda-extending-arxiv250403553&#34;&gt;Advancing Agentic Knowledgeable Self-Awareness: A Research Agenda Extending arXiv:2504.03553&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The development of artificial intelligence (AI) agents capable of complex tasks necessitates mechanisms for robust and efficient knowledge utilization. A critical aspect of this is self-awareness regarding the agent&amp;rsquo;s own knowledge state – understanding what it knows, what it doesn&amp;rsquo;t know, and when external information is required. The paper arXiv:2504.03553 introduces the concept of &amp;ldquo;agentic knowledgeable self-awareness&amp;rdquo; and proposes the &amp;ldquo;KnowSelf&amp;rdquo; method as a novel approach to instill this capability in language agents. KnowSelf utilizes special tokens and a two-stage training process to explicitly signal the agent&amp;rsquo;s perceived knowledge state and guide its information processing strategy (e.g., relying on internal parameters vs. seeking external knowledge).&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Rag</title>
+      <link>https://letungbach.com/posts/rag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/rag/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://vectorize.io/how-i-finally-got-agentic-rag-to-work-right/&#34;&gt;https://vectorize.io/how-i-finally-got-agentic-rag-to-work-right/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230344.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230302.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230445.png]]&#xA;![[Pasted image 20250414230451.png]]&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

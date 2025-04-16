@@ -1,6 +1,5 @@
 ---
 title: benchmark
-date: 2025-04-10
 draft: false
 tags:
   - moe
@@ -8,7 +7,14 @@ tags:
   - continuallearning
   - neuralnet
   - deeplearning
+created: 2025-04-10T00:13
+updated: 2025-04-14T22:10
+description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
 ---
+
+
+
+
 https://livebench.ai/#/
 https://openrouter.ai/rankings
 
