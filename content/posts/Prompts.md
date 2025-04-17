@@ -5,7 +5,12 @@ draft: false
 tags:
   - ai
   - prompt
+created: 2025-04-10T00:37
+updated: 2025-04-16T23:21
 ---
+
+
+[openAI4.0 prompting](https://cookbook.openai.com/examples/gpt4-1_prompting_guide?fbclid=IwY2xjawJss5pleHRuA2FlbQIxMQABHqyv-ZisclOP1ABxgswdYzK-SHBfUS5J_UtyGfxnKYiU8QyNhmOmOEOdGrIX_aem_zKUqHJKSUNhIfMAUmDm1Kg)
 
 
 

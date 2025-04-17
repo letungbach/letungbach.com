@@ -771,7 +771,31 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/agent/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/posts/ai-cyber/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/ai-dev-25-conference/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -879,6 +903,18 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/cicd/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/posts/compute/</loc>
     
     
@@ -963,6 +999,18 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/kid/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/posts/test/</loc>
     
     
@@ -1024,6 +1072,18 @@
   
   <url>
     <loc>https://letungbach.com/posts/rag/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/rf/</loc>
     
     
     <changefreq>weekly</changefreq>

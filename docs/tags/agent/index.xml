@@ -13,7 +13,28 @@
       <link>https://letungbach.com/posts/multi-ai-agent-system/</link>
       <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/posts/multi-ai-agent-system/</guid>
-      <description>&lt;p&gt;The next generation of AI Agents is not just smarter&lt;/p&gt;&#xA;&lt;p&gt;They will be fundamentally different, Let me explain&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414225911.png]]&lt;/p&gt;&#xA;&lt;p&gt;Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.&lt;br&gt;&#xA;(Learn more here: &lt;a href=&#34;https://lnkd.in/gzTFADZM&#34;&gt;https://lnkd.in/gzTFADZM&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;These AI Agents can clearly accelerate the development of different fields.&lt;/p&gt;&#xA;&lt;p&gt;However, it is certain that their architecture will greatly differ from our current architecture.&lt;/p&gt;&#xA;&lt;p&gt;Though we cannot exactly predict the future architecture.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/tadata-org/fastapi_mcp&#34;&gt;https://github.com/tadata-org/fastapi_mcp&lt;/a&gt;&#xA;A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools:&#xA;&lt;strong&gt;Exposing FastAPI Endpoints as MCP Tools&lt;/strong&gt;:&#xA;- Automatically converts existing FastAPI endpoints into MCP-compatible tools.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Documentation and Schema Preservation&lt;/strong&gt;:&#xA;Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Flexible Deployment&lt;/strong&gt;:&#xA;Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agent</title>
+      <link>https://letungbach.com/posts/agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/agent/</guid>
+      <description>&lt;p&gt;At their core, AI agents are LLMs with a specific role and task that have access to memory and external tools. They use reasoning capabilities to plan steps and take actions to complete tasks.&lt;/p&gt;&#xA;&lt;p&gt;Four components that make an agent &amp;ldquo;agentic&amp;rdquo;:&lt;br&gt;&#xA;• An LLM (with a defined role and task)&lt;br&gt;&#xA;• Memory systems (both short-term and long-term)&lt;br&gt;&#xA;• Planning capabilities (to determine required steps)&lt;br&gt;&#xA;• Tools (like databases, web search, or APIs)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CICD</title>
+      <link>https://letungbach.com/posts/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/cicd/</guid>
+      <description>&lt;p&gt;𝗛𝗼𝘄 𝘁𝗼 𝗰𝗵𝗼𝗼𝘀𝗲 𝗮 𝗰𝗹𝗼𝘂𝗱 𝗖𝗜/𝗖𝗗 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺?&lt;/p&gt;&#xA;&lt;p&gt;CI and CD stand for 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆. In the simplest terms possible, Continuous Integration (CI) is a technique where incremental code changes are reliably and regularly made. Code updates merged into the repository are made reliable by automated build-and-test procedures that CI sparks. Then, the code is swiftly and efficiently deployed as part of the CD process.&lt;/p&gt;&#xA;&lt;p&gt;The 𝗖𝗜/𝗖𝗗 𝗽𝗶𝗽𝗲𝗹𝗶𝗻𝗲, as used in the software industry, is the automation that enables developers to reliably transfer incremental code changes from their machines to test and production.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>reinforcement learning towards AGI</title>
+      <link>https://letungbach.com/posts/rf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/rf/</guid>
+      <description>&lt;h2 id=&#34;reinforcement-learning-charting-the-course-towards-artificial-general-intelligence&#34;&gt;Reinforcement Learning: Charting the Course Towards Artificial General Intelligence&lt;/h2&gt;&#xA;&lt;p&gt;Reinforcement Learning (RL) has emerged as a pivotal force driving the evolution of modern Artificial Intelligence (AI), offering a paradigm where intelligent agents learn optimal behaviors through dynamic interaction with their environment. Unlike supervised learning, which relies on labeled datasets, RL empowers agents to acquire knowledge and refine their decision-making processes through a continuous cycle of trial and error, guided by rewards and penalties received for their actions. This inherent ability to learn from experience, to explore and exploit the complexities of their surroundings, positions Reinforcement Learning as a potentially transformative pathway towards achieving Artificial General Intelligence (AGI) – the elusive goal of creating machines with human-level cognitive abilities across a wide spectrum of tasks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

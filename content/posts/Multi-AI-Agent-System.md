@@ -8,13 +8,51 @@ tags:
   - agent
   - agentic
 created: 2025-04-11T00:21
-updated: 2025-04-14T22:59
+updated: 2025-04-16T22:25
 ---
-The next generation of AI Agents is not just smarter  
-  
 
-They will be fundamentally different, Let me explain...  
+
+
+
+
+  https://github.com/tadata-org/fastapi_mcp
+  A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools:
+**Exposing FastAPI Endpoints as MCP Tools**:
+        - Automatically converts existing FastAPI endpoints into MCP-compatible tools.
+        
+	    Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems.
+        
+- **Documentation and Schema Preservation**:
+        Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.
+        
+- **Flexible Deployment**:
+        Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.
+        
+- **AI Application Development**:
+        Facilitates the creation of AI applications that require structured API interactions, such as conversational documentation, internal automation, and data querying agents2.
+        
+- **Multi-Agent Orchestration**:
+        Supports collaboration between AI agents across services using standardized APIs.
+
+
+
   
+Think of how websites use a common standard for authentication. For example, by visiting a URL like https://{website_url}/.well-known/openid-configuration you instantly receive a host of login and security details—the magic behind the OpenID Connect Discovery mechanism.  
+  
+Now, imagine a similar approach for AI agents. Instead of authentication details, you’d check https://{website_url}/.well-known/agents.json and find a list of available AI agents, along with what they can do. This means your AI agent could simply visit that endpoint on any site and immediately understand which other agents are ready to work together.  
+  
+While no one is publicly exposing this metadata yet, Google has rolled out a Python framework that supports this exact protocol. It’s a practical step toward a future where AI agents can be easily discovered and communicate with each other—no more one-off integrations or guesswork.  
+  
+For anyone building AI agents behind the scenes, this is a turning point. It makes it possible to publicly share and integrate your agents, paving the way for broader, more dynamic collaboration across different services.  
+  
+MCP and A2A protocols are, in my opinion, equally important as AI Agents !
+
+  ![[Pasted image 20250416221153.png]]
+
+![[Pasted image 20250416221416.png]]
+
+![[Pasted image 20250416222543.png]]
+****
 
 ![[Pasted image 20250414225911.png]]
 
