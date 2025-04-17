@@ -1,10 +1,11 @@
 ---
 title: kid link
 draft: false
-tags: 
+tags:
+  - kid
 created: 2025-04-17T00:13:00
-updated: 2025-04-17T19:52
-description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
+updated: 2025-04-17T20:03
+description: kid stuffs
 ---
 links:
 
