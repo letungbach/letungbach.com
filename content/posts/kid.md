@@ -1,10 +1,10 @@
 ---
-title: kid link
+title: kid-link
 draft: false
 tags:
   - kid
-created: 2025-04-17T00:13:00
-updated: 2025-04-17T20:03
+updated: 2025-04-18T02:51
+created: 2025-04-17T19:48
 description: kid stuffs
 ---
 links:

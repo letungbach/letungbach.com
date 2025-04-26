@@ -771,7 +771,43 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/apps/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/dataset/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/posts/agent/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/mvp/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -939,6 +975,30 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/coworker/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/coworker/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/cpu/</loc>
     
     
@@ -999,6 +1059,30 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/tags/inference/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/inference/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/kid/</loc>
     
     
@@ -1036,6 +1120,18 @@
   
   <url>
     <loc>https://letungbach.com/posts/mcp/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/pub/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -1156,6 +1252,18 @@
   
   <url>
     <loc>https://letungbach.com/tags/sitemap/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/posts/test1/</loc>
     
     
     <changefreq>weekly</changefreq>

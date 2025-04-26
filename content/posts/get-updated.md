@@ -5,9 +5,14 @@ draft: false
 tags:
   - update
   - news
+created: 2025-04-01T02:14
+updated: 2025-04-22T02:40
 ---
 https://rss.orbit13.synology.me
 
+ai_news_generator
+
+https://github.com/patchy631/ai-engineering-hub/tree/main/ai_news_generator
 
 
 
@@ -16,7 +21,9 @@ To stay updated on the latest news about AI and neural networks, here are some e
 1. **Google Alerts**:
    - Set up Google Alerts for keywords like "AI news" or "neural networks." You can choose to receive updates via email or create an RSS feed for your alerts.
 
-2. **RSS Feeds**:
+
+
+1. **RSS Feeds**:
    - Use RSS readers like Feedly or Inoreader to subscribe to AI-related blogs, news websites, and research publications. Many platforms, including Google Alerts, allow you to convert alerts into RSS feeds.
 
 3. **Tech News Websites**:
@@ -73,7 +80,8 @@ github
 
 Organization news:
 https://x.com/testingcatalog
-Google ai research lab
+[Google ai research blog](https://research.google/blog/)
+[Google for developers blogs](https://developers.googleblog.com/)
 Microsoft
 Nvidia
 https://huggingface.co/blog/text-to-video
@@ -82,9 +90,11 @@ https://github.com/openai
 https://lmarena.ai/
 https://allenai.org/ai-for-science
 https://www.together.ai/research
-
+[Deeplearning.Ai the Batch](https://www.deeplearning.ai/the-batch/)
 
 youtube
 
 
 https://openrouter.ai/openrouter/optimus-alpha/apps
+
+https://mlabonne.github.io/blog/

@@ -6,13 +6,15 @@ tags:
   - ai
   - prompt
 created: 2025-04-10T00:37
-updated: 2025-04-16T23:21
+updated: 2025-04-19T01:56
 ---
+https://prompts.chat/
+https://github.com/f/awesome-chatgpt-prompts
 
 
 [openAI4.0 prompting](https://cookbook.openai.com/examples/gpt4-1_prompting_guide?fbclid=IwY2xjawJss5pleHRuA2FlbQIxMQABHqyv-ZisclOP1ABxgswdYzK-SHBfUS5J_UtyGfxnKYiU8QyNhmOmOEOdGrIX_aem_zKUqHJKSUNhIfMAUmDm1Kg)
 
-
+https://www.norai.fi/courses/prompt-engineering-mastery-from-foundations-to-future/
 
 
 NHIỀU CÔNG CỤ HỌC TẬP ĐƯỢC TẠO RA TỪ VIBE CODING. Vd: app học nhạc chỉ dùng 1 prompt trên Gemini 2.5 Pro trong Google AI Studio.
