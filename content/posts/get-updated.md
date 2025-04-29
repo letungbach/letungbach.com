@@ -6,7 +6,7 @@ tags:
   - update
   - news
 created: 2025-04-01T02:14
-updated: 2025-04-22T02:40
+updated: 2025-04-29T04:52
 ---
 https://rss.orbit13.synology.me
 
@@ -38,6 +38,7 @@ To stay updated on the latest news about AI and neural networks, here are some e
 6. **AI Conferences**:
    - Track announcements and updates from conferences like NVIDIA's GTC or other AI-focused events.
 		NAACL
+		 ICLR 2025.
 		
 
 

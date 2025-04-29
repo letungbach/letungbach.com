@@ -8,7 +8,7 @@ tags:
   - neuralnet
   - deeplearning
 created: 2025-04-10T00:13
-updated: 2025-04-24T04:30
+updated: 2025-04-29T04:51
 description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
 ---
 https://linzhiqiu.github.io/papers/naturalbench/?fbclid=IwY2xjawJ1xCpleHRuA2FlbQIxMQABHnFZ6hln8p75Kuz4l9F4Mgow7kzEgS1GKuRYj6q-DlvUAWVVRiyVmW1SvnwQ_aem_y_RMPY4cokQHJk8TpxQwpQ
@@ -32,7 +32,9 @@ LiveCodeBench và SciCode
 [Aider polyglot](https://aider.chat/docs/leaderboards/?fbclid=IwY2xjawJs18lleHRuA2FlbQIxMQABHpMzr6OCU0YD65sAyMY5vDd4DKn00s4RKJniEUvlJIIeX4sIYMCtIq7MLZw8_aem_yF2JsBDjLMvkeFDhYfb-6A)
 	[github](https://github.com/Aider-AI/aider)
 
-https://livebench.ai/#/
+https://livebench.ai
+https://github.com/LiveBench/LiveBench
+
 https://openrouter.ai/rankings
 
 https://arcprize.org/leaderboard?fbclid=IwY2xjawJkGOJleHRuA2FlbQIxMAABHpInxwGwuzaVHnGeNNycEGfhmweu8Xb_aBq5dhGnOHLm1qEbktYZYnqZzNmc_aem_ttSWRTegPXjvOSU1K0DAlg
