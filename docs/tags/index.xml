@@ -275,6 +275,13 @@
       <description></description>
     </item>
     <item>
+      <title>Fintune</title>
+      <link>https://letungbach.com/tags/fintune/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/fintune/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Gpu</title>
       <link>https://letungbach.com/tags/gpu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -300,6 +307,13 @@
       <link>https://letungbach.com/tags/kid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/tags/kid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>https://letungbach.com/tags/llm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/llm/</guid>
       <description></description>
     </item>
     <item>
@@ -342,6 +356,13 @@
       <link>https://letungbach.com/tags/tpu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/tags/tpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>https://letungbach.com/tags/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/tags/training/</guid>
       <description></description>
     </item>
   </channel>

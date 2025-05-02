@@ -62,7 +62,7 @@
       <link>https://letungbach.com/posts/mcp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://letungbach.com/posts/mcp/</guid>
-      <description>&lt;p&gt;opensource MCP:&#xA;&lt;a href=&#34;https://github.com/pietrozullo/mcp-use&#34;&gt;https://github.com/pietrozullo/mcp-use&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230045.png]]![[Pasted image 20250414230109.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250416205343.png]]&lt;/p&gt;</description>
+      <description>&lt;p&gt;opensource MCP:&#xA;&lt;a href=&#34;https://github.com/pietrozullo/mcp-use&#34;&gt;https://github.com/pietrozullo/mcp-use&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250414230045.png]]![[Pasted image 20250414230109.png]]&lt;/p&gt;&#xA;&lt;p&gt;![[Pasted image 20250416205343.png]]&lt;/p&gt;&#xA;&lt;p&gt;  &amp;ldquo;my-mcp-server-fdbeb09b&amp;rdquo;: {&lt;/p&gt;&#xA;&lt;p&gt;                &amp;ldquo;type&amp;rdquo;: &amp;ldquo;stdio&amp;rdquo;,&lt;/p&gt;&#xA;&lt;p&gt;                &amp;ldquo;command&amp;rdquo;: &amp;ldquo;@modelcontextprotocol/docker-mcp&amp;rdquo;,&lt;/p&gt;&#xA;&lt;p&gt;                &amp;ldquo;args&amp;rdquo;: []&lt;/p&gt;&#xA;&lt;p&gt;            }&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

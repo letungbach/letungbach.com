@@ -807,6 +807,18 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/posts/finetuning/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/posts/mvp/</loc>
     
     
@@ -1035,6 +1047,18 @@
   </url>
   
   <url>
+    <loc>https://letungbach.com/tags/fintune/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
     <loc>https://letungbach.com/tags/gpu/</loc>
     
     
@@ -1096,6 +1120,18 @@
   
   <url>
     <loc>https://letungbach.com/posts/kid/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/llm/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -1276,6 +1312,18 @@
   
   <url>
     <loc>https://letungbach.com/tags/tpu/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/training/</loc>
     
     
     <changefreq>weekly</changefreq>

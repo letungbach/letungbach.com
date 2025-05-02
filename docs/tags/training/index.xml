@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Training on Le Tung Bach, Ph.D.</title>
+    <link>https://letungbach.com/tags/training/</link>
+    <description>Recent content in Training on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://letungbach.com/tags/training/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent</title>
+      <link>https://letungbach.com/posts/finetuning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://letungbach.com/posts/finetuning/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/unslothai/unsloth&#34;&gt;https://github.com/unslothai/unsloth&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.unsloth.ai/get-started/unsloth-notebooks&#34;&gt;https://docs.unsloth.ai/get-started/unsloth-notebooks&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/code/danielhanchen/kaggle-llama-3-2-1b-3b-unsloth-notebook&#34;&gt;https://www.kaggle.com/code/danielhanchen/kaggle-llama-3-2-1b-3b-unsloth-notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Google colab&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
