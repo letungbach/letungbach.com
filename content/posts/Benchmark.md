@@ -8,9 +8,14 @@ tags:
   - neuralnet
   - deeplearning
 created: 2025-04-10T00:13
-updated: 2025-04-29T04:51
+updated: 2025-05-04T09:49
 description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
 ---
+
+https://codeforces.com/blog/entry/133874
+
+https://www.swebench.com/
+
 https://linzhiqiu.github.io/papers/naturalbench/?fbclid=IwY2xjawJ1xCpleHRuA2FlbQIxMQABHnFZ6hln8p75Kuz4l9F4Mgow7kzEgS1GKuRYj6q-DlvUAWVVRiyVmW1SvnwQ_aem_y_RMPY4cokQHJk8TpxQwpQ
 
 https://github.com/Baiqi-Li/NaturalBench
