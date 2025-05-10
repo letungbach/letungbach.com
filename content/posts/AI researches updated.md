@@ -6,8 +6,10 @@ tags:
   - update
   - news
 created: 2025-04-01T02:14
-updated: 2025-04-29T04:52
+updated: 2025-05-10T15:55
 ---
+
+
 https://rss.orbit13.synology.me
 
 ai_news_generator
@@ -37,9 +39,16 @@ To stay updated on the latest news about AI and neural networks, here are some e
 
 6. **AI Conferences**:
    - Track announcements and updates from conferences like NVIDIA's GTC or other AI-focused events.
-		NAACL
+		NAACL https://2025.naacl.org/blog/best-papers/
 		 ICLR 2025.
-		
+		NeurIPS, 
+ICLR, 
+GECCO, 
+ALIFE, 
+MLSys, 
+JMLR, 
+ICML, 
+IROS
 
 
 Would you like help setting up Google Alerts or finding specific RSS feeds? 😊
@@ -78,24 +87,58 @@ reddit
 github
 
 
+Open AI:
+	mark chen
+		
+
 
 Organization news:
 https://x.com/testingcatalog
+
+
+Google
+Sir ... 
 [Google ai research blog](https://research.google/blog/)
 [Google for developers blogs](https://developers.googleblog.com/)
+Google I/O 2025
+youtube
+# Google Cloud Next ’25
+
 Microsoft
+
+
+
+
 Nvidia
 https://huggingface.co/blog/text-to-video
-https://ai.meta.com/blog/
+
 https://github.com/openai
 https://lmarena.ai/
 https://allenai.org/ai-for-science
 https://www.together.ai/research
 [Deeplearning.Ai the Batch](https://www.deeplearning.ai/the-batch/)
 
-youtube
+
 
 
 https://openrouter.ai/openrouter/optimus-alpha/apps
 
 https://mlabonne.github.io/blog/
+
+
+Meta 
+	Yann lecun
+	https://ai.meta.com/blog/
+	LlamaCon 2025
+
+
+facebook.com/Montreal.AI 
+
+
+
+https://aclanthology.org/
+
+https://aclanthology.org/2025.naacl-long.268/
+
+
+https://simonwillison.net/2025/May/9/gemini-implicit-caching/
