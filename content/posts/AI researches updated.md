@@ -6,7 +6,7 @@ tags:
   - update
   - news
 created: 2025-04-01T02:14
-updated: 2025-05-10T15:55
+updated: 2025-05-12T13:30
 ---
 
 
@@ -142,3 +142,7 @@ https://aclanthology.org/2025.naacl-long.268/
 
 
 https://simonwillison.net/2025/May/9/gemini-implicit-caching/
+https://simonwillison.net/2025/May/10/llama-cpp-vision/
+https://simonwillison.net/2025/May/9/gemini-implicit-caching/
+
+
