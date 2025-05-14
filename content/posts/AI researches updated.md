@@ -6,7 +6,7 @@ tags:
   - update
   - news
 created: 2025-04-01T02:14
-updated: 2025-05-12T13:30
+updated: 2025-05-14T08:52
 ---
 
 
@@ -106,7 +106,7 @@ youtube
 
 Microsoft
 
-
+https://www.sequoiacap.com/article/ai-ascent-2025/ - May 2nd
 
 
 Nvidia

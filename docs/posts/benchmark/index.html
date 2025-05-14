@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <h1 class="post-title">
     <a href="https://letungbach.com/posts/benchmark/">benchmark</a>
   </h1>
-  <div class="post-meta"><span class="post-reading-time">12 min read (2412 words)</span></div>
+  <div class="post-meta"><span class="post-reading-time">1 min read (40 words)</span></div>
 
   
     <span class="post-tags">
@@ -376,44 +376,15 @@ document.addEventListener('DOMContentLoaded', function() {
       <h2>
         Table of Contents
       </h2>
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#why-are-datasets-important-in-training-llms"><strong>Why are datasets important in training LLMs?</strong></a>
-      <ul>
-        <li><a href="#common-challenges-when-preparing-training-datasets">Common challenges when preparing training datasets</a></li>
-      </ul>
-    </li>
-    <li><a href="#popular-open-source-datasets-for-training-llms"><strong>Popular Open Source Datasets for Training LLMs</strong></a>
-      <ul>
-        <li><a href="#1-common-crawl">1. Common Crawl</a></li>
-        <li><a href="#2-refinedweb">2. RefinedWeb</a></li>
-        <li><a href="#3-the-pile">3. The Pile</a></li>
-        <li><a href="#4-c4">4. C4</a></li>
-        <li><a href="#5-starcoder-data">5. Starcoder Data</a></li>
-        <li><a href="#6-bookcorpus">6. BookCorpus</a></li>
-        <li><a href="#7-roots">7. ROOTS</a></li>
-        <li><a href="#8-wikipedia">8. Wikipedia</a></li>
-        <li><a href="#9-red-pajama">9. Red Pajama</a></li>
-      </ul>
-    </li>
-    <li><a href="#why-data-preprocessing-is-important-when-using-open-source-datasets"><strong>Why Data Preprocessing is Important when Using Open Source Datasets</strong></a>
-      <ul>
-        <li><a href="#data-pre-processing-techniques">Data Pre-Processing Techniques</a></li>
-        <li><a href="#cleaning-and-normalization"><strong><em>Cleaning and normalization</em></strong></a></li>
-        <li><a href="#tokenization-and-vectorization"><strong><em>Tokenization and vectorization</em></strong></a></li>
-        <li><a href="#handling-of-missing-data"><strong><em>Handling of missing data</em></strong></a></li>
-        <li><a href="#data-augmentation"><strong><em>Data augmentation</em></strong></a></li>
-      </ul>
-    </li>
-    <li><a href="#ethical-considerations-and-challenges-when-applying-datasets-in-machine-learning"><strong>Ethical Considerations and Challenges When Applying Datasets in Machine Learning</strong></a></li>
-    <li><a href="#how-datasets-are-used-in-fine-tuning-and-evaluating-llms"><strong>How Datasets are used in Fine-Tuning and Evaluating LLMs</strong></a></li>
-  </ul>
-</nav>
+      <nav id="TableOfContents"></nav>
     </div>
   
 
   <div class="post-content"><div>
-        <p><a href="https://codeforces.com/blog/entry/133874">https://codeforces.com/blog/entry/133874</a></p>
+        <p>Video generation benchmark
+<a href="https://github.com/Vchitect/VBench">https://github.com/Vchitect/VBench</a>
+<a href="https://arxiv.org/abs/2401.01651#:~:text=This%20paper%20introduces%20AIGCBench,%20a%20pioneering%20comprehensive%20and,with%20a%20primary%20focus%20on%20Image-to-Video%20%28I2V%29%20generation.">AIGCBench</a></p>
+<p><a href="https://codeforces.com/blog/entry/133874">https://codeforces.com/blog/entry/133874</a></p>
 <p><a href="https://www.swebench.com/">https://www.swebench.com/</a></p>
 <p><a href="https://linzhiqiu.github.io/papers/naturalbench/?fbclid=IwY2xjawJ1xCpleHRuA2FlbQIxMQABHnFZ6hln8p75Kuz4l9F4Mgow7kzEgS1GKuRYj6q-DlvUAWVVRiyVmW1SvnwQ_aem_y_RMPY4cokQHJk8TpxQwpQ">https://linzhiqiu.github.io/papers/naturalbench/?fbclid=IwY2xjawJ1xCpleHRuA2FlbQIxMQABHnFZ6hln8p75Kuz4l9F4Mgow7kzEgS1GKuRYj6q-DlvUAWVVRiyVmW1SvnwQ_aem_y_RMPY4cokQHJk8TpxQwpQ</a></p>
 <p><a href="https://github.com/Baiqi-Li/NaturalBench">https://github.com/Baiqi-Li/NaturalBench</a></p>
@@ -439,135 +410,6 @@ document.addEventListener('DOMContentLoaded', function() {
     </figcaption>
 </figure>
 
-<p>Table of Contents</p>
-<ul>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#3">Why are datasets important in training LLMs?</a>
-<ul>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#common-challenges-when-preparing-training-datasets">Common challenges when preparing training datasets</a></li>
-</ul>
-</li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#27">Popular Open Source Datasets for Training LLMs</a>
-<ul>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#1.-common-crawl">1. Common Crawl</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#2.-refinedweb">2. RefinedWeb</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#3.-the-pile">3. The Pile</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#4.-c4">4. C4</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#5.-starcoder-data">5. Starcoder Data</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#6.-bookcorpus">6. BookCorpus</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#7.-roots">7. ROOTS</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#8.-wikipedia">8. Wikipedia</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#9.-red-pajama">9. Red Pajama</a></li>
-</ul>
-</li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#73">Why Data Preprocessing is Important when Using Open Source Datasets</a>
-<ul>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#data-pre-processing-techniques">Data Pre-Processing Techniques</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#cleaning-and-normalization">Cleaning and normalization</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#tokenization-and-vectorization">Tokenization and vectorization</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#handling-of-missing-data">Handling of missing data</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#data-augmentation">Data augmentation</a></li>
-</ul>
-</li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#115">Ethical Considerations and Challenges When Applying Datasets in Machine Learning</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#126">How Datasets are used in Fine-Tuning and Evaluating LLMs</a></li>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#142">Conclusion: You Reap what you Sow</a>
-<ul>
-<li><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#additional-reading">Additional Reading</a></li>
-</ul>
-</li>
-</ul>
-<p>The emergence of large language models (LLMs) sparks revolutionary transformation in various industries. While ChatGPT has impressed the public with its ingenious take on poetic writing, organizations are adopting deep learning AI models to build advanced neural information processing systems for specialized use cases.</p>
-<p>The benefits that LLMs like GPT, LLaMA, and Falcon bring promise efficiency, cost-reduction, and collaborative-friendly business environments. Yet, few question the factors that enable large language models to perform exceptionally in text generation and other natural language processing tasks; or to excel in other respective domains they are deployed in.</p>
-<p>In this article, we’ll explore the importance of datasets that AI companies use to train their models. We will also discuss data pre-processing techniques and the ethical challenges of choosing a large language model dataset for training AI models.</p>
-<h2 id="why-are-datasets-important-in-training-llms"><strong>Why are datasets important in training LLMs?</strong><a href="#why-are-datasets-important-in-training-llms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>As popular as they are, large language models rely on the training datasets they learn on. LLMs consist of multiple hidden layers of deep neural networks, which extract and train their parameters from a significant amount of data sources.  If you train LLMs with questionable datasets, they will be impacted by performance issues like bias and overfitting. Conversely, training a deep learning model with <a href="https://kili-technology.com/platform/explore-and-fix">high-quality datasets</a> enables a more accurate and coherent output.</p>
-<p>Leading organizations have realized that good language modeling needs more than state-of-the-art machine learning models and training methods. Curating and annotating a diverse training dataset that fairly represents the model’s domain is equally important in implementing neural network artificial intelligence solutions in various industries.</p>
-<p>For example, Bloomberg trained a transformer architecture from scratch with decades-worth of carefully curated financial data. The resulting <a href="https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/">BloombergGPT</a> allows the financial company to empower its clients and perform existing financial-specific NLP tasks faster and with more accuracy. Likewise, HuggingFace has developed a programmer-friendly model <a href="https://huggingface.co/bigcode/starcoder">StarCode</a>, by training it on code in different programming languages gathered from GitHub.</p>
-<h3 id="common-challenges-when-preparing-training-datasets">Common challenges when preparing training datasets<a href="#common-challenges-when-preparing-training-datasets" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Machine learning teams face considerable challenges when curating datasets to train AI models. For example,</p>
-<ul>
-<li>
-<p>Data scarcity in some domains results in imbalanced datasets that affect the model’s ability to infer appropriately. Similarly, preparing a diverse dataset proves challenging in certain use cases.</p>
-</li>
-<li>
-<p>Training a large language model requires an enormous size of datasets. For example, OpenAI trained GPT-3 with <a href="https://www.springboard.com/blog/data-science/machine-learning-gpt-3-open-ai/">45 TB</a> of textual data curated from various sources.</p>
-</li>
-<li>
-<p>Organizations must secure datasets containing sensitive information from adversarial threats to protect users’ privacy and comply with industry regulations.</p>
-</li>
-<li>
-<p><a href="https://kili-technology.com/platform/label-annotate/">Data annotation</a> is required when <a href="https://kili-technology.com/large-language-models-llms/the-ultimate-guide-to-fine-tuning-llms-2023">fine-tuning LLMs</a> for downstream tasks. When performed manually, organizations must manage the cost of hiring large teams of human labelers and factor in possible annotation errors.</p>
-</li>
-</ul>
-<p>Data labeling platforms like Kili Technology help organizations overcome hurdles when preparing datasets for machine learning projects. Our software provides automated <a href="https://kili-technology.com/data-labeling/data-labeling-tool-guide">labeling tools</a> that improve annotation efficiency and reduce the number of human-generated errors.</p>
-<h2 id="popular-open-source-datasets-for-training-llms"><strong>Popular Open Source Datasets for Training LLMs</strong><a href="#popular-open-source-datasets-for-training-llms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>These <a href="https://kili-technology.com/datasets">open-source datasets</a> are pivotal in training or <a href="https://kili-technology.com/large-language-models-llms/how-to-fine-tune-large-language-models-llms-with-kili-technology">fine-tuning many LLMs</a> that ML engineers use today.</p>
-<h3 id="1-common-crawl">1. Common Crawl<a href="#1-common-crawl" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://commoncrawl.org/">The Common Crawl</a> dataset comprises terabytes of raw web data extracted from billions of web pages. It releases new data files that the crawler obtains each month. Several large language models, including GPT-3, LLaMA, OpenLLaMa, and T5, were trained with CommonCrawl.</p>
-<p><img src="https://a.storyblok.com/f/139616/1200x800/e66f483877/downstream-filtering.webp" alt=""></p>
-<h3 id="2-refinedweb">2. RefinedWeb<a href="#2-refinedweb" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/datasets/refinedweb">RefinedWeb</a> is a massive corpus of deduplicated and filtered tokens from the Common Crawl dataset. In natural language processing (NLP), a token is a unit of text that is meaningful to the language being processed. Tokens can be words, punctuation marks, or other symbols. The dataset has more than 5 trillion tokens of textual data, of which 600 billion are made publicly available. It was developed as an initiative to train the Falcon-40B model with smaller-sized but high-quality datasets.</p>
-<p><img src="https://a.storyblok.com/f/139616/1200x800/b6fbb07bf1/pile-dataset.webp" alt=""></p>
-<p><em>Source:</em> <a href="https://paperswithcode.com/dataset/the-pile"><em>The Pile</em></a></p>
-<h3 id="3-the-pile">3. The Pile<a href="#3-the-pile" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://pile.eleuther.ai/">The Pile</a> is an 800 GB corpus that enhances a model’s generalization capability across a broader context. It was curated from 22 diverse datasets, mostly from academic or professional sources. The Pile was instrumental in training various LLMs, including GPT-Neo, LLaMA, and OPT.</p>
-<h3 id="4-c4">4. C4<a href="#4-c4" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/datasets/C4">C4, which stands for (Colossal Clean Crawled Corpus)</a>, is a 750 GB English corpus derived from the Common Crawl. It uses heuristic methods to extract only natural language data while removing all gibberish text. C4 has also undergone heavy deduplication to improve its quality. Language models like MPT-7B and T5 are pre-trained with C4.</p>
-<p><img src="https://a.storyblok.com/f/139616/2000x1125/7ae15d867e/uggingface-faq.webp" alt=""></p>
-<p><em>Source:</em> <a href="https://huggingface.co/blog/starcoder"><em>HuggingFace</em></a></p>
-<h3 id="5-starcoder-data">5. Starcoder Data<a href="#5-starcoder-data" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/datasets/Starcoder%20Data">Starcoder Data</a> is a programming-centric dataset built from 783 GB of code written in 86 programming languages. It also contains 250 billion tokens extracted from GitHub and Jupyter Notebooks. Salesforce CodeGen, Starcoder, and StableCode were trained with Starcoder Data to enable better program synthesis.</p>
-<p><img src="https://a.storyblok.com/f/139616/1200x800/ca02998496/bookcorpus-genre-breakdown.webp" alt=""></p>
-<p><em>Source:</em> <a href="https://github.com/jackbandy/bookcorpus-datasheet"><em>Jack Bandy</em></a></p>
-<h3 id="6-bookcorpus">6. BookCorpus<a href="#6-bookcorpus" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/datasets/Book%20Corpus">BookCorpus</a> turned scraped data of 11,000 unpublished books into a 985 million-word dataset. It was initially created to align storylines in books to their movie interpretations. The dataset was used for training LLMs like RoBERTA, XLNET, and T5.</p>
-<h3 id="7-roots">7. ROOTS<a href="#7-roots" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://arxiv.org/abs/2303.03915">ROOTS</a> is a 1.6TB multilingual dataset curated from text sourced in 59 languages. Created to train the BigScience Large Open-science Open-access Multilingual (BLOOM) language model. ROOTS uses heavily deduplicated and filtered data from Common Crawl, GitHub Code, and other crowdsourced initiatives.</p>
-<h3 id="8-wikipedia">8. Wikipedia<a href="#8-wikipedia" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>The <a href="https://kili-technology.com/datasets/Wikipedia">Wikipedia</a> dataset is curated from cleaned text data derived from the Wikipedia site and presented in all languages. The default English Wikipedia dataset contains 19.88 GB of vast examples of complete articles that help with language modeling tasks. It was used to train larger models like Roberta, XLNet, and LLaMA.</p>
-<h3 id="9-red-pajama">9. Red Pajama<a href="#9-red-pajama" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/datasets/Red%20Pajama">Red Pajama</a> is an open-source effort to replicate the LLaMa dataset. It comprises 1.2 trillion tokens extracted from Common Crawl, C4, GitHub, books, and other sources. Red Pajama’s transparent approach helps train MPT-7B and OpenLLaMA.</p>
-<h2 id="why-data-preprocessing-is-important-when-using-open-source-datasets"><strong>Why Data Preprocessing is Important when Using Open Source Datasets</strong><a href="#why-data-preprocessing-is-important-when-using-open-source-datasets" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Never assume that open-source datasets are optimal for training deep learning models. As comprehensive as they are, such datasets often contain redundant, missing, or improperly formatted data that a deep neural network couldn’t process. This draws our attention to data processing.</p>
-<p>Data preprocessing is a step that ML teams take to ensure the model trains with clean and consistent data. In practical AI development, language models have a low tolerance for data outliers. An outlier is a data point that differs significantly from other observations. Outliers can be problematic for machine learning models because they can skew the results of the model. For example, a language model that is trained on a dataset with a few outliers may learn to associate those outliers with the wrong words or phrases. This can lead to the model generating incorrect or nonsensical text.</p>
-<p>If you apply open-source datasets as they are, the language model will extract, learn and embed the noise within. As a result, the model training process and eventual performance suffer in several aspects.</p>
-<ul>
-<li>
-<p>The presence of redundant data prolongs the time it takes to train a model, which increases computational resources and costs.</p>
-</li>
-<li>
-<p>Data anomalies might lead to erratic model behavior when exposed to real-world data.</p>
-</li>
-<li>
-<p>When you forgo data preprocessing, performance issues such as underfitting or overfitting might occur.</p>
-</li>
-</ul>
-<p>So, it’s essential to preprocess your datasets, whether they’re downloaded from sources we listed or curated from your internal databases.</p>
-<p><img src="https://a.storyblok.com/f/139616/1200x800/ef2e8edc0b/data-pre-processing-techniques.webp" alt=""></p>
-<h3 id="data-pre-processing-techniques">Data Pre-Processing Techniques<a href="#data-pre-processing-techniques" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>We share several common data preprocessing techniques that help you prepare clean, consistent, and quality training datasets.</p>
-<h3 id="cleaning-and-normalization"><strong><em>Cleaning and normalization</em></strong><a href="#cleaning-and-normalization" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/data-labeling/machine-learning/data-cleaning-guide">Data cleaning</a> removes noisy data or outliers from the raw data. When doing so, ML teams use techniques like binning and regression to filter out noise from the training data. Then, they cluster similar groups of data and remove outliers that don’t belong to any.  For example, Technology Innovation Institute uses <a href="https://arxiv.org/pdf/2306.01116.pdf">RefinedWeb</a>, which applies extensive data cleaning, such as URL filtering and deduplication, to train a high-performing Falcon-40B model.</p>
-<p>Normalization is helpful to ensure features in datasets are uniformly structured to a common scale. When normalizing data, ML engineers use techniques like min-max scaling, log transformation, and z-score standardization. Normalized data are distributed over a narrower scale, which enables a model to converge faster. In this <a href="https://www.mdpi.com/2227-7390/10/11/1942">study</a>, data science researchers have shown that normalizing datasets can improve multiclass classification by up to 6%.</p>
-<h3 id="tokenization-and-vectorization"><strong><em>Tokenization and vectorization</em></strong><a href="#tokenization-and-vectorization" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Tokenization and vectorization are closely related data preprocessing methods that enable NLP models to extract features from textual sources. Tokenization segregates words or phrases in a sentence into separate textual entities or tokens organized as n-grams. An n-gram is a contiguous sequence of n items from a given sample of text or speech. The items can be letters, words, or base pairs according to the application. N-grams are used to group words together to be processed as a single unit. This can help to improve the accuracy of NLP models by reducing the number of unique tokens that need to be considered.</p>
-<p>Meanwhile, vectorization, or word embeddings, is a process that assigns each token a unique number. Common vectorization techniques include bags of words, Term Frequency–Inverse Document Frequency (TF-IDF), and Word2Vec. In this <a href="https://pdf.sciencedirectassets.com/280203/1-s2.0-S1877050920X00160/1-s2.0-S1877050920323954/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED8aCXVzLWVhc3QtMSJGMEQCIF9OIUqVdZBnDI3bEDGp1IK%2FZby1hymoWmFwJog4wb6NAiA3aWrP1hAbok8ql6ILduQPiFZ3I4%2F9yLAytBetbRNw3Sq8BQjo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAUaDDA1OTAwMzU0Njg2NSIMT7NzgwPwcH2tAd8IKpAFkJTzujCEg4MiW5xY2v6yDSARnw10Xz9aPCVu%2Fe3CrwXcwaReSAbIG2gjWJbQLOQSFI3jCtKa3rPSJhhxq1LxwcGQCP6q39YiO%2BrdKbvqlNR9Wamvw%2F7vFo2rpiT%2Fa2%2FtAq%2BnXMZT438EM5LE85NH7HII7n1pyIHX94vg1%2BRBAHfszW%2FabVh5hCc63qR7xhfrmPR8sCcBpCaThFEyH9VE3cdCsAWEWpGHSji2wSXWSZHFGFdO6M%2BF14%2Fb6VpUjaWUw3esoNmibwWrEyp3WifFTNCHoB%2Fx96G2VOsJ6FfAR9EgcSpVt%2B2Y30cismISWkrSyTGwlb9mDFMn652Aj9hPzOFGpXgm4r4w0cciG5CBBS7%2B1yBCo5ykLxyLQRLEicCG2tEbUVI%2Fb%2FnAZlrNsbsy6PchWAWeKfBSiSwHjgY%2FG4CKxo2SOGcMc6HOR75CBqEc8jRMojV%2BnpY6kNVQAB2cYj4TXJjhvaSVocuUVwdidXkyWc1A3duF1XYYDp4DJbjgOWXIFVbHOcLmsT3QNoSWFyLSQxQvta%2FyJFEjLBWEi94eqM8wKjaaSEcVw4OCG%2FfSJT4fwgF%2BBwQzUJHW4zQrQ899bcaQuSxSezwummpcHqyly7ua6zFxBcod25zttXSom1%2FkwAMqdKK7%2Bi3nsQ9PmE4jmUD8NwSHXwKQZdGLS7ztzxpDW94fBqMu8MXIO%2BWy%2F4NeSrjfUZI4YGK5hEQNQVmuniJpnNkRxYUDaAw%2BdF8X6VLhun4RnlmL20gdhQqkrKfmhP8N7efzCTbJhsroDHlUz9E93f%2FKIP9FkftGZg8qrQnd%2BxSqqY6tpie34sC6j1Q5IWTEo6LAIEjCZh2lRWD6MP2s9xAZ0Kw0U1mR22owltXcpgY6sgEeKodathPDVCrtpZkDd6rQaiwo2A1fOvuOt8q815I%2Bd7nonfMLwnVnBJF7PcISi80FTk%2F6v6dzz8WkHOrj%2BvUtjJipTAD32l2P6XpR8Lr6D9A259lVha7WuWl6K0JUflsH3diqxJ7EyG8YMPEE687G4R%2BT2Gya0Hg4iGQtqwS6z8dhURF6%2BJOW8JuZKdOqMA2L98mEXr2UfEAs9JWRjGgoBt8drJ2f7g6ELkOlg2Lo%2FCHN&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230812T072639Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQ3PHCVTYSW55KHHD%2F20230812%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=879400a7317aaf690ddc69a8e2f2412ec1f8dd66ee6e3123f6862c404e25f194&amp;hash=5b9bdacfba01b55cf6712b6b717ef7f3b49b6ff22da3f6cc0409f182c3472a20&amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;pii=S1877050920323954&amp;tid=spdf-20c04635-f3c9-4377-a27f-d664ff7731de&amp;sid=8c6ca9946be7e041877b41d45160666e8d6egxrqb&amp;type=client&amp;tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;ua=171f590457530703055f59&amp;rr=7f56fdc96c9b13e0&amp;cc=my">paper</a>, researchers found that applying TF-IDF improved the accuracy of a sentiment analysis model.</p>
-<h3 id="handling-of-missing-data"><strong><em>Handling of missing data</em></strong><a href="#handling-of-missing-data" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>When your dataset contains missing values, you can either remove or replace them. Removing missing or null data is straightforward but decreases the available data to train the model. Alternatively, impute or replace the data with arithmetic approximation such as mean and median or regression techniques to predict the likely values. Machine learning-driven imputation techniques like <a href="https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00516-9">missForest and the k-nearest neighbor</a> have shown promising in a comparative study.</p>
-<h3 id="data-augmentation"><strong><em>Data augmentation</em></strong><a href="#data-augmentation" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><a href="https://kili-technology.com/data-labeling/machine-learning/data-augmentation-guide">Data augmentation</a> allows you to overcome the limitations of dataset scarcity by transforming existing datasets into new and realistic ones. Because of its cost-efficiency, data augmentation is commonly used when training machine translation and computer vision models. For example, applying transformation methods like flipping, rotating, and scaling enables ML teams to create sufficient datasets for disciplines like medical imaging. <a href="https://paperswithcode.com/paper/deep-autoaugment-1">Deep AutoAugment</a> is one of the latest efforts to improve data augmentation performance benchmarked with ImageNet.</p>
-<h2 id="ethical-considerations-and-challenges-when-applying-datasets-in-machine-learning"><strong>Ethical Considerations and Challenges When Applying Datasets in Machine Learning</strong><a href="#ethical-considerations-and-challenges-when-applying-datasets-in-machine-learning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>As LLMs usage becomes increasingly prevalent, the spotlight now shines on ethical concerns around the models, as some have reportedly exhibited bias when making predictions. For example, researchers discovered that an <a href="http://www.ethicsinnlp.org/workshop/pdf/EthNLP06.pdf">AI-powered automated captioning feature</a> on a popular video platform performs less accurately when a Scottish women&rsquo;s accent is chosen.</p>
-<p>While model bias may occur because of the model’s architecture, such incidence is equally likely caused by underrepresentation in the training data. For example, ML teams need help creating sufficiently large and diverse datasets for implementing AI systems in Europe. There, the GPDR regulation limits the type of healthcare data one can assemble to train deep learning models.</p>
-<p>The dataset&rsquo;s quality has vast implications for the model that trains on it, especially as it can cause undesirable behaviors in AI systems. <a href="https://www.theregister.com/2020/07/01/mit_dataset_removed">MIT researchers</a> permanently removed a dataset that caused AI models to describe people with potentially degrading terms. Such abusive behaviors happen because researchers fail to filter racist and sexist labels of images when compiling the dataset.</p>
-<p>Besides ensuring fairness, ML teams must strive to safeguard data privacy as AI models gain access to enormous amounts of data. Industries that manage sensitive data, such as healthcare and finance, are particularly concerned about the lack of explainability and data risks that deep learning models might pose. <a href="https://www.computerworld.com/article/3697000/apple-bans-employees-from-using-chatgpt-should-you.html">Apple’s recent move to ban its employees</a> from using ChatGPT underscored the risk of leaking confidential data.</p>
-<p>Preventing data leakages, whether intentional or not, requires a coordinated effort in policy compliance, data security measures, and software development best practices. It’s imperative to secure the entire ML pipeline, including data labeling tools, from breaches. In this sense, organizations choose Kili because of the <a href="https://docs.kili-technology.com/docs/kili-security-measures">security measures our platform provides.</a></p>
-<h2 id="how-datasets-are-used-in-fine-tuning-and-evaluating-llms"><strong>How Datasets are used in Fine-Tuning and Evaluating LLMs</strong><a href="#how-datasets-are-used-in-fine-tuning-and-evaluating-llms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>While open-source datasets contribute to the birth of many large language models and their variants, they are equally relevant in other machine-learning tasks applied to a pre-trained model. As you might have realized, pre-trained models cannot infer reliably beyond the data distribution they were trained on. Without further fine-tuning, you can’t use a general language model like GPT-3 for downstream tasks.</p>
-<p><a href="https://kili-technology.com/large-language-models-llms/how-to-fine-tune-large-language-models-llms-with-kili-technology">Fine-tuning a pre-trained model</a> enables it to learn domain-specific knowledge and unique instructions while maintaining its linguistic capabilities. For example, Google AI used instruction fine-tuning to develop MedPaLM from its base model PaLM. In instruction fine-tuning, the model is trained on a set of examples that are prefixed with instructions. The instructions tell the model what kind of response is expected. For example, an instruction might be &ldquo;Answer this question in a complete sentence.” The dataset used for fine-tuning is called MultiMedQA and consists of over 100,000 questions and answers from various sources, including the US Medical Licensing Examination (USMLE), PubMed, and clinical trials.</p>
-<p><a href="https://kili-technology.com/platform/label-annotate/">Annotated datasets</a> are also helpful in <a href="https://kili-technology.com/large-language-models-llms/webinar-recap-evaluating-large-language-models-llms-using-kili-technology">evaluating a model</a> after fine-tuning. Before deploying the model, ML teams compare its performance with third-party benchmarks to get an objective insight. For example, you can evaluate a model’s tendency to hallucinate with <a href="https://github.com/RUCAIBox/HaluEval">HaluEval</a>, which contains 35,000 question-answer pairs for general and task-specific scenarios. <a href="https://kili-technology.com/large-language-models-llms/understanding-llm-hallucinations-and-how-to-mitigate-them">Hallucination</a> refers to the phenomenon where a language model generates text that is incorrect, nonsensical, or not based on the input given. Meanwhile, <a href="https://github.com/amazon-science/bold">BOLD</a> was developed by Amazon to measure fairness across different domains.</p>
-<p>Language models must also be able to infer with strong confidence and consistency in the domain it was trained for. Hence, ML engineers feed the model with a ground truth test dataset to ensure it can replicate its training results. For instance, <a href="https://zenodo.org/record/4757865">IBEM</a> is an open-source ground truth dataset that helps evaluate a model’s capability in finding mathematical expressions.</p>
-<p>Stay tuned for more blogs about applying datasets for evaluating and fine-tuning LLMs.</p>
 
       </div></div>
 
