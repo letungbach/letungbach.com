@@ -8,13 +8,14 @@ tags:
   - neuralnet
   - deeplearning
 created: 2025-04-10T00:13
-updated: 2025-05-14T08:44
+updated: 2025-05-15T09:35
 description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
 ---
 Video generation benchmark
 	https://github.com/Vchitect/VBench
 	[AIGCBench](https://arxiv.org/abs/2401.01651#:~:text=This%20paper%20introduces%20AIGCBench,%20a%20pioneering%20comprehensive%20and,with%20a%20primary%20focus%20on%20Image-to-Video%20(I2V)%20generation.)
 
+https://github.com/NickRiccardi/two-word-test
 
 https://codeforces.com/blog/entry/133874
 
