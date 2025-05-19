@@ -17,49 +17,7 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/continuallearning/</loc>
-    
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
     <loc>https://letungbach.com/tags/creativecommons/</loc>
-    
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/cvd/</loc>
-    
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/deeplearning/</loc>
     
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     
@@ -129,35 +87,7 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/tags/moe/</loc>
-    
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
     <loc>https://letungbach.com/posts/natural-language-programming/</loc>
-    
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/neuralnet/</loc>
     
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     
@@ -199,9 +129,37 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/posts/zhangxu/</loc>
+    <loc>https://letungbach.com/tags/continuallearning/</loc>
     
-    <lastmod>2025-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/cvd/</loc>
+    
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/deeplearning/</loc>
+    
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -214,6 +172,34 @@
   
   <url>
     <loc>https://letungbach.com/posts/market-research/</loc>
+    
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/moe/</loc>
+    
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://letungbach.com/tags/neuralnet/</loc>
     
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
     
@@ -809,18 +795,6 @@
   </url>
   
   <url>
-    <loc>https://letungbach.com/posts/untitled/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
     <loc>https://letungbach.com/posts/agent/</loc>
     
     
@@ -870,30 +844,6 @@
   
   <url>
     <loc>https://letungbach.com/posts/ai-dev-25-conference/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/ai-impacts/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/tags/aiimpact/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -1170,18 +1120,6 @@
   
   <url>
     <loc>https://letungbach.com/posts/mcp/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://letungbach.com/posts/publication-website/</loc>
     
     
     <changefreq>weekly</changefreq>
