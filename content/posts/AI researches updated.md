@@ -6,7 +6,7 @@ tags:
   - update
   - news
 created: 2025-04-01T02:14
-updated: 2025-05-14T08:52
+updated: 2025-05-28T14:44
 ---
 
 
@@ -104,7 +104,7 @@ Google I/O 2025
 youtube
 # Google Cloud Next ’25
 
-Microsoft
+Microsoft [Microsoft Build 2025](https://build.microsoft.com/home).
 
 https://www.sequoiacap.com/article/ai-ascent-2025/ - May 2nd
 
