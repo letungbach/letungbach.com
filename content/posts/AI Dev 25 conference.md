@@ -7,10 +7,10 @@ tags:
   - security
   - hack
 created: 2025-04-15T00:13:00
-updated: 2025-04-16T20:28
+updated: 2025-06-08T12:37
 description: AI Dev 25 conference hosted by Deeplearning.ai
 ---
-The AI Dev 25 conference featured extensive discussions on various aspects of AI development, with a strong emphasis on **AI agents**, their evaluation, deployment, memory management, and interoperability. The importance of moving beyond simple evaluations based on "vibes" to more data-driven "thrive coding" using metrics was highlighted. Several open-source tools and frameworks were presented to aid in building and evaluating AI agents, including **Phoenix** from Arise for evaluation, **Haystack** for building and deploying agentic workflows, **Llama** as an open-source large language model, and **Crew AI** for building autonomous agents.
+c  The AI Dev 25 conference featured extensive discussions on various aspects of AI development, with a strong emphasis on **AI agents**, their evaluation, deployment, memory management, and interoperability. The importance of moving beyond simple evaluations based on "vibes" to more data-driven "thrive coding" using metrics was highlighted. Several open-source tools and frameworks were presented to aid in building and evaluating AI agents, including **Phoenix** from Arise for evaluation, **Haystack** for building and deploying agentic workflows, **Llama** as an open-source large language model, and **Crew AI** for building autonomous agents.
 
 **Key themes and topics discussed include:**
 
