@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EthicalAI on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/ethicalai/</link>
+    <description>Recent content in EthicalAI on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ethicalai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ethical Intelligence</title>
+      <link>http://localhost:1313/posts/ethical-intelligence/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ethical-intelligence/</guid>
+      <description>&lt;h1 id=&#34;ethical-intelligence-in-the-era-of-al-navigating-the-post-turing-landscape&#34;&gt;Ethical Intelligence in the Era of Al: Navigating the Post-Turing Landscape&lt;/h1&gt;&#xA;&lt;p&gt;The rapid advancement of artificial intelligence (Al) has ignited a global conversation about its potential benefits and inherent risks. The unease expressed by authors in London regarding the alleged unauthorized use of their work to train Al models underscores a growing concern within the creative ecosystem. This is not an isolated incident, but rather a symptom of a larger challenge: how to ethically integrate increasingly sophisticated Al into the fabric of our society, particularly within creative and political spheres where human values and rights are paramount. The deployment of Al in support of regimes committing atrocities further amplifies the urgency of establishing ethical boundaries for this powerful technology. It is no longer a question of whether unchecked Al will significantly impact these ecosystems, but rather how quickly and with what consequences. This paper will delve into the concept of &amp;ldquo;Ethical Intelligence&amp;rdquo; in the context of Al that is reaching, and in some interpretations, surpassing human-level conversational abilities, as symbolized by the Turing Test.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

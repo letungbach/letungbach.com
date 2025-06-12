@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/cyber/</link>
+    <description>Recent content in Cyber on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Cybersecurity</title>
+      <link>http://localhost:1313/posts/ai-cyber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-cyber/</guid>
+      <description>&lt;p&gt;A Cost-Effective Certification Pathway for AI/LLM Cybersecurity SpecializationI. The AI/LLM Security Frontier: Navigating New Risks and OpportunitiesThe rapid integration of Artificial Intelligence (AI) and Large Language Models (LLMs) across industries presents unprecedented opportunities alongside novel security challenges. Understanding this unique landscape is the first step toward specializing in AI/LLM cybersecurity. This section defines the specific threats targeting these systems, explores the critical role of AI governance, and assesses the burgeoning job market for professionals skilled in this domain.A. Defining the Unique Security Challenges in AI/LLMAI and LLM systems introduce attack surfaces and vulnerabilities distinct from traditional IT environments. Securing these systems requires familiarity with threats specifically targeting the AI lifecycle, from data ingestion and model training to deployment and inference.Key frameworks have emerged to categorize these unique risks:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Dev 25 conference</title>
+      <link>http://localhost:1313/posts/ai-dev-25-conference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai-dev-25-conference/</guid>
+      <description>&lt;p&gt;c  The AI Dev 25 conference featured extensive discussions on various aspects of AI development, with a strong emphasis on &lt;strong&gt;AI agents&lt;/strong&gt;, their evaluation, deployment, memory management, and interoperability. The importance of moving beyond simple evaluations based on &amp;ldquo;vibes&amp;rdquo; to more data-driven &amp;ldquo;thrive coding&amp;rdquo; using metrics was highlighted. Several open-source tools and frameworks were presented to aid in building and evaluating AI agents, including &lt;strong&gt;Phoenix&lt;/strong&gt; from Arise for evaluation, &lt;strong&gt;Haystack&lt;/strong&gt; for building and deploying agentic workflows, &lt;strong&gt;Llama&lt;/strong&gt; as an open-source large language model, and &lt;strong&gt;Crew AI&lt;/strong&gt; for building autonomous agents.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

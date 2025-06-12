@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sitemap on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/sitemap/</link>
+    <description>Recent content in Sitemap on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/sitemap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sitemap</title>
+      <link>http://localhost:1313/posts/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sitemap/</guid>
+      <description>&lt;h1 id=&#34;sitemap&#34;&gt;Sitemap&lt;/h1&gt;&#xA;&lt;p&gt;(with anchor link)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Home]]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Project A]]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Task 1]]&lt;/li&gt;&#xA;&lt;li&gt;[[Task 2]]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;[[Project B]]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Research]]&lt;/li&gt;&#xA;&lt;li&gt;[[Drafts]]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-dataview&#34; data-lang=&#34;dataview&#34;&gt;table file.name as &amp;#34;Note&amp;#34;&#xA;from &amp;#34;&amp;#34;&#xA;sort file.name asc&#xA;&#xA;&#xA;&#xA;### 4. **Mind Map Plugins**&#xA;- Install a mind map plugin like &amp;#34;Obsidian Mind Map.&amp;#34;&#xA;- Use it to visualize your notes as a mind map, which can act as a sitemap.&#xA;&#xA;Let me know if you&amp;#39;d like detailed guidance on any of these methods!&#xA;&#xA;&#xA;&#xA;# Main Subject&#xA;- [Introduction](#introduction)&#xA;- [Section 1: Subtopic 1](#subtopic-1)&#xA;- [Section 2: Subtopic 2](#subtopic-2)&#xA;  - [Subsection 2.1](#subsection-2-1)&#xA;  - [Subsection 2.2](#subsection-2-2)&#xA;- [Conclusion](#conclusion)&#xA;&#xA;&#xA;## Introduction&#xA;This is the introduction to the subject.&#xA;&#xA;## Section 1: Subtopic 1&#xA;Details about Subtopic 1.&#xA;&#xA;## Section 2: Subtopic 2&#xA;Information on Subtopic 2.&#xA;&#xA;### Subsection 2.1&#xA;Content for Subsection 2.1.&#xA;&#xA;### Subsection 2.2&#xA;Content for Subsection 2.2.&#xA;&#xA;## Conclusion&#xA;Final thoughts and summary.&#xA;&#xA;&#xA;&#xA;# Table of Contents&#xA;- [Introduction](#introduction)&#xA;- [My Section](#my-section)&#xA;- [Conclusion](#conclusion)&#xA;&#xA;## Introduction&#xA;This is the introduction section.&#xA;&#xA;## My Section&#xA;This is my section.&#xA;&#xA;## Conclusion&#xA;This is the conclusion section.&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

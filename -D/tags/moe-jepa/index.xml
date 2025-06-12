@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moe-Jepa on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/moe-jepa/</link>
+    <description>Recent content in Moe-Jepa on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/moe-jepa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-Rag</title>
+      <link>http://localhost:1313/posts/self-rag/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/self-rag/</guid>
+      <description>&lt;p&gt;**&lt;/p&gt;&#xA;&lt;h1 id=&#34;advancing-agentic-knowledgeable-self-awareness-a-research-agenda-extending-arxiv250403553&#34;&gt;Advancing Agentic Knowledgeable Self-Awareness: A Research Agenda Extending arXiv:2504.03553&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The development of artificial intelligence (AI) agents capable of complex tasks necessitates mechanisms for robust and efficient knowledge utilization. A critical aspect of this is self-awareness regarding the agent&amp;rsquo;s own knowledge state – understanding what it knows, what it doesn&amp;rsquo;t know, and when external information is required. The paper arXiv:2504.03553 introduces the concept of &amp;ldquo;agentic knowledgeable self-awareness&amp;rdquo; and proposes the &amp;ldquo;KnowSelf&amp;rdquo; method as a novel approach to instill this capability in language agents. KnowSelf utilizes special tokens and a two-stage training process to explicitly signal the agent&amp;rsquo;s perceived knowledge state and guide its information processing strategy (e.g., relying on internal parameters vs. seeking external knowledge).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MoE-JEPA</title>
+      <link>http://localhost:1313/posts/moe-jepa/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/moe-jepa/</guid>
+      <description>&lt;h1 id=&#34;research-proposal-moe-jepa-world-models-for-efficient-reinforcement-learning-and-planning&#34;&gt;Research Proposal: MoE-JEPA World Models for Efficient Reinforcement Learning and Planning&lt;/h1&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Current AI research emphasizes the development of sophisticated world models capable of understanding complex dynamics, particularly from video data, often leveraging self-supervised learning (SSL) for representation extraction. Predictive models in abstract spaces (like JEPA) are gaining prominence over generative ones. Simultaneously, Mixture of Experts (MoE) offers a way to scale neural network capacity efficiently. This proposal outlines a research approach combining these trends: developing an Action-Conditioned Mixture-of-Experts Joint-Embedding Predictive Architecture (MoE-JEPA) world model. This model will be pre-trained using self-supervision on large video datasets to learn robust visual representations and environment dynamics. The MoE structure will allow the model to efficiently capture diverse or multi-modal dynamics within an environment by routing inputs to specialized expert sub-networks. This sophisticated world model will then be integrated into a model-based Reinforcement Learning (RL) framework to enable efficient planning and decision-making for agents (e.g., robots) interacting with complex environments. We hypothesize that this approach will lead to more accurate world models, improved sample efficiency in RL, and better generalization across tasks compared to monolithic world models.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

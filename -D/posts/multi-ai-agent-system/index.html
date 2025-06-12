@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>MAAS :: Le Tung Bach, Ph.D.</title>
+  
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>MAAS :: Le Tung Bach, Ph.D.</title>
+<meta name="description" content="https://github.com/tadata-org/fastapi_mcp A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools: Exposing FastAPI Endpoints as MCP Tools: - Automatically converts existing FastAPI endpoints into MCP-compatible tools.
+Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems. Documentation and Schema Preservation: Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.
+Flexible Deployment: Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.
+" />
+<meta name="author" content="Le Tung Bach, Ph.D." />
+<meta name="keywords" content="AI Research, Technology Adoption, Ecosystem Management, Innovation, Art Technology" />
+
+  <meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="http://localhost:1313/posts/multi-ai-agent-system/" />
+
+
+<meta itemprop="name" content="MAAS :: Le Tung Bach, Ph.D.">
+<meta itemprop="description" content="https://github.com/tadata-org/fastapi_mcp A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools: Exposing FastAPI Endpoints as MCP Tools: - Automatically converts existing FastAPI endpoints into MCP-compatible tools.
+Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems. Documentation and Schema Preservation: Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.
+Flexible Deployment: Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.
+">
+<meta itemprop="image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@BachLETUNG25331" />
+<meta name="twitter:creator" content="@BachLETUNG25331" />
+<meta name="twitter:title" content="MAAS :: Le Tung Bach, Ph.D.">
+<meta name="twitter:description" content="https://github.com/tadata-org/fastapi_mcp A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools: Exposing FastAPI Endpoints as MCP Tools: - Automatically converts existing FastAPI endpoints into MCP-compatible tools.
+Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems. Documentation and Schema Preservation: Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.
+Flexible Deployment: Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.
+">
+<meta name="twitter:image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="MAAS :: Le Tung Bach, Ph.D.">
+<meta property="og:description" content="https://github.com/tadata-org/fastapi_mcp A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools: Exposing FastAPI Endpoints as MCP Tools: - Automatically converts existing FastAPI endpoints into MCP-compatible tools.
+Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems. Documentation and Schema Preservation: Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.
+Flexible Deployment: Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.
+">
+<meta property="og:url" content="http://localhost:1313/posts/multi-ai-agent-system/">
+<meta property="og:site_name" content="Le Tung Bach, Ph.D.">
+<meta property="og:image" content="https://letungbach.com/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="me" href="https://github.com/letungbach">
+<link rel="me" href="https://vn.linkedin.com/in/le-tung-bach-28b3074a">
+<link rel="me" href="https://x.com/BachLETUNG25331">
+
+
+
+  
+    <meta property="article:published_time" content="2025-04-11 00:00:00 &#43;0000 UTC" />
+  
+  
+    <meta property="article:modified_time" content="2025-04-11 00:00:00 &#43;0000 UTC" />
+  
+  
+  
+    <meta property="article:tag" content="maas" />
+  
+    <meta property="article:tag" content="ai" />
+  
+    <meta property="article:tag" content="agent" />
+  
+    <meta property="article:tag" content="agentic" />
+  
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.4f0ccc8439f99bf7f7970298556b94011aabc1fcae743b6842fc3361a2da9ea3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.15870410d15d02abd22fb5ef00996f65a00d04b3a7435e9f83831c7c2298de88.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:1313/favicon/site.webmanifest">
+
+
+
+
+
+
+
+
+
+
+<style>
+ 
+@media (max-width: 684px) {
+  .menu--mobile {
+    position: relative;
+    display: block;
+  }
+  
+  .menu--mobile .menu__trigger {
+    display: block;
+    z-index: 100;
+  }
+  
+  .menu--mobile .menu__dropdown {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    min-width: 180px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 99;
+  }
+  
+  .menu--mobile.open .menu__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu--mobile .menu__dropdown li {
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+  
+  .menu--mobile .menu__dropdown li a {
+    display: block;
+    padding: 8px;
+  }
+  
+   
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  marked.setOptions({
+    breaks: true,
+    gfm: true,
+    headerIds: false,
+    mangle: false
+  });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function() {
+      document.body.classList.toggle('menu-open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!document.querySelector('.menu--mobile').contains(e.target)) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+});
+</script> 
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Le Tung Bach, Ph.D.
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/chat">Chat</a></li>
+        
+      
+        
+          <li><a href="/game">Game</a></li>
+        
+      
+        
+          <li><a href="/rss">RSS</a></li>
+        
+      
+        
+          <li><a href="/search">Search</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  const mobileMenu = document.querySelector('.menu--mobile');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mobileMenu.classList.toggle('open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+  }
+});
+</script> 
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/chat" >Chat</a></li>
+        
+      
+        
+          <li><a href="/game" >Game</a></li>
+        
+      
+      
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">Show more&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/rss" >RSS</a></li>
+                  
+                
+                  
+                    <li><a href="/search" >Search</a></li>
+                  
+                
+                  
+                    <li><a href="/showcase" >Showcase</a></li>
+                  
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/multi-ai-agent-system/">MAAS</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-04-11&nbsp;[Updated:  2025-04-11]</time><span class="post-reading-time">4 min read (803 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/maas/">maas</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/ai/">ai</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/agent/">agent</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/agentic/">agentic</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents"></nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <p><a href="https://github.com/tadata-org/fastapi_mcp">https://github.com/tadata-org/fastapi_mcp</a>
+A zero-configuration tool for automatically exposing FastAPI endpoints as Model Context Protocol (MCP) tools:
+<strong>Exposing FastAPI Endpoints as MCP Tools</strong>:
+- Automatically converts existing FastAPI endpoints into MCP-compatible tools.</p>
+<pre><code>    Preserves request and response schemas, ensuring seamless interaction between APIs and AI systems.
+</code></pre>
+<ul>
+<li>
+<p><strong>Documentation and Schema Preservation</strong>:
+Maintains Swagger/OpenAPI documentation for endpoints, making it easier for developers and AI agents to understand and utilize the APIs.</p>
+</li>
+<li>
+<p><strong>Flexible Deployment</strong>:
+Allows mounting the MCP server directly within the FastAPI app or deploying it as a standalone service, catering to different architectural needs.</p>
+</li>
+<li>
+<p><strong>AI Application Development</strong>:
+Facilitates the creation of AI applications that require structured API interactions, such as conversational documentation, internal automation, and data querying agents2.</p>
+</li>
+<li>
+<p><strong>Multi-Agent Orchestration</strong>:
+Supports collaboration between AI agents across services using standardized APIs.</p>
+</li>
+</ul>
+<p>Think of how websites use a common standard for authentication. For example, by visiting a URL like https://{website_url}/.well-known/openid-configuration you instantly receive a host of login and security details—the magic behind the OpenID Connect Discovery mechanism.</p>
+<p>Now, imagine a similar approach for AI agents. Instead of authentication details, you’d check https://{website_url}/.well-known/agents.json and find a list of available AI agents, along with what they can do. This means your AI agent could simply visit that endpoint on any site and immediately understand which other agents are ready to work together.</p>
+<p>While no one is publicly exposing this metadata yet, Google has rolled out a Python framework that supports this exact protocol. It’s a practical step toward a future where AI agents can be easily discovered and communicate with each other—no more one-off integrations or guesswork.</p>
+<p>For anyone building AI agents behind the scenes, this is a turning point. It makes it possible to publicly share and integrate your agents, paving the way for broader, more dynamic collaboration across different services.</p>
+<p>MCP and A2A protocols are, in my opinion, equally important as AI Agents !</p>
+<p>![[Pasted image 20250416221153.png]]</p>
+<p>![[Pasted image 20250416221416.png]]</p>
+<p>![[Pasted image 20250416222543.png]]</p>
+<hr>
+<p>![[Pasted image 20250414225911.png]]</p>
+<p>Sam Altman in a recent Reddit AMA emphasized the popularity of AI Agents.<br>
+(Learn more here: <a href="https://lnkd.in/gzTFADZM">https://lnkd.in/gzTFADZM</a>)</p>
+<p>These AI Agents can clearly accelerate the development of different fields.</p>
+<p>However, it is certain that their architecture will greatly differ from our current architecture.</p>
+<p>Though we cannot exactly predict the future architecture.</p>
+<p>Here is my take on a possible architectural change within AI agents:</p>
+<p>![[Pasted image 20250410221727.png]]</p>
+<p>1️⃣ Input Layer Sophistication:</p>
+<ul>
+<li>Multimodal data processing (images, video, text)</li>
+<li>Real-time data integration capabilities</li>
+<li>Dynamic user feedback loops</li>
+<li>Adaptive data handling mechanisms</li>
+</ul>
+<p>2️⃣ Agent Orchestration Excellence:</p>
+<ul>
+<li>Dynamic task allocation for optimal resource usage</li>
+<li>Sophisticated inter-agent communication protocols</li>
+<li>Advanced monitoring and observability features</li>
+<li>Real-time performance optimization</li>
+</ul>
+<p>3️⃣ AI Agents Core Capabilities:</p>
+<ul>
+<li>Strategic planning and decision-making</li>
+<li>Self-reflection and improvement mechanisms</li>
+<li>Intelligent tool selection and utilization</li>
+<li>Continuous learning loops for perpetual enhancement</li>
+<li>Multiple specialized models working in harmony (Model 1 .. Model X)</li>
+</ul>
+<p>4️⃣ Data Architecture Innovation:</p>
+<ul>
+<li>Unified storage for structured and unstructured data</li>
+<li>Advanced vector stores for efficient retrieval</li>
+<li>Knowledge graphs for complex relationship mapping</li>
+<li>Scalable and adaptable data management</li>
+</ul>
+<p>5️⃣ Output Layer Sophistication:</p>
+<ul>
+<li>Customizable output formats</li>
+<li>Multi-channel delivery systems</li>
+<li>Automated insight generation</li>
+<li>Adaptive response mechanisms</li>
+</ul>
+<p>📌 What truly sets this architecture apart is its focus on:</p>
+<ol>
+<li>Safety &amp; Control: Ensuring reliable and secure operations</li>
+<li>Ethics &amp; Responsible AI: Building trust through ethical principles</li>
+<li>Regulatory Compliance: Futureproofing against evolving regulations</li>
+<li>Interoperability: Seamless integration capabilities</li>
+<li>Versioning &amp; Evolution: Systematic improvement tracking</li>
+<li>Human-AI Collaboration: Maintaining human-centric development</li>
+</ol>
+<p>PhD Students – Use these 4 AI tools to 10x your research progress.</p>
+<p><a href="http://researcher.life/">Researcher.Life</a> offers a package of AI tools that covers almost every phase of your research.</p>
+<p>Link: <a href="https://bit.ly/3JPx9Lq">https://bit.ly/3JPx9Lq</a></p>
+<p>Although the pack has several tools, the following 4 are my favorite.</p>
+<p>𝐑 𝐃𝐢𝐬𝐜𝐨𝐯𝐞𝐫𝐲</p>
+<p>How can it help you?</p>
+<p>·   Personalized recommendations for latest research papers daily, in social media style, based on your area of interest<br>
+·   Find specific papers or scholarly content for specific topics<br>
+·   Save papers in lists for organized research<br>
+·   Read key highlights/summaries or full text in an easy-to-read interface</p>
+<p>R Discovery Tutorial: <a href="https://lnkd.in/gURqGAUw">https://lnkd.in/gURqGAUw</a></p>
+<p>𝐏𝐚𝐩𝐞𝐫𝐩𝐚𝐥</p>
+<p>How can it help you?</p>
+<p>-     AI writing tool specifically designed for scientific writing.<br>
+-     Offers real-time suggestions for smooth writing.<br>
+-     Rephrase confusing and long sentences automatically.<br>
+-     Provides features like language, consistency checks along with synonym suggestions and translations.</p>
+<p>Paperpal Tutorial: <a href="https://lnkd.in/ge5WZW8q">https://lnkd.in/ge5WZW8q</a></p>
+<p>𝐉𝐨𝐮𝐫𝐧𝐚𝐥 𝐅𝐢𝐧𝐝𝐞𝐫</p>
+<p>How can it help you?</p>
+<p>-     Helps you to find the right journal to submit your paper to.<br>
+-     Search papers from a database of 43+ journals<br>
+-     Based on your manuscript, it shows which papers are most relevant</p>
+<p>𝐌𝐢𝐧𝐝 𝐭𝐡𝐞 𝐆𝐫𝐚𝐩𝐡</p>
+<p>How can it help you?</p>
+<p>-     Easily draw figures for your papers/presentations/graphical abstracts.<br>
+-     Contains more than 75K+ scientific illustrations in 80+ popular fields<br>
+-     The platform is easy to use and just about anybody can use it to create great infographics - from beginners to professionals, individuals to groups and small labs to large organizations</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="http://localhost:1313/posts/market-research/" class="button inline prev">
+        &lt; [<span class="button__text">market-research</span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="http://localhost:1313/posts/prompts/" class="button inline next">
+         [<span class="button__text">AI Prompts</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    
+  
+</div>
+
+</body>
+</html>

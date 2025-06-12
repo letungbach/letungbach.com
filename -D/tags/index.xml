@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CC</title>
+      <link>http://localhost:1313/tags/cc/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creativecommons</title>
+      <link>http://localhost:1313/tags/creativecommons/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/creativecommons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>http://localhost:1313/tags/emoji/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/emoji/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Continuallearning</title>
+      <link>http://localhost:1313/tags/continuallearning/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/continuallearning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cvd</title>
+      <link>http://localhost:1313/tags/cvd/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cvd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deeplearning</title>
+      <link>http://localhost:1313/tags/deeplearning/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deeplearning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moe</title>
+      <link>http://localhost:1313/tags/moe/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/moe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neuralnet</title>
+      <link>http://localhost:1313/tags/neuralnet/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/neuralnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>http://localhost:1313/tags/agent/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agentic</title>
+      <link>http://localhost:1313/tags/agentic/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agentic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maas</title>
+      <link>http://localhost:1313/tags/maas/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Abtoy</title>
+      <link>http://localhost:1313/tags/abtoy/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/abtoy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>http://localhost:1313/tags/book/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jepa</title>
+      <link>http://localhost:1313/tags/jepa/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jepa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moe-Jepa</title>
+      <link>http://localhost:1313/tags/moe-jepa/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/moe-jepa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt</title>
+      <link>http://localhost:1313/tags/prompt/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/prompt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publication</title>
+      <link>http://localhost:1313/tags/publication/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/publication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rag</title>
+      <link>http://localhost:1313/tags/rag/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement</title>
+      <link>http://localhost:1313/tags/reinforcement/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reinforcement/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Rag</title>
+      <link>http://localhost:1313/tags/self-rag/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/self-rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sociallistening</title>
+      <link>http://localhost:1313/tags/sociallistening/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sociallistening/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethic</title>
+      <link>http://localhost:1313/tags/ethic/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ethic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EthicalAI</title>
+      <link>http://localhost:1313/tags/ethicalai/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ethicalai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Leisure</title>
+      <link>http://localhost:1313/tags/leisure/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/leisure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movie</title>
+      <link>http://localhost:1313/tags/movie/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/movie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bbb</title>
+      <link>http://localhost:1313/tags/bbb/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bbb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clippings</title>
+      <link>http://localhost:1313/tags/clippings/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/clippings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>http://localhost:1313/tags/news/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Update</title>
+      <link>http://localhost:1313/tags/update/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/update/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apple_unified_chip</title>
+      <link>http://localhost:1313/tags/apple_unified_chip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apple_unified_chip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chainofthought</title>
+      <link>http://localhost:1313/tags/chainofthought/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chainofthought/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compute</title>
+      <link>http://localhost:1313/tags/compute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/compute/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coworker</title>
+      <link>http://localhost:1313/tags/coworker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/coworker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cpu</title>
+      <link>http://localhost:1313/tags/cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber</title>
+      <link>http://localhost:1313/tags/cyber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fintune</title>
+      <link>http://localhost:1313/tags/fintune/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fintune/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpu</title>
+      <link>http://localhost:1313/tags/gpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hack</title>
+      <link>http://localhost:1313/tags/hack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inference</title>
+      <link>http://localhost:1313/tags/inference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kid</title>
+      <link>http://localhost:1313/tags/kid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantum</title>
+      <link>http://localhost:1313/tags/quantum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quantum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantumai</title>
+      <link>http://localhost:1313/tags/quantumai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quantumai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sdk</title>
+      <link>http://localhost:1313/tags/sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sdk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sitemap</title>
+      <link>http://localhost:1313/tags/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sitemap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tpu</title>
+      <link>http://localhost:1313/tags/tpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>http://localhost:1313/tags/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/training/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

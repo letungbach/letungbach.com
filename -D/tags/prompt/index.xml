@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prompt on Le Tung Bach, Ph.D.</title>
+    <link>http://localhost:1313/tags/prompt/</link>
+    <description>Recent content in Prompt on Le Tung Bach, Ph.D.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/prompt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Prompts</title>
+      <link>http://localhost:1313/posts/prompts/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/prompts/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://prompts.chat/&#34;&gt;https://prompts.chat/&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/f/awesome-chatgpt-prompts&#34;&gt;https://github.com/f/awesome-chatgpt-prompts&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://cookbook.openai.com/examples/gpt4-1_prompting_guide?fbclid=IwY2xjawJss5pleHRuA2FlbQIxMQABHqyv-ZisclOP1ABxgswdYzK-SHBfUS5J_UtyGfxnKYiU8QyNhmOmOEOdGrIX_aem_zKUqHJKSUNhIfMAUmDm1Kg&#34;&gt;openAI4.0 prompting&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.norai.fi/courses/prompt-engineering-mastery-from-foundations-to-future/&#34;&gt;https://www.norai.fi/courses/prompt-engineering-mastery-from-foundations-to-future/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;NHIỀU CÔNG CỤ HỌC TẬP ĐƯỢC TẠO RA TỪ VIBE CODING. Vd: app học nhạc chỉ dùng 1 prompt trên Gemini 2.5 Pro trong Google AI Studio.&lt;/p&gt;&#xA;&lt;p&gt;Prompt: Build a tool to help me learn how music modalities work. Make it interactive and use a keyboard that plays sounds. Include a &amp;lsquo;quiz&amp;rsquo; mode. Make sure the code is in a single file.&lt;/p&gt;&#xA;&lt;p&gt;(cre: Google AI Devs)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
