@@ -10,7 +10,7 @@ title = 'About'
 
 **Founder: unitedcoffee.vn, mulala.art, giong.ai**
 
-📞 0906 376 868 | 📍 Hanoi, Vietnam | 📧 b@giong.ai | 🔗 [https://orcid.org/0009-0006-3525-6710](https://orcid.org/0009-0006-3525-6710)
+📞 0868 587 674 | 📍 Hanoi, Vietnam | 📧 b@giong.ai | 🔗 [https://orcid.org/0009-0006-3525-6710](https://orcid.org/0009-0006-3525-6710)
 
 ## About
 
