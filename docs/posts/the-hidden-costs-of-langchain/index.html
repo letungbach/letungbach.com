@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Le Tung Bach, Ph.D.</title>
+  
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title> :: Le Tung Bach, Ph.D.</title>
+<meta name="description" content="The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams [ After 15 years in software development and countless hours wrestling with AI frameworks, I had reached a breaking point. The promise of “production-ready” AI development tools has become a minefield of abstractions, vendor lock-ins, and overhyped capabilities. Let me share why popular frameworks like LangChain, CrewAI, and even the newer PydanticAI fall short, and why I created Atomic Agents as the solution we actually need.
+" />
+<meta name="author" content="Le Tung Bach, Ph.D." />
+<meta name="keywords" content="AI Research, Technology Adoption, Ecosystem Management, Innovation, Art Technology" />
+
+  <meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://letungbach.com/posts/the-hidden-costs-of-langchain/" />
+
+
+<meta itemprop="name" content=" :: Le Tung Bach, Ph.D.">
+<meta itemprop="description" content="The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams [ After 15 years in software development and countless hours wrestling with AI frameworks, I had reached a breaking point. The promise of “production-ready” AI development tools has become a minefield of abstractions, vendor lock-ins, and overhyped capabilities. Let me share why popular frameworks like LangChain, CrewAI, and even the newer PydanticAI fall short, and why I created Atomic Agents as the solution we actually need.
+">
+<meta itemprop="image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@BachLETUNG25331" />
+<meta name="twitter:creator" content="@BachLETUNG25331" />
+<meta name="twitter:title" content=" :: Le Tung Bach, Ph.D.">
+<meta name="twitter:description" content="The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams [ After 15 years in software development and countless hours wrestling with AI frameworks, I had reached a breaking point. The promise of “production-ready” AI development tools has become a minefield of abstractions, vendor lock-ins, and overhyped capabilities. Let me share why popular frameworks like LangChain, CrewAI, and even the newer PydanticAI fall short, and why I created Atomic Agents as the solution we actually need.
+">
+<meta name="twitter:image" content="https://letungbach.com/img/og-image.png">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content=" :: Le Tung Bach, Ph.D.">
+<meta property="og:description" content="The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams [ After 15 years in software development and countless hours wrestling with AI frameworks, I had reached a breaking point. The promise of “production-ready” AI development tools has become a minefield of abstractions, vendor lock-ins, and overhyped capabilities. Let me share why popular frameworks like LangChain, CrewAI, and even the newer PydanticAI fall short, and why I created Atomic Agents as the solution we actually need.
+">
+<meta property="og:url" content="https://letungbach.com/posts/the-hidden-costs-of-langchain/">
+<meta property="og:site_name" content="Le Tung Bach, Ph.D.">
+<meta property="og:image" content="https://letungbach.com/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<link rel="me" href="https://github.com/letungbach">
+<link rel="me" href="https://vn.linkedin.com/in/le-tung-bach-28b3074a">
+<link rel="me" href="https://x.com/BachLETUNG25331">
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/code.min.4f0ccc8439f99bf7f7970298556b94011aabc1fcae743b6842fc3361a2da9ea3.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/main.min.15870410d15d02abd22fb5ef00996f65a00d04b3a7435e9f83831c7c2298de88.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="https://letungbach.com/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="https://letungbach.com/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://letungbach.com/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://letungbach.com/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://letungbach.com/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://letungbach.com/favicon/site.webmanifest">
+
+
+
+
+
+
+
+
+
+
+<style>
+ 
+@media (max-width: 684px) {
+  .menu--mobile {
+    position: relative;
+    display: block;
+  }
+  
+  .menu--mobile .menu__trigger {
+    display: block;
+    z-index: 100;
+  }
+  
+  .menu--mobile .menu__dropdown {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    min-width: 180px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 99;
+  }
+  
+  .menu--mobile.open .menu__dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu--mobile .menu__dropdown li {
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+  
+  .menu--mobile .menu__dropdown li a {
+    display: block;
+    padding: 8px;
+  }
+  
+   
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  marked.setOptions({
+    breaks: true,
+    gfm: true,
+    headerIds: false,
+    mangle: false
+  });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function() {
+      document.body.classList.toggle('menu-open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!document.querySelector('.menu--mobile').contains(e.target)) {
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+});
+</script> 
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Le Tung Bach, Ph.D.
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/chat">Chat</a></li>
+        
+      
+        
+          <li><a href="/game">Game</a></li>
+        
+      
+        
+          <li><a href="/rss">RSS</a></li>
+        
+      
+        
+          <li><a href="/search">Search</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuTrigger = document.querySelector('.menu--mobile .menu__trigger');
+  const mobileMenu = document.querySelector('.menu--mobile');
+  
+  if (mobileMenuTrigger) {
+    mobileMenuTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mobileMenu.classList.toggle('open');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+  }
+});
+</script> 
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/chat" >Chat</a></li>
+        
+      
+        
+          <li><a href="/game" >Game</a></li>
+        
+      
+      
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">Show more&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/rss" >RSS</a></li>
+                  
+                
+                  
+                    <li><a href="/search" >Search</a></li>
+                  
+                
+                  
+                    <li><a href="/showcase" >Showcase</a></li>
+                  
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://letungbach.com/posts/the-hidden-costs-of-langchain/"></a>
+  </h1>
+  <div class="post-meta"><span class="post-reading-time">14 min read (2982 words)</span></div>
+
+  
+  
+
+
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pay-kenny-vaneetvelde-using-paypalme">Pay Kenny Vaneetvelde using PayPal.Me</a>
+      <ul>
+        <li><a href="#go-to-paypalmekennyvaneetvelde-and-type-in-the-amount-since-its-paypal-its-easy-and-secure-dont-have-a-paypal">Go to paypal.me/KennyVaneetvelde and type in the amount. Since it’s PayPal, it’s easy and secure. Don’t have a PayPal…</a></li>
+      </ul>
+    </li>
+    <li><a href="#published-inai-advances">Published in AI Advances</a></li>
+    <li><a href="#written-bykenny-vaneetvelde">Written by Kenny Vaneetvelde</a></li>
+    <li><a href="#responses-5">Responses (5)</a></li>
+    <li><a href="#more-fromkenny-vaneetveldeand-ai-advances">More from Kenny Vaneetvelde and AI Advances</a></li>
+    <li><a href="#building-ai-agents-the-right-way-design-principles-for-agentic-ai">Building AI Agents the Right Way: Design Principles for Agentic AI</a>
+      <ul>
+        <li><a href="#so-you-want-to-build-the-next-super-smart-ai-agent-you-wire-up-gpt-4o-to-a-few-apis-and-let-it-roam-free-what-could-go-wrong-spoiler">So, you want to build the next super-smart AI agent. You wire up GPT-4o to a few APIs and let it roam free. What could go wrong? (Spoiler…</a></li>
+      </ul>
+    </li>
+    <li><a href="#agentic-ai-lifecycle-for-enterprise-processes">Agentic AI Lifecycle for Enterprise Processes</a>
+      <ul>
+        <li><a href="#the-art-of-transforming-manual-processes-into-an-orchestration-of-ai-agents">The art of transforming Manual processes into an Orchestration of AI Agents</a></li>
+      </ul>
+    </li>
+    <li><a href="#llms-can-now-be-pre-trained-using-pure-reinforcement-learning">LLMs Can Now Be Pre-Trained Using Pure Reinforcement Learning</a>
+      <ul>
+        <li><a href="#a-deep-dive-into-reinforcement-pre-training-rpt-a-new-technique-introduced-by-microsoft-researchers-to-scalably-pre-train-llms-using-rl">A deep dive into Reinforcement Pre-Training (RPT), a new technique introduced by Microsoft researchers to scalably pre-train LLMs using RL.</a></li>
+      </ul>
+    </li>
+    <li><a href="#want-to-build-ai-agents-tired-of-langchain-crewai-autogen--other-ai-frameworks-read-this">Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen &amp; Other AI Frameworks? Read this!</a>
+      <ul>
+        <li><a href="#frameworks-like-langchain-crewai-and-autogen-have-gained-popularity-by-promising-high-level-abstractions-for-building-ai-systems-yet">Frameworks like LangChain, CrewAI, and AutoGen have gained popularity by promising high-level abstractions for building AI systems. Yet…</a></li>
+      </ul>
+    </li>
+    <li><a href="#recommended-from-medium">Recommended from Medium</a></li>
+    <li><a href="#these-mcp-servers-are-amazing-for-coding">These MCP servers are amazing for coding</a>
+      <ul>
+        <li><a href="#start-using-mcp-now">Start using MCP. NOW.</a></li>
+      </ul>
+    </li>
+    <li><a href="#gpt-5-is-coming-in-july-2025and-everything-will-change">GPT-5 Is Coming in July 2025 — And Everything Will Change</a>
+      <ul>
+        <li><a href="#its-wild-watching-people-use-chatgpt-knowing-whats-coming-openai-insider">“It’s wild watching people use ChatGPT… knowing what’s coming.”  — OpenAI insider</a></li>
+      </ul>
+    </li>
+    <li><a href="#why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont">Why Most AI Agents Fail in Production (And How to Build Ones That Don’t)</a>
+      <ul>
+        <li><a href="#im-a-8-years-machine-learning-engineer-building-ai-agents-in-production">I’m a 8+ years Machine Learning Engineer building AI agents in production.</a></li>
+      </ul>
+    </li>
+    <li><a href="#goldman-sachs-just-made-your-computer-science-degree-worthless">Goldman Sachs Just Made Your Computer Science Degree Worthless</a>
+      <ul>
+        <li><a href="#your-programming-job-just-got-10x-more-dangerous">Your programming job just got 10x more dangerous</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-47-line-code-that-made-one-developer-2-million-from-ai">The 47-Line Code That Made One Developer $2 Million from AI</a>
+      <ul>
+        <li><a href="#in-late-2024-a-solo-indie-developer-pushed-47-lines-of-python-code-to-github">In late 2024, a solo indie developer pushed 47 lines of Python code to GitHub.</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-i-print-money-daily-with-this-simple-options-strategy">How I Print Money Daily with This Simple Options Strategy</a>
+      <ul>
+        <li><a href="#a-step-by-step-guide-to-making-25-50-daily">A step-by-step guide to making $25-$50 daily</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <h1 id="the-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-production-teams">The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams<a href="#the-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-production-teams" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>[
+<img src="https://miro.medium.com/v2/resize:fit:1050/0*Vh6rw6R4b2fiyk9a" alt=""></p>
+<p>After 15 years in software development and countless hours wrestling with AI frameworks, I had reached a breaking point. The promise of “production-ready” AI development tools has become a minefield of abstractions, vendor lock-ins, and overhyped capabilities. Let me share why popular frameworks like LangChain, CrewAI, and even the newer PydanticAI fall short, and why I created Atomic Agents as the solution we actually need.</p>
+<p><strong>Note: If you don’t have a Medium account you can use</strong> ==<a href="https://ai.gopubby.com/the-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-77b9a40c16cf"><strong>this URL</strong></a>== <strong>to continue reading without an account.</strong></p>
+<h1 id="the-langchain-labyrinth-when-abstractions-attack">The LangChain Labyrinth: When Abstractions Attack<a href="#the-langchain-labyrinth-when-abstractions-attack" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>LangChain quickly became a go-to, and its modularity is often touted as a strength. However, this modularity can quickly devolve into a complex setup and configuration nightmare. One of the biggest pain points is the lack of control over autonomous agents. The framework often makes hidden calls to LLMs, chaining requests in ways that aren’t transparent. The result? Unpredictable costs, inefficient execution, and workflows that can become unnecessarily long and difficult to debug.</p>
+<h1 id="the-hidden-cost-problem">The Hidden Cost Problem<a href="#the-hidden-cost-problem" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Here’s a real scenario from my own experience: I once had a simple document analysis task balloon into hundreds of dollars in API costs because LangChain was making multiple hidden LLM calls I couldn’t see or control. The framework’s layers of abstraction made it nearly impossible to understand what was happening under the hood.</p>
+<h1 id="documentation-a-maze-without-a-map">Documentation: A Maze Without a Map<a href="#documentation-a-maze-without-a-map" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>LangChain’s documentation has been a point of contention for many users. Compared to some competing frameworks, the quality of LangChain’s documentation has been criticized as subpar, with reports of: Incomplete guidance and unclear explanations, Outdated information and broken links, Misleading code examples</p>
+<p>The documentation reads like it was written by people who’ve never actually built a production system. You’ll find yourself diving through GitHub issues and Discord channels just to understand basic functionality.</p>
+<h1 id="real-companies-are-moving-away">Real Companies Are Moving Away<a href="#real-companies-are-moving-away" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Octomind used LangChain for a year to power AI agents that create and fix software tests, but they encountered numerous issues as they scaled up. They found that LangChain’s abstractions were too inflexible for more complex agent architectures (like agents spawning sub-agents or specialized agents coordinating). After growing frustrations, <a href="https://octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents">Octomind’s team decided to remove LangChain entirely in 2024</a>. The result? “Once we removed it… we could just code,” they report, noting that no longer being constrained by LangChain made their team far more productive.</p>
+<h1 id="crewai-the-overpromise-express">CrewAI: The Overpromise Express<a href="#crewai-the-overpromise-express" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>CrewAI offers a more structured approach to multi-agent systems, focusing on role-playing agents that collaborate on tasks. This is great for certain use cases, like research teams or project management. However, this structured approach can also be its Achilles’ heel.</p>
+<h1 id="rigidity-disguised-as-structure">Rigidity Disguised as Structure<a href="#rigidity-disguised-as-structure" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The framework can be rigid, making it difficult to dynamically adjust roles or delegate tasks mid-workflow. While it aims for simplicity, some users report inconsistent results for specific use cases and a need for significant performance tuning to achieve stability in complex tasks.</p>
+<p>From my experience, you spend more time fighting the framework’s opinions than building your actual application. Want to slightly modify how agents communicate? Good luck navigating their rigid crew-based programming model.</p>
+<h1 id="autogen-microsofts-half-baked-solution">AutoGen: Microsoft’s Half-Baked Solution<a href="#autogen-microsofts-half-baked-solution" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Microsoft’s AutoGen empowers developers with multi-agent conversations and offers flexibility with human-in-the-loop problem-solving. It’s powerful, especially for complex problem-solving and research tasks. However, it’s not without its frustrations. A common complaint is that its documentation can be hard to navigate, with insufficient examples. Some developers report that certain features, like structured outputs, “flat out don’t work” as expected.</p>
+<p>Think about that for a moment: a Microsoft-backed project shipping with features that simply don’t work as advertised. This should tell you everything about the current state of AI frameworks.</p>
+<h1 id="pydanticai-new-player-same-problems">PydanticAI: New Player, Same Problems<a href="#pydanticai-new-player-same-problems" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>When <a href="https://ai.pydantic.dev/">PydanticAI was announced</a>, I had high hopes. Built by the team behind Pydantic (which powers much of the Python ecosystem), it promised to bring “that FastAPI feeling to GenAI app development.” But after diving deep into it, I’ve found it’s not the production-ready solution it claims to be.</p>
+<h1 id="still-in-beta-still-breaking">Still in Beta, Still Breaking<a href="#still-in-beta-still-breaking" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>PydanticAI is in beta. This article is based on version 0.0.13. Code examples may not work with future versions. Limitations that are mentioned may be lifted in future versions. This isn’t just a version number — it’s a warning. The framework is actively breaking APIs and making major changes. As they state in their <a href="https://github.com/pydantic/pydantic-ai/issues/913">roadmap</a>, break APIs ASAP so we can get to a stable state ASAP is literally part of their philosophy.</p>
+<p>Building production systems on a framework that openly admits to breaking changes? That’s a recipe for maintenance nightmares I’ve seen too many times before.</p>
+<h1 id="the-logfire-lock-in">The Logfire Lock-in<a href="#the-logfire-lock-in" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Here’s where things get concerning. Pydantic Services, the company behind Pydantic, has raised a $12.5m Series A in October 2024. This is great news for the project: funding pays for full time developers. It also raises the question of how Pydantic will make money, and the answer to that is Logfire subscriptions.</p>
+<p>While they claim Logfire integration is optional, make the experience of using PydanticAI with Pydantic Logfire as good as it can possibly be is a stated priority. This creates an uncomfortable dynamic where the “best” experience requires their paid product.</p>
+<h1 id="limited-production-features">Limited Production Features<a href="#limited-production-features" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Despite marketing itself as “production-grade,” PydanticAI is missing crucial features:</p>
+<ul>
+<li>No built-in retry mechanisms (unlike Instructor, which it claims to improve upon)</li>
+<li>its validation and streaming modes have some rough edges</li>
+<li>The roadmap shows they’re still figuring out fundamental architecture</li>
+</ul>
+<h1 id="the-real-problem-developers-building-for-vcs-not-users">The Real Problem: Developers Building for VCs, Not Users<a href="#the-real-problem-developers-building-for-vcs-not-users" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The common thread across all these frameworks? They’re built to impress investors, not solve real problems. A lot of money was put into these types of companies by VC and investors. A bubble of ignorance that now seems to have at least slightly burst.</p>
+<p>These frameworks promise AGI-level capabilities when as someone with 15 years of experience in AI development, I know we’re just not there yet! They focus on buzzwords and demos rather than the boring but essential work of building reliable, maintainable systems.</p>
+<h1 id="enter-atomic-agents-built-by-developers-for-developers">Enter Atomic Agents: Built by Developers, for Developers<a href="#enter-atomic-agents-built-by-developers-for-developers" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>After wrestling with these frustrations, I created <a href="https://github.com/BrainBlend-AI/atomic-agents">Atomic Agents</a> with a simple philosophy: <strong>no magic, just solid engineering</strong>.</p>
+<blockquote>
+<p><em>NOTE:</em> <strong><em>If you happen to be looking for a strategic partner to help develop your AI-driven application or prototype</em></strong><em>, feel free to</em> <strong><em>contact BrainBlend AI</em></strong> <em>through our website:</em> <a href="https://brainblendai.com/#contact"><strong><em>https://brainblendai.com/#contac</em></strong></a>_t<br>
+_<strong><em>We offer end-to-end project delivery, staff augmentation, workshops and more!</em></strong></p>
+<p><strong><em>As experienced software engineers with over 15 years of experience</em></strong><em>, we make sure your project is</em> <strong><em>not just ship-shit-fast vaporware</em></strong><em>, but a maintainable piece of quality software built to last and grow.</em></p>
+<p><em>Alternatively,</em> <strong><em>you can also find us on LinkedIn</em></strong> <em>and send us a message there:</em><a href="https://www.linkedin.com/company/brain-blend-ai"><em>https://www.linkedin.com/company/brain-blend-ai</em></a></p></blockquote>
+<h1 id="the-power-of-true-atomicity">The Power of True Atomicity<a href="#the-power-of-true-atomicity" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>By focusing on single-purpose building blocks (“atoms”), Atomic Agents allows you to fine-tune every part of your system. Swap out a web-scraper for a database query, or a local LLM for an OpenAI model — no extensive rewrites needed. Strict input/output schemas let you define precisely what you expect, ensuring consistent results instead of random structure issues or half-baked JSON.</p>
+<p>Every component in Atomic Agents:</p>
+<ul>
+<li>Has a single, clear responsibility</li>
+<li>Can be tested in isolation</li>
+<li>Can be swapped out without affecting the rest of your system</li>
+<li>Uses standard Python practices you already know</li>
+</ul>
+<h1 id="no-hidden-complexity">No Hidden Complexity<a href="#no-hidden-complexity" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>If you’re a Python dev, it’s just Python. You can step through with a debugger, log everything, or integrate these agents into standard web frameworks (Flask, FastAPI, Django, etc.) without friction.</p>
+<p>When something goes wrong (and it will), you can set a breakpoint and see exactly what’s happening. No diving through layers of abstraction or trying to decode what some “magic” orchestrator is doing.</p>
+<h1 id="schema-first-development-with-real-control">Schema-First Development with Real Control<a href="#schema-first-development-with-real-control" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>By leveraging Pydantic (yes, the same Pydantic that PydanticAI uses), we ensure type safety without the overhead. But unlike PydanticAI, we don’t try to reinvent the wheel:</p>
+<p>from atomic_agents.agents.base_agent import BaseIOSchema<br>
+from pydantic import Field<br>
+from typing import List</p>
+<p>class QueryAgentInputSchema(BaseIOSchema):<br>
+&ldquo;&ldquo;&ldquo;Input schema for the QueryAgent.&rdquo;&rdquo;&rdquo;<br>
+instruction: str = Field(<br>
+&hellip;,<br>
+description=&ldquo;A detailed instruction or request to generate search engine queries for.&rdquo;<br>
+)<br>
+num_queries: int = Field(&hellip;, description=&ldquo;The number of search queries to generate.&rdquo;)</p>
+<h1 id="the-output-of-one-agent-becomes-the-input-of-another">The output of one agent becomes the input of another<a href="#the-output-of-one-agent-becomes-the-input-of-another" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>from web_search_agent.tools.searxng_search import SearxNGSearchTool<br>
+query_agent = BaseAgent(<br>
+BaseAgentConfig(<br>
+client=instructor.from_openai(openai.OpenAI()),<br>
+model=&ldquo;gpt-4o-mini&rdquo;,<br>
+system_prompt_generator=SystemPromptGenerator(<br>
+background=[<br>
+&ldquo;You are an intelligent query generation expert.&rdquo;<br>
+],<br>
+steps=[<br>
+&ldquo;Receive the instruction and the number of queries.&rdquo;,<br>
+&ldquo;Generate the queries in JSON format.&rdquo;<br>
+],<br>
+output_instructions=[<br>
+&ldquo;Ensure each query is unique and relevant.&rdquo;,<br>
+&ldquo;Provide the queries in the expected schema.&rdquo;<br>
+],<br>
+),<br>
+input_schema=QueryAgentInputSchema,<br>
+output_schema=SearxNGSearchTool.input_schema  # Direct chaining!<br>
+)<br>
+)</p>
+<p>But here’s the crucial difference that sets Atomic Agents apart: <strong>You’re not forced into rigid chaining</strong>. Want to add business logic between agents? No problem:</p>
+<h1 id="run-the-query-agent">Run the query agent<a href="#run-the-query-agent" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>query_result = query_agent.run(query_input)</p>
+<h1 id="apply-your-business-logic">Apply your business logic<a href="#apply-your-business-logic" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>filtered_queries = []<br>
+for query in query_result.queries:<br>
+# Check against your business rules<br>
+if not contains_prohibited_terms(query):<br>
+filtered_queries.append(query)</p>
+<pre><code># Maybe log for compliance  
+audit_log.record_query(query, user_id, timestamp)  
+  
+# Apply rate limiting  
+if len(filtered_queries) &gt;= get_user_query_limit(user_id):  
+    break  
+</code></pre>
+<h1 id="only-then-pass-to-the-search-tool">Only then pass to the search tool<a href="#only-then-pass-to-the-search-tool" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>search_input = SearxNGSearchTool.input_schema(queries=filtered_queries)<br>
+search_results = search_tool.run(search_input)</p>
+<h1 id="more-business-logic-after-search">More business logic after search<a href="#more-business-logic-after-search" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>validated_results = validate_search_results(search_results)<br>
+enriched_results = add_metadata_from_database(validated_results)</p>
+<h1 id="finally-pass-to-your-qa-agent">Finally pass to your QA agent<a href="#finally-pass-to-your-qa-agent" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>qa_input = QAAgentInputSchema(<br>
+question=original_question,<br>
+context=enriched_results<br>
+)<br>
+qa_result = qa_agent.run(qa_input)</p>
+<p>This is <strong>real</strong> control. You decide when to chain directly, when to insert business logic, when to branch conditionally. No framework magic dictating your flow.</p>
+<h1 id="real-production-features">Real Production Features<a href="#real-production-features" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Unlike the frameworks above, Atomic Agents includes what you actually need:</p>
+<ol>
+<li><strong>Context Providers</strong>: Inject dynamic data into system prompts without hacks</li>
+<li><strong>Memory Management</strong>: Built-in conversation tracking that you control</li>
+<li><strong>Tool Ownership</strong>: Download tools into your codebase — you own them completely</li>
+<li><strong>No Vendor Lock-in</strong>: Use any LLM provider, any observability platform, any deployment method</li>
+</ol>
+<h1 id="the-cli-that-actually-helps">The CLI That Actually Helps<a href="#the-cli-that-actually-helps" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The Atomic Assembler CLI provides complete control over your tools, allowing you to: Avoid dependency clutter: Install only the tools you need. Modify tools easily: Each tool is self-contained with its own tests.</p>
+<h1 id="building-real-systems-not-demos">Building Real Systems, Not Demos<a href="#building-real-systems-not-demos" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Here’s a complete example that shows the difference. While other frameworks would have you navigating through abstractions, with Atomic Agents it’s just clear, testable code:</p>
+<p>from atomic_agents.agents.base_agent import BaseAgent, BaseAgentConfig<br>
+from atomic_agents.lib.components.system_prompt_generator import SystemPromptGenerator<br>
+from atomic_agents.lib.components.agent_memory import AgentMemory<br>
+from atomic_agents.lib.base.base_io_schema import BaseIOSchema<br>
+from pydantic import Field<br>
+from typing import List<br>
+import instructor<br>
+import openai</p>
+<h1 id="step-1-define-what-goes-in-and-out-no-magic">Step 1: Define what goes in and out (no magic!)<a href="#step-1-define-what-goes-in-and-out-no-magic" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>class ResearchInput(BaseIOSchema):<br>
+&ldquo;&ldquo;&ldquo;Input schema for research queries.&rdquo;&rdquo;&rdquo;<br>
+question: str = Field(&hellip;, description=&ldquo;Research question&rdquo;)<br>
+class ResearchOutput(BaseIOSchema):<br>
+&ldquo;&ldquo;&ldquo;Output schema for research results.&rdquo;&rdquo;&rdquo;<br>
+answer: str = Field(&hellip;, description=&ldquo;Researched answer&rdquo;)<br>
+sources: List[str] = Field(&hellip;, description=&ldquo;Source URLs&rdquo;)</p>
+<h1 id="step-2-configure-your-agent-you-control-everything">Step 2: Configure your agent (you control everything)<a href="#step-2-configure-your-agent-you-control-everything" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>agent = BaseAgent(<br>
+config=BaseAgentConfig(<br>
+client=instructor.from_openai(openai.OpenAI()),  # Your choice of LLM<br>
+model=&ldquo;gpt-4o-mini&rdquo;,  # Your choice of model<br>
+system_prompt_generator=SystemPromptGenerator(<br>
+background=[&ldquo;You are a research assistant.&rdquo;],<br>
+steps=[&ldquo;Search for information&rdquo;, &ldquo;Synthesize findings&rdquo;],<br>
+output_instructions=[&ldquo;Provide sources for all claims&rdquo;]<br>
+),<br>
+input_schema=ResearchInput,<br>
+output_schema=ResearchOutput,<br>
+memory=AgentMemory()<br>
+)<br>
+)</p>
+<h1 id="step-3-use-it-no-hidden-api-calls-or-surprise-costs">Step 3: Use it (no hidden API calls or surprise costs)<a href="#step-3-use-it-no-hidden-api-calls-or-surprise-costs" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>result = agent.run(ResearchInput(question=&ldquo;What is quantum computing?&rdquo;))<br>
+print(f&quot;Answer: {result.answer}&quot;)<br>
+print(f&quot;Sources: {result.sources}&quot;)</p>
+<p>That’s it. No magic. No hidden complexity. Just code you can understand, test, and maintain.</p>
+<h1 id="the-industry-is-waking-up">The Industry Is Waking Up<a href="#the-industry-is-waking-up" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Posts and articles with titles like ‘Why we no longer use LangChain’ began appearing, reflecting real companies deciding to pull LangChain out of their stacks. <a href="https://shashankguda.medium.com/challenges-criticisms-of-langchain-b26afcef94e7">One analysis on Medium</a> noted that While some developers acknowledge that LangChain is still in rapid development, many feel it lacks the stability required for serious projects.</p>
+<p>Developers are realizing that Developers use it to learn AI development, and for prototyping rather than for production due to bad code quality, and high component complexity.</p>
+<h1 id="the-choice-is-yours">The Choice Is Yours<a href="#the-choice-is-yours" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>You can continue wrestling with:</p>
+<ul>
+<li>LangChain’s maze of abstractions and hidden costs</li>
+<li>CrewAI’s rigid structures and broken promises</li>
+<li>AutoGen’s non-functional features</li>
+<li>PydanticAI’s beta instability and vendor lock-in</li>
+</ul>
+<p>Or you can choose a framework that respects you as a developer and treats you as an adult.</p>
+<p><strong>If you’re tired of wrestling with frameworks that fight you every step of the way, I urge you: Explore</strong> <a href="https://github.com/BrainBlend-AI/atomic-agents"><strong>Atomic Agents on GitHub</strong></a><strong>.</strong></p>
+<h1 id="the-future-is-atomic">The Future Is Atomic<a href="#the-future-is-atomic" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The AI development landscape doesn’t need more magic or AGI promises. It needs solid engineering principles applied to real problems. That’s what Atomic Agents delivers.</p>
+<p>Join us in building AI systems that are:</p>
+<ul>
+<li><strong>Predictable</strong>: You know exactly what will happen</li>
+<li><strong>Maintainable</strong>: Your future self will thank you</li>
+<li><strong>Testable</strong>: Unit tests that actually work</li>
+<li><strong>Portable</strong>: No vendor lock-in, ever</li>
+<li><strong>Flexible</strong>: Chain directly or add business logic — your choice</li>
+</ul>
+<p>Stop fighting your tools. Start building with Atomic Agents.</p>
+<p><em>Ready to experience AI development without the frustration?</em> <strong><em>Check out</em></strong> <a href="https://github.com/BrainBlend-AI/atomic-agents"><strong><em>Atomic Agents on GitHub</em></strong></a> <strong><em>and join our</em></strong> <a href="https://www.reddit.com/r/AtomicAgents/"><strong><em>community on Reddit</em></strong></a><strong><em>.</em></strong> <em>Built by developers who’ve been burned by the alternatives — and learned from it.</em></p>
+<h1 id="support-the-author">Support the Author<a href="#support-the-author" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p><strong><em>If you found this article useful, please consider donating any appropriate amount to my PayPal.me tip jar</em></strong><em>!</em></p>
+<p>[</p>
+<h2 id="pay-kenny-vaneetvelde-using-paypalme">Pay Kenny Vaneetvelde using PayPal.Me<a href="#pay-kenny-vaneetvelde-using-paypalme" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="go-to-paypalmekennyvaneetvelde-and-type-in-the-amount-since-its-paypal-its-easy-and-secure-dont-have-a-paypal">Go to paypal.me/KennyVaneetvelde and type in the amount. Since it’s PayPal, it’s easy and secure. Don’t have a PayPal…<a href="#go-to-paypalmekennyvaneetvelde-and-type-in-the-amount-since-its-paypal-its-easy-and-secure-dont-have-a-paypal" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p><a href="https://www.paypal.com">www.paypal.com</a></p>
+<p>](<a href="https://www.paypal.com/paypalme/KennyVaneetvelde?source=post_page-----77b9a40c16cf---------------------------------------">https://www.paypal.com/paypalme/KennyVaneetvelde?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p><strong><em>Your support means the world and allows me to continue to spend time writing articles, making tutorials, …</em></strong></p>
+<p><strong><em>Thank you!</em></strong></p>
+<p>If you <strong>loved</strong> my content and want to <strong>get in touch</strong>, you can do so through <a href="https://www.linkedin.com/in/kennyvaneetvelde/"><strong>LinkedIn</strong></a> or even feel free to reach out to me by email at <a href="mailto:kenny@brainblendai.com"><strong>kenny@brainblendai.com</strong></a></p>
+<p>Similarly, if you need an AI-driven project or prototype developed, please contact my agency: <a href="https://brainblendai.com/#contact"><strong>BrainBlend AI</strong></a> and we will make sure your project gets the quality treatment it deserves in a way that is maintainable and ready for production!</p>
+<p>You can also find me on <a href="https://x.com/Kenny_V"><strong>X/Twitter</strong></a> or you can give me a <a href="https://github.com/KennyVaneetvelde">follow on <strong>GitHub</strong></a> and check out and star any of my projects on there, such as <a href="https://github.com/BrainBlend-AI/atomic-agents"><strong>Atomic Agents</strong></a>!</p>
+<p><img src="https://miro.medium.com/v2/resize:fit:743/0*d2He_eahRqX17I7g.png" alt=""></p>
+<p>[</p>
+<p>Langchain</p>
+<p>](<a href="https://medium.com/tag/langchain?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/tag/langchain?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Python</p>
+<p>](<a href="https://medium.com/tag/python?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/tag/python?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Programming</p>
+<p>](<a href="https://medium.com/tag/programming?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/tag/programming?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Technology</p>
+<p>](<a href="https://medium.com/tag/technology?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/tag/technology?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>AI</p>
+<p>](<a href="https://medium.com/tag/ai?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/tag/ai?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>217</p>
+<p>5</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F77b9a40c16cf&amp;operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fthe-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-77b9a40c16cf&amp;source=---footer_actions--77b9a40c16cf---------------------bookmark_footer------------------"></a></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:96:96/1*R8zEd59FDf0l8Re94ImV0Q.png" alt="AI Advances"></p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------">https://ai.gopubby.com/?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<h2 id="published-inai-advances">Published in AI Advances<a href="#published-inai-advances" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------">https://ai.gopubby.com/?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------</a>)</p>
+<p><a href="https://ai.gopubby.com/followers?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------">43K followers</a></p>
+<p>·<a href="https://ai.gopubby.com/thinking-with-our-hands-f5fa70a60d49?source=post_page---post_publication_info--77b9a40c16cf---------------------------------------">Last published 8 hours ago</a></p>
+<p>Democratizing access to artificial intelligence</p>
+<p>Follow</p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:96:96/1*npvvQ9Itr8VvMaMxRrQwYQ.png" alt="Kenny Vaneetvelde"></p>
+<p>](<a href="https://medium.com/@kenny_v?source=post_page---post_author_info--77b9a40c16cf---------------------------------------">https://medium.com/@kenny_v?source=post_page---post_author_info--77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<h2 id="written-bykenny-vaneetvelde">Written by Kenny Vaneetvelde<a href="#written-bykenny-vaneetvelde" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>](<a href="https://medium.com/@kenny_v?source=post_page---post_author_info--77b9a40c16cf---------------------------------------">https://medium.com/@kenny_v?source=post_page---post_author_info--77b9a40c16cf---------------------------------------</a>)</p>
+<p><a href="https://medium.com/@kenny_v/followers?source=post_page---post_author_info--77b9a40c16cf---------------------------------------">2.4K followers</a></p>
+<p>·<a href="https://medium.com/@kenny_v/following?source=post_page---post_author_info--77b9a40c16cf---------------------------------------">82 following</a></p>
+<p>Freelance Developer // AI &amp; Large Language Models // Python // Coaching // FrontEnd // Author with Packt Publishing - TheDeadlyPretzel on Reddit</p>
+<p>Follow</p>
+<h2 id="responses-5">Responses (5)<a href="#responses-5" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><a href="https://policy.medium.com/medium-rules-30e5502c4eb4?source=post_page---post_responses--77b9a40c16cf---------------------------------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fill:48:48/1*dmbNkD5D-u45r44go_cf0g.png" alt=""></p>
+<p>Write a response</p>
+<p>[</p>
+<p>What are your thoughts?</p>
+<p>](<a href="https://medium.com/m/signin?operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fthe-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-77b9a40c16cf&amp;source=---post_responses--77b9a40c16cf---------------------respond_sidebar------------------">https://medium.com/m/signin?operation=register&redirect=https%3A%2F%2Fai.gopubby.com%2Fthe-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-77b9a40c16cf&source=---post_responses--77b9a40c16cf---------------------respond_sidebar------------------</a>)</p>
+<p>Cancel</p>
+<p>Respond</p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:48:48/0*Q0EHYswlHBhsyDTw" alt="Michael Jhonson"></p>
+<p>](<a href="https://medium.com/@michaeljohnsontechno?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------">https://medium.com/@michaeljohnsontechno?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------</a>)</p>
+<p>[</p>
+<p>Michael Jhonson</p>
+<p>](<a href="https://medium.com/@michaeljohnsontechno?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------">https://medium.com/@michaeljohnsontechno?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------</a>)</p>
+<p>[</p>
+<p>1 day ago (edited)</p>
+<p>](<a href="https://medium.com/@michaeljohnsontechno/great-blog-d525419d3314?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------">https://medium.com/@michaeljohnsontechno/great-blog-d525419d3314?source=post_page---post_responses--77b9a40c16cf----0-----------------------------------</a>)</p>
+<p>Great blog! You nailed the hidden struggles of <a href="https://www.sparkouttech.com/botpress-ai-development/">LangChain development</a> in production especially the lack of transparency and modular overload. Eye-opening for dev teams chasing real scalability.</p>
+<p>21</p>
+<p>Reply</p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:48:48/1*rRVPi9O9iK719f3_oQpnAQ.jpeg" alt="Pierre Brunelle"></p>
+<p>](<a href="https://medium.com/@pierrebrunelle?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------">https://medium.com/@pierrebrunelle?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------</a>)</p>
+<p>[</p>
+<p>Pierre Brunelle</p>
+<p>](<a href="https://medium.com/@pierrebrunelle?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------">https://medium.com/@pierrebrunelle?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------</a>)</p>
+<p>[</p>
+<p>1 day ago</p>
+<p>](<a href="https://medium.com/@pierrebrunelle/you-should-try-https-github-com-pixeltable-pixeltable-c1467857acc6?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------">https://medium.com/@pierrebrunelle/you-should-try-https-github-com-pixeltable-pixeltable-c1467857acc6?source=post_page---post_responses--77b9a40c16cf----1-----------------------------------</a>)</p>
+<p>You should try <a href="https://github.com/pixeltable/pixeltable">https://github.com/pixeltable/pixeltable</a> and its computed column principle to give you all the visibility you need and building your own agent framework if you want to but definitely not necessary.</p>
+<p>6</p>
+<p>Reply</p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:48:48/2*HlnerL9UAjCGa7IVvpMaGw.jpeg" alt="Maxim Fateev"></p>
+<p>](<a href="https://medium.com/@mfateev?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------">https://medium.com/@mfateev?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------</a>)</p>
+<p>[</p>
+<p>Maxim Fateev</p>
+<p>](<a href="https://medium.com/@mfateev?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------">https://medium.com/@mfateev?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------</a>)</p>
+<p>[</p>
+<p>16 hours ago</p>
+<p>](<a href="https://medium.com/@mfateev/consider-using-temporal-io-5edc50ef2ccf?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------">https://medium.com/@mfateev/consider-using-temporal-io-5edc50ef2ccf?source=post_page---post_responses--77b9a40c16cf----2-----------------------------------</a>)</p>
+<p>Consider using temporal.io to make your frameworkless code resilient to process crashes and other failures.</p>
+<p>2</p>
+<p>Reply</p>
+<p>See all responses</p>
+<h2 id="more-fromkenny-vaneetveldeand-ai-advances">More from Kenny Vaneetvelde and AI Advances<a href="#more-fromkenny-vaneetveldeand-ai-advances" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/0*23pBGyNuZpxFbrRX" alt="Building AI Agents the Right Way: Design Principles for Agentic AI"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*R8zEd59FDf0l8Re94ImV0Q.png" alt="AI Advances"></p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>AI Advances</p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Kenny Vaneetvelde</p>
+<p>](<a href="https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>[</p>
+<h2 id="building-ai-agents-the-right-way-design-principles-for-agentic-ai">Building AI Agents the Right Way: Design Principles for Agentic AI<a href="#building-ai-agents-the-right-way-design-principles-for-agentic-ai" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="so-you-want-to-build-the-next-super-smart-ai-agent-you-wire-up-gpt-4o-to-a-few-apis-and-let-it-roam-free-what-could-go-wrong-spoiler">So, you want to build the next super-smart AI agent. You wire up GPT-4o to a few APIs and let it roam free. What could go wrong? (Spoiler…<a href="#so-you-want-to-build-the-next-super-smart-ai-agent-you-wire-up-gpt-4o-to-a-few-apis-and-let-it-roam-free-what-could-go-wrong-spoiler" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://ai.gopubby.com/building-ai-agents-the-right-way-design-principles-for-agentic-ai-47d1b92f0124?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/building-ai-agents-the-right-way-design-principles-for-agentic-ai-47d1b92f0124?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>May 18</p>
+<p>[</p>
+<p>832</p>
+<p>27</p>
+<p>](<a href="https://ai.gopubby.com/building-ai-agents-the-right-way-design-principles-for-agentic-ai-47d1b92f0124?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/building-ai-agents-the-right-way-design-principles-for-agentic-ai-47d1b92f0124?source=post_page---author_recirc--77b9a40c16cf----0---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F47d1b92f0124&amp;operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fbuilding-ai-agents-the-right-way-design-principles-for-agentic-ai-47d1b92f0124&amp;source=---author_recirc--77b9a40c16cf----0-----------------bookmark_preview----de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/0*xbBzzMy3O1m68oLJ" alt="Agentic AI Lifecycle for Enterprise Processes"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*R8zEd59FDf0l8Re94ImV0Q.png" alt="AI Advances"></p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>AI Advances</p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Debmalya Biswas</p>
+<p>](<a href="https://debmalyabiswas.medium.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://debmalyabiswas.medium.com/?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>[</p>
+<h2 id="agentic-ai-lifecycle-for-enterprise-processes">Agentic AI Lifecycle for Enterprise Processes<a href="#agentic-ai-lifecycle-for-enterprise-processes" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="the-art-of-transforming-manual-processes-into-an-orchestration-of-ai-agents">The art of transforming Manual processes into an Orchestration of AI Agents<a href="#the-art-of-transforming-manual-processes-into-an-orchestration-of-ai-agents" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://ai.gopubby.com/agentification-of-enterprise-processes-0f173554f7b4?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/agentification-of-enterprise-processes-0f173554f7b4?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>Jun 30</p>
+<p>[</p>
+<p>494</p>
+<p>13</p>
+<p>](<a href="https://ai.gopubby.com/agentification-of-enterprise-processes-0f173554f7b4?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/agentification-of-enterprise-processes-0f173554f7b4?source=post_page---author_recirc--77b9a40c16cf----1---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F0f173554f7b4&amp;operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fagentification-of-enterprise-processes-0f173554f7b4&amp;source=---author_recirc--77b9a40c16cf----1-----------------bookmark_preview----de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*NvQurVzhbdTxme2O-LiZOA.png" alt="LLMs Can Now Be Pre-Trained Using Pure Reinforcement Learning"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*R8zEd59FDf0l8Re94ImV0Q.png" alt="AI Advances"></p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>AI Advances</p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Dr. Ashish Bamania</p>
+<p>](<a href="https://bamania-ashish.medium.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://bamania-ashish.medium.com/?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>[</p>
+<h2 id="llms-can-now-be-pre-trained-using-pure-reinforcement-learning">LLMs Can Now Be Pre-Trained Using Pure Reinforcement Learning<a href="#llms-can-now-be-pre-trained-using-pure-reinforcement-learning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="a-deep-dive-into-reinforcement-pre-training-rpt-a-new-technique-introduced-by-microsoft-researchers-to-scalably-pre-train-llms-using-rl">A deep dive into Reinforcement Pre-Training (RPT), a new technique introduced by Microsoft researchers to scalably pre-train LLMs using RL.<a href="#a-deep-dive-into-reinforcement-pre-training-rpt-a-new-technique-introduced-by-microsoft-researchers-to-scalably-pre-train-llms-using-rl" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://ai.gopubby.com/llms-can-now-be-pre-trained-using-pure-reinforcement-learning-7676f579cbee?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/llms-can-now-be-pre-trained-using-pure-reinforcement-learning-7676f579cbee?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>Jun 26</p>
+<p>[</p>
+<p>820</p>
+<p>5</p>
+<p>](<a href="https://ai.gopubby.com/llms-can-now-be-pre-trained-using-pure-reinforcement-learning-7676f579cbee?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/llms-can-now-be-pre-trained-using-pure-reinforcement-learning-7676f579cbee?source=post_page---author_recirc--77b9a40c16cf----2---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F7676f579cbee&amp;operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fllms-can-now-be-pre-trained-using-pure-reinforcement-learning-7676f579cbee&amp;source=---author_recirc--77b9a40c16cf----2-----------------bookmark_preview----de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*Z1FbtzFGLX5n9fuaMshZSg.png" alt="Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen &amp; Other AI Frameworks? Read this!"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*R8zEd59FDf0l8Re94ImV0Q.png" alt="AI Advances"></p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>AI Advances</p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Kenny Vaneetvelde</p>
+<p>](<a href="https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>[</p>
+<h2 id="want-to-build-ai-agents-tired-of-langchain-crewai-autogen--other-ai-frameworks-read-this">Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen &amp; Other AI Frameworks? Read this!<a href="#want-to-build-ai-agents-tired-of-langchain-crewai-autogen--other-ai-frameworks-read-this" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="frameworks-like-langchain-crewai-and-autogen-have-gained-popularity-by-promising-high-level-abstractions-for-building-ai-systems-yet">Frameworks like LangChain, CrewAI, and AutoGen have gained popularity by promising high-level abstractions for building AI systems. Yet…<a href="#frameworks-like-langchain-crewai-and-autogen-have-gained-popularity-by-promising-high-level-abstractions-for-building-ai-systems-yet" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p>Jan 19</p>
+<p>[</p>
+<p>1.6K</p>
+<p>33</p>
+<p>](<a href="https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------">https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411?source=post_page---author_recirc--77b9a40c16cf----3---------------------de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Fc83ab4535411&amp;operation=register&amp;redirect=https%3A%2F%2Fai.gopubby.com%2Fwant-to-build-ai-agents-c83ab4535411&amp;source=---author_recirc--77b9a40c16cf----3-----------------bookmark_preview----de3c0183_365f_47fe_a1a9_f35ec14a54ff--------------"></a></p>
+<p>[</p>
+<p>See all from Kenny Vaneetvelde</p>
+<p>](<a href="https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf---------------------------------------">https://medium.com/@kenny_v?source=post_page---author_recirc--77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>See all from AI Advances</p>
+<p>](<a href="https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf---------------------------------------">https://ai.gopubby.com/?source=post_page---author_recirc--77b9a40c16cf---------------------------------------</a>)</p>
+<h2 id="recommended-from-medium">Recommended from Medium<a href="#recommended-from-medium" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*SZ0akeZuE4WhwjCntsDo6g.png" alt="These MCP servers are amazing for coding"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*ViyWUoh4zqx294no1eENxw.png" alt="Coding Beauty"></p>
+<p>](<a href="https://medium.com/coding-beauty?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/coding-beauty?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>Coding Beauty</p>
+<p>](<a href="https://medium.com/coding-beauty?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/coding-beauty?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Tari Ibaba</p>
+<p>](<a href="https://medium.com/@tariibaba?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@tariibaba?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="these-mcp-servers-are-amazing-for-coding">These MCP servers are amazing for coding<a href="#these-mcp-servers-are-amazing-for-coding" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="start-using-mcp-now">Start using MCP. NOW.<a href="#start-using-mcp-now" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://medium.com/coding-beauty/mcp-servers-479614e4b74c?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/coding-beauty/mcp-servers-479614e4b74c?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>5d ago</p>
+<p>[</p>
+<p>334</p>
+<p>5</p>
+<p>](<a href="https://medium.com/coding-beauty/mcp-servers-479614e4b74c?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/coding-beauty/mcp-servers-479614e4b74c?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F479614e4b74c&amp;operation=register&amp;redirect=https%3A%2F%2Fmedium.com%2Fcoding-beauty%2Fmcp-servers-479614e4b74c&amp;source=---read_next_recirc--77b9a40c16cf----0-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/0*PRZcNPDVe2z5n7kO" alt="GPT-5 Is Coming in July 2025 — And Everything Will Change"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*EetZyjDw-19wRRBzc6fSMA.png" alt="Predict"></p>
+<p>](<a href="https://medium.com/predict?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/predict?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>Predict</p>
+<p>](<a href="https://medium.com/predict?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/predict?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>iswarya writes</p>
+<p>](<a href="https://medium.com/@iswaryawrites?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@iswaryawrites?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="gpt-5-is-coming-in-july-2025and-everything-will-change">GPT-5 Is Coming in July 2025 — And Everything Will Change<a href="#gpt-5-is-coming-in-july-2025and-everything-will-change" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="its-wild-watching-people-use-chatgpt-knowing-whats-coming-openai-insider">“It’s wild watching people use ChatGPT… knowing what’s coming.”  — OpenAI insider<a href="#its-wild-watching-people-use-chatgpt-knowing-whats-coming-openai-insider" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://medium.com/predict/gpt-5-is-coming-in-july-2025-and-everything-will-change-643252fe6849?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/predict/gpt-5-is-coming-in-july-2025-and-everything-will-change-643252fe6849?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>Jul 8</p>
+<p>[</p>
+<p>5.9K</p>
+<p>164</p>
+<p>](<a href="https://medium.com/predict/gpt-5-is-coming-in-july-2025-and-everything-will-change-643252fe6849?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/predict/gpt-5-is-coming-in-july-2025-and-everything-will-change-643252fe6849?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F643252fe6849&amp;operation=register&amp;redirect=https%3A%2F%2Fmedium.com%2Fpredict%2Fgpt-5-is-coming-in-july-2025-and-everything-will-change-643252fe6849&amp;source=---read_next_recirc--77b9a40c16cf----1-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*RxDCsYpAyqquIBO8Bs10hA.jpeg" alt="Why Most AI Agents Fail in Production (And How to Build Ones That Don’t)"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*0nV0Q-FBHj94Kggq00pG2Q.jpeg" alt="Data Science Collective"></p>
+<p>](<a href="https://medium.com/data-science-collective?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/data-science-collective?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>Data Science Collective</p>
+<p>](<a href="https://medium.com/data-science-collective?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/data-science-collective?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Paolo Perrone</p>
+<p>](<a href="https://medium.com/@paoloperrone?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@paoloperrone?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont">Why Most AI Agents Fail in Production (And How to Build Ones That Don’t)<a href="#why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="im-a-8-years-machine-learning-engineer-building-ai-agents-in-production">I’m a 8+ years Machine Learning Engineer building AI agents in production.<a href="#im-a-8-years-machine-learning-engineer-building-ai-agents-in-production" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>Jun 16</p>
+<p>[</p>
+<p>1.4K</p>
+<p>21</p>
+<p>](<a href="https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075?source=post_page---read_next_recirc--77b9a40c16cf----0---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff6f604bcd075&amp;operation=register&amp;redirect=https%3A%2F%2Fmedium.com%2Fdata-science-collective%2Fwhy-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075&amp;source=---read_next_recirc--77b9a40c16cf----0-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*rbyeFrq2O0wU3nMJQU_gmA.png" alt="Goldman Sachs Just Made Your Computer Science Degree Worthless"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*WxqZ2ee9YcqARv0Jgx7_0A.png" alt="Utopian"></p>
+<p>](<a href="https://medium.com/utopian?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/utopian?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>Utopian</p>
+<p>](<a href="https://medium.com/utopian?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/utopian?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Derick David</p>
+<p>](<a href="https://jeazous.medium.com/?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://jeazous.medium.com/?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="goldman-sachs-just-made-your-computer-science-degree-worthless">Goldman Sachs Just Made Your Computer Science Degree Worthless<a href="#goldman-sachs-just-made-your-computer-science-degree-worthless" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="your-programming-job-just-got-10x-more-dangerous">Your programming job just got 10x more dangerous<a href="#your-programming-job-just-got-10x-more-dangerous" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://medium.com/utopian/goldman-sachs-just-made-your-computer-science-degree-worthless-604177a5a0e9?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/utopian/goldman-sachs-just-made-your-computer-science-degree-worthless-604177a5a0e9?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>4d ago</p>
+<p>[</p>
+<p>1.1K</p>
+<p>150</p>
+<p>](<a href="https://medium.com/utopian/goldman-sachs-just-made-your-computer-science-degree-worthless-604177a5a0e9?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/utopian/goldman-sachs-just-made-your-computer-science-degree-worthless-604177a5a0e9?source=post_page---read_next_recirc--77b9a40c16cf----1---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F604177a5a0e9&amp;operation=register&amp;redirect=https%3A%2F%2Fmedium.com%2Futopian%2Fgoldman-sachs-just-made-your-computer-science-degree-worthless-604177a5a0e9&amp;source=---read_next_recirc--77b9a40c16cf----1-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/1*F1HE6GGa40dhfv1ZZkwToA.png" alt="The 47-Line Code That Made One Developer $2 Million from AI"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*qzg4k1dbmci1Z47Qm6BTsQ@2x.jpeg" alt="Yash Batra"></p>
+<p>](<a href="https://medium.com/@yashbatra11111?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@yashbatra11111?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<p>Yash Batra</p>
+<p>](<a href="https://medium.com/@yashbatra11111?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@yashbatra11111?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="the-47-line-code-that-made-one-developer-2-million-from-ai">The 47-Line Code That Made One Developer $2 Million from AI<a href="#the-47-line-code-that-made-one-developer-2-million-from-ai" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="in-late-2024-a-solo-indie-developer-pushed-47-lines-of-python-code-to-github">In late 2024, a solo indie developer pushed 47 lines of Python code to GitHub.<a href="#in-late-2024-a-solo-indie-developer-pushed-47-lines-of-python-code-to-github" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://medium.com/@yashbatra11111/the-47-line-code-that-made-one-developer-2-million-from-ai-7269383d65db?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@yashbatra11111/the-47-line-code-that-made-one-developer-2-million-from-ai-7269383d65db?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>Jul 8</p>
+<p>[</p>
+<p>450</p>
+<p>11</p>
+<p>](<a href="https://medium.com/@yashbatra11111/the-47-line-code-that-made-one-developer-2-million-from-ai-7269383d65db?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@yashbatra11111/the-47-line-code-that-made-one-developer-2-million-from-ai-7269383d65db?source=post_page---read_next_recirc--77b9a40c16cf----2---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F7269383d65db&amp;operation=register&amp;redirect=https%3A%2F%2Fmedium.com%2F%40yashbatra11111%2Fthe-47-line-code-that-made-one-developer-2-million-from-ai-7269383d65db&amp;source=---read_next_recirc--77b9a40c16cf----2-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:1019/0*TiKAbpdCzX-GZQZP" alt="How I Print Money Daily with This Simple Options Strategy"></p>
+<p>[</p>
+<p><img src="https://miro.medium.com/v2/resize:fill:30:30/1*rHi38uLXrqZYEFOtAcN6Dw.png" alt="InsiderFinance Wire"></p>
+<p>](<a href="https://wire.insiderfinance.io/?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://wire.insiderfinance.io/?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>In</p>
+<p>[</p>
+<p>InsiderFinance Wire</p>
+<p>](<a href="https://wire.insiderfinance.io/?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://wire.insiderfinance.io/?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>by</p>
+<p>[</p>
+<p>Kabilan Thavabalalingam</p>
+<p>](<a href="https://medium.com/@kabilan.t?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://medium.com/@kabilan.t?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>[</p>
+<h2 id="how-i-print-money-daily-with-this-simple-options-strategy">How I Print Money Daily with This Simple Options Strategy<a href="#how-i-print-money-daily-with-this-simple-options-strategy" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="a-step-by-step-guide-to-making-25-50-daily">A step-by-step guide to making $25-$50 daily<a href="#a-step-by-step-guide-to-making-25-50-daily" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>](<a href="https://wire.insiderfinance.io/how-i-print-money-daily-with-this-simple-options-strategy-76681ab193ac?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://wire.insiderfinance.io/how-i-print-money-daily-with-this-simple-options-strategy-76681ab193ac?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p>Jul 9</p>
+<p>[</p>
+<p>210</p>
+<p>17</p>
+<p>](<a href="https://wire.insiderfinance.io/how-i-print-money-daily-with-this-simple-options-strategy-76681ab193ac?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------">https://wire.insiderfinance.io/how-i-print-money-daily-with-this-simple-options-strategy-76681ab193ac?source=post_page---read_next_recirc--77b9a40c16cf----3---------------------e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------</a>)</p>
+<p><a href="https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2F76681ab193ac&amp;operation=register&amp;redirect=https%3A%2F%2Fwire.insiderfinance.io%2Fhow-i-print-money-daily-with-this-simple-options-strategy-76681ab193ac&amp;source=---read_next_recirc--77b9a40c16cf----3-----------------bookmark_preview----e9b5ea44_7778_43c0_aa7a_d7f26a6e56bd--------------"></a></p>
+<p>[</p>
+<p>See more recommendations</p>
+<p>](<a href="https://medium.com/?source=post_page---read_next_recirc--77b9a40c16cf---------------------------------------">https://medium.com/?source=post_page---read_next_recirc--77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Help</p>
+<p>](<a href="https://help.medium.com/hc/en-us?source=post_page-----77b9a40c16cf---------------------------------------">https://help.medium.com/hc/en-us?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Status</p>
+<p>](<a href="https://medium.statuspage.io/?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.statuspage.io/?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>About</p>
+<p>](<a href="https://medium.com/about?autoplay=1&amp;source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/about?autoplay=1&source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Careers</p>
+<p>](<a href="https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=post_page-----77b9a40c16cf---------------------------------------">https://medium.com/jobs-at-medium/work-at-medium-959d1a85284e?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Press</p>
+<p>](mailto:pressinquiries@medium.com)</p>
+<p>[</p>
+<p>Blog</p>
+<p>](<a href="https://blog.medium.com/?source=post_page-----77b9a40c16cf---------------------------------------">https://blog.medium.com/?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Privacy</p>
+<p>](<a href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=post_page-----77b9a40c16cf---------------------------------------">https://policy.medium.com/medium-privacy-policy-f03bf92035c9?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Rules</p>
+<p>](<a href="https://policy.medium.com/medium-rules-30e5502c4eb4?source=post_page-----77b9a40c16cf---------------------------------------">https://policy.medium.com/medium-rules-30e5502c4eb4?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Terms</p>
+<p>](<a href="https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=post_page-----77b9a40c16cf---------------------------------------">https://policy.medium.com/medium-terms-of-service-9db0094a1e0f?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+<p>[</p>
+<p>Text to speech</p>
+<p>](<a href="https://speechify.com/medium?source=post_page-----77b9a40c16cf---------------------------------------">https://speechify.com/medium?source=post_page-----77b9a40c16cf---------------------------------------</a>)</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="https://letungbach.com/posts/dataset/" class="button inline prev">
+        &lt; [<span class="button__text"></span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="https://letungbach.com/posts/agent/" class="button inline next">
+         [<span class="button__text">AI Agent</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    
+  
+</div>
+
+</body>
+</html>
