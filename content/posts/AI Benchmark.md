@@ -8,7 +8,7 @@ tags:
   - neuralnet
   - deeplearning
 created: 2025-04-10T00:13
-updated: 2025-05-27T22:42
+updated: 2026-01-05T15:20
 description: AI benchmarks assess the performance and capabilities of models in standardized tasks.
 ---
 [GLUE Benchmark](https://gluebenchmark.com/leaderboard)
@@ -59,3 +59,6 @@ EQ-Bench - Longform Creative Writing: [paper](https://arxiv.org/pdf/2312.06281)
 https://llmbenchmark.kili-technology.com/?_gl=1*1y0re2j*_gcl_au*NzA4OTAwNjM4LjE3NDQ5MjAzNDE.
 
 {{< figure src="https://eqbench.com/images/eqbench3-judge-comparison.png" title="Judge Comparison" >}}
+
+[EQ-Bench 3 Leaderboard](https://eqbench.com/index.html)
+
